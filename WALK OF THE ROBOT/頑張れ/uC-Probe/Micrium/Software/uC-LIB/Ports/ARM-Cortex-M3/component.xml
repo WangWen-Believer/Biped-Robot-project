@@ -1,0 +1,20 @@
+<xs:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:xs="http://xml.micrium.com/schema/component">
+
+    <component id="com.micrium.uclib.port.armcortexm3.iar" name="Cortex M-3 IAR LIB Port" toolchain="IAR" mcuSpecific="true">
+
+        <description> LIB Port for ARM Cortex M3 processors on the IAR toolchain</description>
+
+        <sourceDir needIncludePath="false">IAR</sourceDir>
+
+    </component>
+
+    <component id="com.micrium.uclib.port.armcortexm3.realview" name="Cortex M-3 RealView LIB Port" toolchain="RealView" mcuSpecific="true">
+
+        <description> LIB Port for ARM Cortex M3 processors on the RealView toolchain</description>
+
+        <sourceDir needIncludePath="false">RealView</sourceDir>
+
+    </component>
+
+</xs:root>

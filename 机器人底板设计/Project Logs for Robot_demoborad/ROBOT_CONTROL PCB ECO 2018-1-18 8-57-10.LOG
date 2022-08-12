@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=GND Pin=C3-2
+Removed Pin From Net: NetName=VCC3.3 Pin=R4-2
+Removed Pin From Net: NetName=GND Pin=RSTSET-2
+Removed Member From Class: ClassName=Robot_demoborad Member=C3
+Removed Member From Class: ClassName=Robot_demoborad Member=R4
+Removed Member From Class: ClassName=Robot_demoborad Member=RSTSET

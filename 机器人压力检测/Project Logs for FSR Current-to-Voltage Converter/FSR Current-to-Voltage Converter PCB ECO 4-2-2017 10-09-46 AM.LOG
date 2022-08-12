@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=VCC Pin=RG1-2
+Removed Pin From Net: NetName=VCC Pin=RG2-2
+Removed Pin From Net: NetName=VCC Pin=RG3-2
+Removed Pin From Net: NetName=VCC Pin=RG4-2
+Added Pin To Net: NetName=SENSER_1 Pin=RG1-2
+Added Pin To Net: NetName=SENSER_2 Pin=RG2-2
+Added Pin To Net: NetName=SENSER_3 Pin=RG3-2
+Added Pin To Net: NetName=SENSER_4 Pin=RG4-2
+Added Pin To Net: NetName=GND Pin=U1-11
+Added Pin To Net: NetName=NetU1_5 Pin=U1-11
+Added Pin To Net: NetName=NetU1_10 Pin=U1-11
+Added Room: Name=FSR Current-to-Voltage Converter

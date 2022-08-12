@@ -1,0 +1,378 @@
+C51 COMPILER V7.06   MAIN                         06/07/2011 15:43:01 PAGE 1   
+
+
+C51 COMPILER V7.06, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE main.c OPTIMIZE(SIZE) BROWSE DEBUG
+                    - OBJECTEXTEND PAGEWIDTH(79) PAGELENGTH(66)
+
+stmt level    source
+
+   1          /****************************************************************
+             -********************/
+   2          //      °æÈ¨ËùÓÐ£ºCopyright (c) 2005 - 2010 ICRoute INC.
+   3          /****************************************************************
+             -********************/
+   4          
+   5          #include "STC10F08XE.H"
+   6          #include "LDchip.h"
+   7          #include "Reg_RW.h"
+   8          #include "FlashDef.h"
+   9          
+  10          sbit LED1=P3^4;
+  11          sbit LED2=P3^5;
+  12          
+  13          /****************************************************************
+             -********************/
+  14          //      nAsrStatus ÓÃÀ´ÔÚmainÖ÷³ÌÐòÖÐ±íÊ¾³ÌÐòÔËÐÐµÄ×´Ì¬£¬²»ÊÇLD3320Ð¾Æ
+             -¬ÄÚ²¿µÄ×´Ì¬¼Ä´æÆ÷
+  15          //      LD_ASR_NONE:            ±íÊ¾Ã»ÓÐÔÚ×÷ASRÊ¶±ð
+  16          //      LD_ASR_RUNING£º         ±íÊ¾LD3320ÕýÔÚ×÷ASRÊ¶±ðÖÐ
+  17          //      LD_ASR_FOUNDOK:         ±íÊ¾Ò»´ÎÊ¶±ðÁ÷³Ì½áÊøºó£¬ÓÐÒ»¸öÊ¶±ð½á¹û
+  18          //      LD_ASR_FOUNDZERO:       ±íÊ¾Ò»´ÎÊ¶±ðÁ÷³Ì½áÊøºó£¬Ã»ÓÐÊ¶±ð½á¹û
+  19          //      LD_ASR_ERROR:           ±íÊ¾Ò»´ÎÊ¶±ðÁ÷³ÌÖÐLD3320Ð¾Æ¬ÄÚ²¿³öÏÖ²»ÕýÈ·µÄ×´Ì
+             -¬
+  20          /****************************************************************
+             -*******************/
+  21          uint8 idata nAsrStatus=0;       
+  22          
+  23          
+  24          /****************************************************************
+             -********************/
+  25          //      ÒÔÏÂ¶¨ÒåÊÇÔÚÊ¾·¶³ÌÐòÖÐ£¬ÓÃÀ´²¥·ÅµÄÉùÒôÊý¾ÝµÄÆðÊ¼Î»ÖÃºÍ³¤¶È
+  26          //      ÕâÐ©ÉùÒôÊÇÊÂÏÈÔÚPC»úÉÏÂ¼ÖÆºÃµÄMP3ÎÄ¼þ£¬ÔÚPC»úÉÏºÏ³Éµ½Ò»¸öÎÄ¼þ 
+             -voice.datÖÐ
+  27          //      ¿ÉÒÔ°ÑÕâ¸övoide.dat´æ´¢µ½ÓÃ»§ÏµÍ³ÖÐµÄ´æ´¢Ð¾Æ¬ÖÐ£¬ÖîÈç spi-flas
+             -hÖÐ
+  28          //      ÔÚÐèÒª²¥·ÅÊ±£¬ÓÃ»§µÄÖ÷¿ØMCU¿ÉÒÔµ½spi-flashÖÐ¸ù¾ÝÒª²¥·ÅÎÄ¼þµÄÆð
+             -Ê¼µØÖ·ÎÞ¶ÁÈ¡MP3Êý¾Ý
+  29          //      ²¢ËÍÈëLD3320½øÐÐ²¥·Å
+  30          /****************************************************************
+             -********************/
+  31          #define MP3_BEIJING_START       0x0000;
+  32          #define MP3_BEIJING_SIZE        0x08b8;
+  33          #define MP3_SHANGHAI_START      0x1000;
+  34          #define MP3_SHANGHAI_SIZE       0x0ab0;
+  35          #define MP3_TIANJIN_START       0x2000;
+  36          #define MP3_TIANJIN_SIZE        0x0a20;
+  37          #define MP3_CHONGQING_START     0x3000;
+  38          #define MP3_CHONGQING_SIZE      0x0990;
+  39          #define MP3_DING_START  0x4000;
+  40          #define MP3_DING_SIZE   0x0828;
+  41          #define MP3_NIHAO_START 0x5000;
+  42          #define MP3_NIHAO_SIZE  0x1170;
+  43          
+  44          
+  45          extern void          _nop_     (void);
+C51 COMPILER V7.06   MAIN                         06/07/2011 15:43:01 PAGE 2   
+
+  46          
+  47          void MCU_init();
+  48          void FlashLED(uint8 nTimes);
+  49          void PlaySound(uint8 nCode);
+  50          uint8 RunASR();
+  51          void ProcessInt0();
+  52          
+  53          
+  54          /****************************************************************
+             -********************/
+  55          //      Õâ¸öÊ¾·¶³ÌÐòÊÇ»ùÓÚSTC10L08XE±àÒëµÄÍêÕûµØ£¬¿ÉÒÔÖ´ÐÐµÄ³ÌÐò
+  56          //      ÊÂÏÈÁËÊ¶±ðºÍ²¥·ÅµÄ¹¦ÄÜ
+  57          //      ¸ù¾ÝÓÃ»§Ëµ³ö²»Í¬µÄ¹Ø¼ü´ÊÓï£¬Ê¶±ðºó²¥·Å¶ÔÓ¦µÄmp3ÉùÒô
+  58          //
+  59          //      ÓëLD3320Ð¾Æ¬ÓÐ¹ØµÄº¯Êý¹¦ÄÜ£¬¶¼ÔÚ"¿ª·¢ÊÖ²á.pdf"ÖÐÓÐÏêÏ¸ËµÃ÷
+  60          //      Çë¿ª·¢Õß¶ÔÕÕ"¿ª·¢ÊÖ²á.pdf¡°ÔÄ¶Á
+  61          //      
+  62          //      ¿ª·¢ÕßÔÚÑ§Ï°LD3320¿ªÊ¼Ê±£¬¿ÉÒÔÖ±½Ó°ÑÔÚÕâ¸ömainº¯Êý¿½±´µ½×Ô¼ºµ¥
+             -Æ¬»úÖÐ±àÒëÔËÐÐ
+  63          //      Èç¹ûÖ»ÊµÏÖASRÓïÒôÊ¶±ð¹¦ÄÜ£¬¿ÉÒÔ°Ñ³ÌÐòÖÐPlaySound()º¯ÊýµÄµ÷ÓÃ×¢
+             -ÊÍµô¾Í¿ÉÒÔ
+  64          //      
+  65          //      µ±È»£¬ÓÃ»§Òª¸ù¾Ý×Ô¼ºÊµ¼ÊµÄµ¥Æ¬»úÈ¥ÐÞ¸Ä mcu_init £¬ÒÔ¼°¶ÔÓ¦µÄ¹Ü
+             -½ÅÁ¬½ÓµÄ¶¨Òå£¬ÖÐ¶Ï¶¨Òå
+  66          /****************************************************************
+             -********************/
+  67          
+  68          void  main()
+  69          {
+  70   1              uint8 idata nAsrRes;
+  71   1      
+  72   1              FlashLED(3);
+  73   1      
+  74   1              MCU_init();
+  75   1              LD_reset();
+  76   1      
+  77   1              nAsrStatus = LD_ASR_NONE;               //      ³õÊ¼×´Ì¬£ºÃ»ÓÐÔÚ×÷ASR
+  78   1              PlaySound(CODE_DEFAULT);                //      ²¥·ÅÌáÊ¾Òô
+  79   1              while(1)
+  80   1              {
+  81   2                      if (bMp3Play!=0)                        //      Èç¹û»¹ÔÚ²¥·ÅMP3ÖÐ£¬ÔòµÈ´ý£¬Ö±µ½MP3²¥·ÅÍê±
+             -Ï ¼´bMp3Play==0
+  82   2                              continue;                               //      bMp3Play ÊÇ¶¨ÒåµÄÒ»¸öÈ«¾Ö±äÁ¿ÓÃÀ´¼ÇÂ¼MP3²¥·ÅµÄ
+             -×´Ì¬£¬²»ÊÇLD3320Ð¾Æ¬ÄÚ²¿µÄ¼Ä´æÆ÷
+  83   2      
+  84   2                      switch(nAsrStatus)
+  85   2                      {
+  86   3                              case LD_ASR_RUNING:
+  87   3                              case LD_ASR_ERROR:              
+  88   3                                      break;
+  89   3                              case LD_ASR_NONE:
+  90   3                              {
+  91   4                                      FlashLED(4);
+  92   4                                      nAsrStatus=LD_ASR_RUNING;
+  93   4                                      if (RunASR()==0)        //      Æô¶¯Ò»´ÎASRÊ¶±ðÁ÷³Ì£ºASR³õÊ¼»¯£¬ASRÌí¼Ó¹Ø
+             -¼ü´ÊÓï£¬Æô¶¯ASRÔËËã
+  94   4                                      {
+  95   5                                              nAsrStatus = LD_ASR_ERROR;
+  96   5                                              LED1=0;
+  97   5                                              LED2=0;
+  98   5                                      }
+  99   4                                      break;
+ 100   4                              }
+ 101   3                              case LD_ASR_FOUNDOK:
+C51 COMPILER V7.06   MAIN                         06/07/2011 15:43:01 PAGE 3   
+
+ 102   3                              {
+ 103   4                                      FlashLED(2);
+ 104   4                                      nAsrRes = LD_GetResult();       //      Ò»´ÎASRÊ¶±ðÁ÷³Ì½áÊø£¬È¥È¡ASRÊ¶±ð
+             -½á¹û
+ 105   4                                      PlaySound(nAsrRes);
+ 106   4                                      nAsrStatus = LD_ASR_NONE;
+ 107   4                                      break;
+ 108   4                              }
+ 109   3                              case LD_ASR_FOUNDZERO:
+ 110   3                              default:
+ 111   3                              {
+ 112   4                                      FlashLED(1);
+ 113   4                                      PlaySound(CODE_DEFAULT);
+ 114   4                                      nAsrStatus = LD_ASR_NONE;
+ 115   4                                      break;
+ 116   4                              }
+ 117   3                      }// switch
+ 118   2              }// while
+ 119   1      
+ 120   1      }
+ 121          
+ 122          void MCU_init()
+ 123          {
+ 124   1              P1M0 |= 1;
+ 125   1              P3M0 |= 8;
+ 126   1      
+ 127   1              LED1=0;
+ 128   1              LED2=0;
+ 129   1              P0 = 0xff;
+ 130   1              P1 = 0xff;
+ 131   1              P2 = 0xff;
+ 132   1              P3 = 0xf7;
+ 133   1              P4 = 0x0f;
+ 134   1      
+ 135   1      #if defined (SOFT_SPI_PORT)             //      Èí¼þÄ£ÄâSPI¶ÁÐ´
+                      LD_MODE = 1;                            //      ÉèÖÃMD¹Ü½ÅÎª¸ß
+              #elif defined (HARD_SPI_PORT)   //      Ó²¼þÊµÏÖSPI¶ÁÐ´
+                      LD_MODE = 1;                            //      ÉèÖÃMD¹Ü½ÅÎª¸ß
+              #else                                                   //      ²¢ÐÐ¶ÁÐ´ £¨Ó²¼þÊµÏÖ»òÕßÈí¼þÄ£Äâ£©
+ 140   1              LD_MODE = 0;                            //      ÉèÖÃMD¹Ü½ÅÎªµÍ
+ 141   1      #endif
+ 142   1      
+ 143   1      
+ 144   1              IP=0;
+ 145   1              IPH=0;
+ 146   1      
+ 147   1              PX0=1; 
+ 148   1              PT0=1;
+ 149   1              PS=1;
+ 150   1              IPH |= 1;       
+ 151   1              
+ 152   1              EX0=0;
+ 153   1              EX1=0;
+ 154   1              EA=1;
+ 155   1      }
+ 156          
+ 157          void  delay(unsigned long uldata)
+ 158          {
+ 159   1              unsigned int j  =  0;
+ 160   1              unsigned int g  =  0;
+ 161   1              for (j=0;j<5;j++)
+ 162   1              {
+ 163   2                      for (g=0;g<uldata;g++)
+ 164   2                      {
+C51 COMPILER V7.06   MAIN                         06/07/2011 15:43:01 PAGE 4   
+
+ 165   3                              _nop_();
+ 166   3                              _nop_();
+ 167   3                              _nop_();
+ 168   3                      }
+ 169   2              }
+ 170   1      }
+ 171          
+ 172          /****************************************************************
+             -*****
+ 173          //ÎªÁËÏû³ý±àÒëÊ±µÄ ¾¯¸æ *** WARNING L15: MULTIPLE CALL TO SEGMENT
+ 174          //°ÑÔÚÖÐ¶Ïº¯ÊýÖÐÐèÒªµ÷ÓÃµÄº¯ÊýÖØÐÂ¸´ÖÆ²¢ÃüÃû
+ 175          //Ïû³ý¾¯¸æ Warning L15£¬²¢ÇÒ±ÜÃâÓÉÓÚº¯ÊýÖØÈë¿ÉÄÜ´øÀ´µÄÒþ²ØBug
+ 176          /****************************************************************
+             -*****/
+ 177          void  delay_2(unsigned long uldata)
+ 178          {
+ 179   1              unsigned int j  =  0;
+ 180   1              unsigned int g  =  0;
+ 181   1              for (j=0;j<5;j++)
+ 182   1              {
+ 183   2                      for (g=0;g<uldata;g++)
+ 184   2                      {
+ 185   3                              _nop_();
+ 186   3                              _nop_();
+ 187   3                              _nop_();
+ 188   3                      }
+ 189   2              }
+ 190   1      }
+ 191          
+ 192          void FlashLED(uint8 nTimes)
+ 193          {
+ 194   1              uint8 k;
+ 195   1              for (k=0; k<nTimes; k++)
+ 196   1              {
+ 197   2                      LED1=0;
+ 198   2                      LED2=0;
+ 199   2                      delay(15000);
+ 200   2                      LED1=1;
+ 201   2                      LED2=1;
+ 202   2                      delay(15000);
+ 203   2              }
+ 204   1      }
+ 205          
+ 206          void PlaySound(uint8 nCode)
+ 207          {
+ 208   1              switch(nCode)
+ 209   1              {
+ 210   2              case CODE_BEIJING:
+ 211   2                      nMp3StartPos = MP3_BEIJING_START;
+ 212   2                      nMp3Size = MP3_BEIJING_SIZE;
+ 213   2                      break;
+ 214   2              case CODE_SHANGHAI:
+ 215   2                      nMp3StartPos = MP3_SHANGHAI_START;
+ 216   2                      nMp3Size = MP3_SHANGHAI_SIZE;
+ 217   2                      break;
+ 218   2              case CODE_TIANJIN:
+ 219   2                      nMp3StartPos = MP3_TIANJIN_START;
+ 220   2                      nMp3Size = MP3_TIANJIN_SIZE;
+ 221   2                      break;
+ 222   2              case CODE_CHONGQING:
+ 223   2                      nMp3StartPos = MP3_CHONGQING_START;
+ 224   2                      nMp3Size = MP3_CHONGQING_SIZE;
+ 225   2                      break;
+ 226   2              default:
+C51 COMPILER V7.06   MAIN                         06/07/2011 15:43:01 PAGE 5   
+
+ 227   2                      nMp3StartPos = MP3_NIHAO_START;
+ 228   2                      nMp3Size = MP3_NIHAO_SIZE;
+ 229   2                      break;          
+ 230   2              }
+ 231   1      
+ 232   1              LD_Init_MP3();
+ 233   1              LD_AdjustMIX2SPVolume(15);
+ 234   1              LD_play();
+ 235   1      }
+ 236          
+ 237          
+ 238          /****************************************************************
+             -********************/
+ 239          //      IO_Send_Byte()ÊÇÖ÷¿ØMCUÏòspi-flash (ÐÍºÅÎª»ª°îµÄ W25X40)·¢ËÍÖ¸
+             -Áî
+ 240          //      ¿ª·¢ÕßÓ¦¸Ã¸ù¾Ý×Ô¼ºÊ¹ÓÃµÄ´æ´¢Ð¾Æ¬È¥Ð´¾ßÌåµÄº¯Êý
+ 241          //
+ 242          //      ICroute¹«Ë¾ÎÞ·¨¶Ô´æ´¢Ð¾Æ¬µÄ¶ÁÐ´Ìá¹©¼¼ÊõÖ§³Ö£¬
+ 243          //      ¿ª·¢ÕßÐèÒª×Ô¼ºÏò×Ô¼ºÊ¹ÓÃµÄ´æ´¢Ð¾Æ¬µÄ³§ÉÌ»ñµÃ¼¼ÊõÖ§³Ö
+ 244          //      »òÕßÔÚÍøÂçÉÏËÑË÷Ïà¹Ø´úÂëºÍÎÄµµ
+ 245          //
+ 246          //      »ª°îµÄspi-flashµÄ¼¼ÊõÖ§³ÖµÄÎÄµµÒ³ÃæÔÚ£º
+ 247          //      http://www.winbond.com.tw/hq/cht/ProductAndSales/ProductLines/
+             -FlashMemory/SerialFlash/
+ 248          //      http://www.xtdpj.com/show_hdr.php?xname=915RL41&dname=23T0M41&
+             -xpos=84
+ 249          /****************************************************************
+             -********************/
+ 250          
+ 251          void IO_Send_Byte(uint8 dataout)
+ 252          {
+ 253   1               uint8 i = 0; 
+ 254   1               FLASH_CS = 0;
+ 255   1               for (i=0; i<8; i++)
+ 256   1               {
+ 257   2                        if ((dataout & 0x80) == 0x80) 
+ 258   2                                 FLASH_DIO = 1;
+ 259   2                        else
+ 260   2                                 FLASH_DIO = 0;
+ 261   2                        FLASH_CLK = 1;
+ 262   2                        dataout = (dataout << 1); 
+ 263   2                        FLASH_CLK = 0;   
+ 264   2               }
+ 265   1      }
+ 266          
+ 267          
+ 268          /****************************************************************
+             -********************/
+ 269          //      RunASR()º¯ÊýÊµÏÖÁËÒ»´ÎÍêÕûµÄASRÓïÒôÊ¶±ðÁ÷³Ì
+ 270          //      LD_AsrStart() º¯ÊýÊµÏÖÁËASR³õÊ¼»¯
+ 271          //      LD_AsrAddFixed() º¯ÊýÊµÏÖÁËÌí¼Ó¹Ø¼ü´ÊÓïµ½LD3320Ð¾Æ¬ÖÐ
+ 272          //      LD_AsrRun()     º¯ÊýÆô¶¯ÁËÒ»´ÎASRÓïÒôÊ¶±ðÁ÷³Ì
+ 273          //
+ 274          //      ÈÎºÎÒ»´ÎASRÊ¶±ðÁ÷³Ì£¬¶¼ÐèÒª°´ÕÕÕâ¸öË³Ðò£¬´Ó³õÊ¼»¯¿ªÊ¼½øÐÐ
+ 275          /****************************************************************
+             -********************/
+ 276          
+ 277          uint8 RunASR()
+ 278          {
+ 279   1              uint8 i=0;
+ 280   1              uint8 asrflag=0;
+ 281   1              for (i=0; i<5; i++)                     //      ·ÀÖ¹ÓÉÓÚÓ²¼þÔ­Òòµ¼ÖÂLD3320Ð¾Æ¬¹¤×÷²»Õý³
+             -££¬ËùÒÔÒ»¹²³¢ÊÔ5´ÎÆô¶¯ASRÊ¶±ðÁ÷³Ì
+ 282   1              {
+C51 COMPILER V7.06   MAIN                         06/07/2011 15:43:01 PAGE 6   
+
+ 283   2                      LD_AsrStart();
+ 284   2                      delay(100);
+ 285   2                      if (LD_AsrAddFixed()==0)
+ 286   2                      {
+ 287   3                              LD_reset();                     //      LD3320Ð¾Æ¬ÄÚ²¿³öÏÖ²»Õý³££¬Á¢¼´ÖØÆôLD3320Ð¾Æ¬
+ 288   3                              delay(100);                     //      ²¢´Ó³õÊ¼»¯¿ªÊ¼ÖØÐÂASRÊ¶±ðÁ÷³Ì
+ 289   3                              continue;
+ 290   3                      }
+ 291   2                      delay(10);
+ 292   2                      if (LD_AsrRun() == 0)
+ 293   2                      {
+ 294   3                              LD_reset();                     //      LD3320Ð¾Æ¬ÄÚ²¿³öÏÖ²»Õý³££¬Á¢¼´ÖØÆôLD3320Ð¾Æ¬
+ 295   3                              delay(100);                     //      ²¢´Ó³õÊ¼»¯¿ªÊ¼ÖØÐÂASRÊ¶±ðÁ÷³Ì
+ 296   3                              continue;
+ 297   3                      }
+ 298   2      
+ 299   2                      asrflag=1;
+ 300   2                      break;                                  //      ASRÁ÷³ÌÆô¶¯³É¹¦£¬ÍË³öµ±Ç°forÑ­»·¡£¿ªÊ¼µÈ´ýLD3320Ë
+             -Í³öµÄÖÐ¶ÏÐÅºÅ
+ 301   2              }
+ 302   1      
+ 303   1              return asrflag;
+ 304   1      }
+ 305          
+ 306          void ExtInt0Handler(void) interrupt 0  
+ 307          {
+ 308   1              ProcessInt0();                          //      LD3320 ËÍ³öÖÐ¶ÏÐÅºÅ£¬°üÀ¨ASRºÍ²¥·ÅMP3µÄÖÐ¶Ï
+             -£¬ÐèÒªÔÚÖÐ¶Ï´¦Àíº¯ÊýÖÐ·Ö±ð´¦Àí
+ 309   1      }
+ 310          
+ 311          
+ 312          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    595    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      16
+   IDATA SIZE       =      1       1
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

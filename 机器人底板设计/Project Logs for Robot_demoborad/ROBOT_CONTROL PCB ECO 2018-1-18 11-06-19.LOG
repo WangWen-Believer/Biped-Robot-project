@@ -1,0 +1,7 @@
+Change Component Footprint: Designator=R23 Old Footprint=0805-1 New Footprint=0603P
+Change Component Footprint: Designator=C33 Old Footprint=C-RAD-0805 New Footprint=0603P
+Change Component Footprint: Designator=C34 Old Footprint=C-RAD-0805 New Footprint=0603P
+Change Component Footprint: Designator=C35 Old Footprint=C-RAD-0805 New Footprint=0603P
+Change Component Footprint: Designator=C36 Old Footprint=C-RAD-0805 New Footprint=0603P
+Added Member To Class: ClassName=Robot_demoborad Member=Component M1 STM32F4&F7_CB
+Added Room: Name=Robot_demoborad

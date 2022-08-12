@@ -1,0 +1,11 @@
+%% File: Additional function for 'example' =================================
+%% Abstract:
+%%    This file contains additional functions needed by the
+%%    Simulink Coder generated C code. It is created by rtwgen.
+%%
+
+%function GetModelUserFcnPrototypes() void
+%return ""
+%endfunction
+
+

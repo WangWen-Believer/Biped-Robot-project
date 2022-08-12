@@ -1,0 +1,8 @@
+安装前请确定你的计算机已经有framework 3.5补丁包
+如果是win7（或更更高版本的系统）是自带framework 3.5补丁的，不需要您再额外安装
+如果是win XP系统并且以前没有安装过framework 3.5,则需要先安装framework 3.5才能使用此安装包
+framework 3.5的下载地址可以在百度上很轻松的查找到
+确定您的操作系统已经有framework 3.5之后，直接双击安装程序开始安装
+
+必须要系统有framwork 3.5才能正常运行，假如你的系统只有framwork 4.0,没有3.5也是不行的。
+我们得到的最新信息是微软的framwork 4.0并不兼容framwork 3.5 每个版本都各不兼容，所以必须要系统有framwork 3.5才能正常运行，如果是win7系统，系统是自带framwork 3.5和framwork 4.0两个版本都有的，可以直接运行USART HMI 如果是XP系统，系统没有自带，所以XP系统一定要装个framwork 3.5

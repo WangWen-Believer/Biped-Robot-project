@@ -1,0 +1,70 @@
+Removed Pin From Net: NetName=PC10 Pin=M1-J1_9
+Removed Pin From Net: NetName=PC10 Pin=P3-1
+Removed Pin From Net: NetName=DCMI_D4 Pin=P3-2
+Change Component Comment : Designator=P5 Old Comment=USART4 New Comment=UART5
+Change Component Comment : Designator=P4 Old Comment=USART5 New Comment=USART3
+Change Component Comment : Designator=P10 Old Comment=VOICE New Comment=WIFI
+Change Component Designator: OldDesignator=MIC? NewDesignator=MIC1
+Added Component: Designator=P12(HDR2X3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P13(HDR2X3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P16(HDR2X4)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VCC3.3 Pin=C7-2
+Added Pin To Net: NetName=9D_INT Pin=M1-J1_33
+Added Pin To Net: NetName=DCMI_PWDN Pin=M1-J1_34
+Added Pin To Net: NetName=VREF+ Pin=P1-1
+Added Pin To Net: NetName=PD5 Pin=P3-1
+Added Pin To Net: NetName=PD6 Pin=P3-2
+Added Pin To Net: NetName=PD8 Pin=P4-1
+Added Pin To Net: NetName=PD9 Pin=P4-2
+Added Pin To Net: NetName=PC12 Pin=P5-1
+Added Pin To Net: NetName=PD2 Pin=P5-2
+Added Pin To Net: NetName=Screen(RX) Pin=P5-4
+Added Pin To Net: NetName=VCC3.3 Pin=P9-1
+Added Pin To Net: NetName=VCC5 Pin=P12-1
+Added Pin To Net: NetName=GND Pin=P12-6
+Added Pin To Net: NetName=VCC5 Pin=P13-1
+Added Pin To Net: NetName=PA1 Pin=P13-2
+Added Pin To Net: NetName=PA2 Pin=P13-3
+Added Pin To Net: NetName=PC5 Pin=P13-4
+Added Pin To Net: NetName=PA4 Pin=P13-5
+Added Pin To Net: NetName=GND Pin=P13-6
+Added Pin To Net: NetName=VCC3.3 Pin=R11-1
+Added Pin To Net: NetName=PE4 Pin=U12-7
+Added Pin To Net: NetName=PE5 Pin=U12-8
+Added Pin To Net: NetName=PE3 Pin=U12-9
+Added Pin To Net: NetName=PE6 Pin=U12-10
+Added Pin To Net: NetName=PE2 Pin=U12-11
+Change Net Name : Old Net Name=Voice(RX) New Net Name=WIFI(RX)
+Added Pin To Net: NetName=left_1 Pin=M1-J1_46
+Added Pin To Net: NetName=left_1 Pin=P12-2
+Added Net: Name=left_1
+Added Pin To Net: NetName=left_2 Pin=M1-J1_48
+Added Pin To Net: NetName=left_2 Pin=P12-3
+Added Net: Name=left_2
+Added Pin To Net: NetName=left_3 Pin=M1-J1_51
+Added Pin To Net: NetName=left_3 Pin=P12-4
+Added Net: Name=left_3
+Added Pin To Net: NetName=left_4 Pin=M1-J1_52
+Added Pin To Net: NetName=left_4 Pin=P12-5
+Added Net: Name=left_4
+Added Pin To Net: NetName=PC1 Pin=M1-J1_9
+Added Net: Name=PC1
+Added Pin To Net: NetName=WIFI(TX) Pin=P4-4
+Added Pin To Net: NetName=WIFI(TX) Pin=P10-3
+Added Net: Name=WIFI(TX)
+Added Member To Class: ClassName=Robot_demoborad Member=Component P12 Right_foot
+Added Member To Class: ClassName=Robot_demoborad Member=Component P13 Left_foot
+Added Member To Class: ClassName=Robot_demoborad Member=Component P16 Header 4X2
+Added Room: Name=Robot_demoborad

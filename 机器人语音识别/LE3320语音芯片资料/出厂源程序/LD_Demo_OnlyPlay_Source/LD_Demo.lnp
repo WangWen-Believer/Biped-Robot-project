@@ -1,0 +1,7 @@
+"main.obj",
+"LDChip.obj",
+"Reg_RW.obj" 
+TO "LD_Demo" 
+PAGEWIDTH (79) 
+PAGELENGTH (66) 
+RAMSIZE(256) 

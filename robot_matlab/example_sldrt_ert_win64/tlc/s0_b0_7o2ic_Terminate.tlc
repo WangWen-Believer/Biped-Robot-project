@@ -1,0 +1,47 @@
+%implements s0_b0_7o2ic_Terminate "C"
+
+%function Terminate(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcTerminateFcnOfS0B0 = OpaqueTLCBlockFcn("Terminate", 0, 0, 0, 4)
+%assign tlcTerminateFcnOfS0B1 = OpaqueTLCBlockFcn("Terminate", 0, 1, 0, 4)
+%assign tlcTerminateFcnOfS0B2 = OpaqueTLCBlockFcn("Terminate", 0, 2, 0, 4)
+%assign tlcCleanupRuntimeResourcesFcnOfS0B0 = OpaqueTLCBlockFcn("CleanupRuntimeResources", 0, 0, 0, 4)
+%assign tlcCleanupRuntimeResourcesFcnOfS0B1 = OpaqueTLCBlockFcn("CleanupRuntimeResources", 0, 1, 0, 4)
+%assign tlcCleanupRuntimeResourcesFcnOfS0B2 = OpaqueTLCBlockFcn("CleanupRuntimeResources", 0, 2, 0, 4)
+%if !WHITE_SPACE(tlcTerminateFcnOfS0B0)
+/* Terminate for M-S-Function: '<Root>/Serial Configuration' */
+%<SLibCG_DumpSSCode("/*@[1c23*/",tlcTerminateFcnOfS0B0,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcTerminateFcnOfS0B1)
+/* Terminate for M-S-Function: '<Root>/Serial Send' */
+%<SLibCG_DumpSSCode("/*@[1c25*/",tlcTerminateFcnOfS0B1,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcTerminateFcnOfS0B2)
+/* Terminate for S-Function (exa): '<Root>/S-Function' */
+%<SLibCG_DumpSSCode("/*@[1c29*/",tlcTerminateFcnOfS0B2,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcCleanupRuntimeResourcesFcnOfS0B0)
+/* CleanupRuntimeResources for M-S-Function: '<Root>/Serial Configuration' */
+%<SLibCG_DumpSSCode("/*@[1c2a*/",tlcCleanupRuntimeResourcesFcnOfS0B0,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcCleanupRuntimeResourcesFcnOfS0B1)
+/* CleanupRuntimeResources for M-S-Function: '<Root>/Serial Send' */
+%<SLibCG_DumpSSCode("/*@[1c2c*/",tlcCleanupRuntimeResourcesFcnOfS0B1,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcCleanupRuntimeResourcesFcnOfS0B2)
+/* CleanupRuntimeResources for S-Function (exa): '<Root>/S-Function' */
+%<SLibCG_DumpSSCode("/*@[1c30*/",tlcCleanupRuntimeResourcesFcnOfS0B2,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function TerminateFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Terminate(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 4, fcnProtoType)>
+%endfunction

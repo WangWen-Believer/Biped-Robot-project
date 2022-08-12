@@ -1,0 +1,150 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\c\OV2640\单片机代码\STM32F103R\MDK_Project\MyProject.uvproj
+Project File Date:  11/30/2012
+
+<h2>Output:</h2>
+Build target 'Project_Template'
+compiling main.c...
+..\Usrer\main\main.c(112): warning:  #188-D: enumerated type mixed with another type
+..\Usrer\main\main.c:           GpioInit(GPIOA, GPIO_Pin_0, GPIO_Mode_IPU, 0);
+..\Usrer\main\main.c:                                                      ^
+..\Usrer\main\main.c(121): warning:  #111-D: statement is unreachable
+..\Usrer\main\main.c:           return 1;
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(110): warning:  #550-D: variable "key_down" was set but never used
+..\Usrer\main\main.c:           u8 key_down;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(201): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\Usrer\main\main.c:                                   temp_id = (u16)CharToNumber(fn, 5);
+..\Usrer\main\main.c:                                                               ^
+..\Usrer\main\main.c(168): warning:  #177-D: variable "i" was declared but never referenced
+..\Usrer\main\main.c:           u16 i = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(239): warning:  #167-D: argument of type "const u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:           res = f_open(&f_jpg, p_path, FA_CREATE_ALWAYS | FA_WRITE);
+..\Usrer\main\main.c:                                ^
+..\Usrer\main\main.c(274): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:                   res = f_open(&f_jpg, PhotoName, FA_OPEN_EXISTING | FA_READ);
+..\Usrer\main\main.c:                                        ^
+..\Usrer\main\main.c(364): warning:  #223-D: function "OV2640_AutoExposure" declared implicitly
+..\Usrer\main\main.c:           OV2640_AutoExposure(2);
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(300): warning:  #177-D: variable "j" was declared but never referenced
+..\Usrer\main\main.c:           u16 j = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(301): warning:  #177-D: variable "temp" was declared but never referenced
+..\Usrer\main\main.c:           u16 temp = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(302): warning:  #177-D: variable "data" was declared but never referenced
+..\Usrer\main\main.c:           u16 data = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(304): warning:  #177-D: variable "key_down" was declared but never referenced
+..\Usrer\main\main.c:           u8 key_down = 0;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(305): warning:  #177-D: variable "key_cnt" was declared but never referenced
+..\Usrer\main\main.c:           u16 key_cnt = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c: ..\Usrer\main\main.c: 13 warnings, 0 errors
+compiling stm32f10x_it.c...
+..\Usrer\STM32_it\stm32f10x_it.c(245): warning:  #177-D: variable "i" was declared but never referenced
+..\Usrer\STM32_it\stm32f10x_it.c:       u32 i = 0;
+..\Usrer\STM32_it\stm32f10x_it.c:           ^
+..\Usrer\STM32_it\stm32f10x_it.c: ..\Usrer\STM32_it\stm32f10x_it.c: 1 warning, 0 errors
+compiling sd_driver.c...
+compiling USART.c...
+..\MyBSP\USART\USART.c(187): warning:  #550-D: variable "RxBuffer2" was set but never used
+..\MyBSP\USART\USART.c:   static u8 RxBuffer2[10];
+..\MyBSP\USART\USART.c:             ^
+..\MyBSP\USART\USART.c: ..\MyBSP\USART\USART.c: 1 warning, 0 errors
+compiling LED_Key.c...
+compiling Delay.c...
+compiling stm32f10x_usart.c...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_pwr.c...
+compiling diskio.c...
+compiling FATFS_008.c...
+..\Usrer\fatfs\FATFS_008.c(1298): warning:  #111-D: statement is unreachable
+..\Usrer\fatfs\FATFS_008.c:                     w = (w << 8) + b;
+..\Usrer\fatfs\FATFS_008.c:                     ^
+..\Usrer\fatfs\FATFS_008.c: ..\Usrer\fatfs\FATFS_008.c: 1 warning, 0 errors
+compiling ccsbcs.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_hd.s...
+compiling SPI.c...
+..\OnChip_Drivers\SPI\SPI.c(357): warning:  #177-D: variable "i" was declared but never referenced
+..\OnChip_Drivers\SPI\SPI.c:    u16 i = 0;
+..\OnChip_Drivers\SPI\SPI.c:        ^
+..\OnChip_Drivers\SPI\SPI.c(358): warning:  #177-D: variable "retry" was declared but never referenced
+..\OnChip_Drivers\SPI\SPI.c:    u8 retry;
+..\OnChip_Drivers\SPI\SPI.c:       ^
+..\OnChip_Drivers\SPI\SPI.c(359): warning:  #177-D: variable "reg_val" was declared but never referenced
+..\OnChip_Drivers\SPI\SPI.c:    u32 reg_val = 0;
+..\OnChip_Drivers\SPI\SPI.c:        ^
+..\OnChip_Drivers\SPI\SPI.c: ..\OnChip_Drivers\SPI\SPI.c: 3 warnings, 0 errors
+compiling Nvic_Exit.c...
+compiling Wifi_Spi.c...
+..\MyBSP\Wifi\Wifi_Spi.c(134): warning:  #177-D: variable "reg_val" was declared but never referenced
+..\MyBSP\Wifi\Wifi_Spi.c:       u32 reg_val = 0;
+..\MyBSP\Wifi\Wifi_Spi.c:           ^
+..\MyBSP\Wifi\Wifi_Spi.c: ..\MyBSP\Wifi\Wifi_Spi.c: 1 warning, 0 errors
+compiling LCD_Driver.c...
+..\MyBSP\LCD_Driver\LCD_Driver.c(347): warning:  #223-D: function "UART_Transmit" declared implicitly
+..\MyBSP\LCD_Driver\LCD_Driver.c:               UART_Transmit(lcd_id >> 8);
+..\MyBSP\LCD_Driver\LCD_Driver.c:               ^
+..\MyBSP\LCD_Driver\LCD_Driver.c: ..\MyBSP\LCD_Driver\LCD_Driver.c: 1 warning, 0 errors
+compiling LCD_GUI.c...
+..\MyBSP\LCD_Driver\LCD_GUI.c(417): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\MyBSP\LCD_Driver\LCD_GUI.c:                                  if(Start_X < 0)
+..\MyBSP\LCD_Driver\LCD_GUI.c:                                             ^
+..\MyBSP\LCD_Driver\LCD_GUI.c: ..\MyBSP\LCD_Driver\LCD_GUI.c: 1 warning, 0 errors
+compiling FIFO.c...
+compiling ov7670.c...
+..\MyBSP\OV7670_Driver\ov7670.c(268): warning:  #188-D: enumerated type mixed with another type
+..\MyBSP\OV7670_Driver\ov7670.c:        GpioInit(GPIOB, GPIO_Pin_14, GPIO_Mode_IPU, 0);                                                 //HREF
+..\MyBSP\OV7670_Driver\ov7670.c:                                                    ^
+..\MyBSP\OV7670_Driver\ov7670.c(270): warning:  #117-D: non-void function "OV7670_init" should return a value
+..\MyBSP\OV7670_Driver\ov7670.c:        return;//从这里返回     
+..\MyBSP\OV7670_Driver\ov7670.c:              ^
+..\MyBSP\OV7670_Driver\ov7670.c(273): warning:  #111-D: statement is unreachable
+..\MyBSP\OV7670_Driver\ov7670.c:        temp=0x80;
+..\MyBSP\OV7670_Driver\ov7670.c:        ^
+..\MyBSP\OV7670_Driver\ov7670.c: ..\MyBSP\OV7670_Driver\ov7670.c: 3 warnings, 0 errors
+compiling SCCB.c...
+compiling dcmi_ov2640.c...
+..\MyBSP\OV2640\dcmi_ov2640.c(1177): warning:  #188-D: enumerated type mixed with another type
+..\MyBSP\OV2640\dcmi_ov2640.c:          GpioInit(GPIOB, GPIO_Pin_14, GPIO_Mode_IPU, 0); 
+..\MyBSP\OV2640\dcmi_ov2640.c:                                                      ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1264): warning:  #223-D: function "Delay" declared implicitly
+..\MyBSP\OV2640\dcmi_ov2640.c:     Delay(200);
+..\MyBSP\OV2640\dcmi_ov2640.c:     ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1280): warning:  #111-D: statement is unreachable
+..\MyBSP\OV2640\dcmi_ov2640.c:     OV2640_Reset();
+..\MyBSP\OV2640\dcmi_ov2640.c:     ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1281): warning:  #223-D: function "Delay" declared implicitly
+..\MyBSP\OV2640\dcmi_ov2640.c:     Delay(200);
+..\MyBSP\OV2640\dcmi_ov2640.c:     ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1474): warning:  #223-D: function "Delay" declared implicitly
+..\MyBSP\OV2640\dcmi_ov2640.c:      Delay(200);
+..\MyBSP\OV2640\dcmi_ov2640.c:      ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1291): warning:  #177-D: variable "change_reg" was declared but never referenced
+..\MyBSP\OV2640\dcmi_ov2640.c:   static const u8 change_reg[][2]=
+..\MyBSP\OV2640\dcmi_ov2640.c:                   ^
+..\MyBSP\OV2640\dcmi_ov2640.c: ..\MyBSP\OV2640\dcmi_ov2640.c: 6 warnings, 0 errors
+linking...
+Program Size: Code=24848 RO-data=4252 RW-data=204 ZI-data=15428  
+FromELF: creating hex file...
+"..\Output\MyProject.axf" - 0 Error(s), 31 Warning(s).

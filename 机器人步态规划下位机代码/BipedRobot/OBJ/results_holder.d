@@ -1,0 +1,17 @@
+..\obj\results_holder.o: ..\DMP\mllite\results_holder.c
+..\obj\results_holder.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\results_holder.o: ..\DMP\mllite\results_holder.h
+..\obj\results_holder.o: ..\DMP\driver\include\mltypes.h
+..\obj\results_holder.o: ..\DMP\driver\include\stdint_invensense.h
+..\obj\results_holder.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\results_holder.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\errno.h
+..\obj\results_holder.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+..\obj\results_holder.o: ..\DMP\mllite\ml_math_func.h
+..\obj\results_holder.o: ..\DMP\driver\include\mlmath.h
+..\obj\results_holder.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\results_holder.o: ..\DMP\mllite\start_manager.h
+..\obj\results_holder.o: ..\DMP\mllite\data_builder.h
+..\obj\results_holder.o: ..\DMP\mllite\message_layer.h
+..\obj\results_holder.o: ..\DMP\driver\include\log.h
+..\obj\results_holder.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\results_holder.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h

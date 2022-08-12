@@ -1,0 +1,2248 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\mr09OV2640\STM32F103R\MDK_Project\MyProject.uvproj
+Project File Date:  11/30/2012
+
+<h2>Output:</h2>
+Build target 'Project_Template'
+compiling main.c...
+..\Usrer\main\main.c(112): warning:  #188-D: enumerated type mixed with another type
+..\Usrer\main\main.c:           GpioInit(GPIOA, GPIO_Pin_0, GPIO_Mode_IPU, 0);
+..\Usrer\main\main.c:                                                      ^
+..\Usrer\main\main.c(121): warning:  #111-D: statement is unreachable
+..\Usrer\main\main.c:           return 1;
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(110): warning:  #550-D: variable "key_down" was set but never used
+..\Usrer\main\main.c:           u8 key_down;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(201): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\Usrer\main\main.c:                                   temp_id = (u16)CharToNumber(fn, 5);
+..\Usrer\main\main.c:                                                               ^
+..\Usrer\main\main.c(168): warning:  #177-D: variable "i" was declared but never referenced
+..\Usrer\main\main.c:           u16 i = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(239): warning:  #167-D: argument of type "const u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:           res = f_open(&f_jpg, p_path, FA_CREATE_ALWAYS | FA_WRITE);
+..\Usrer\main\main.c:                                ^
+..\Usrer\main\main.c(274): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:                   res = f_open(&f_jpg, PhotoName, FA_OPEN_EXISTING | FA_READ);
+..\Usrer\main\main.c:                                        ^
+..\Usrer\main\main.c(364): warning:  #223-D: function "OV2640_AutoExposure" declared implicitly
+..\Usrer\main\main.c:           OV2640_AutoExposure(2);
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(300): warning:  #177-D: variable "j" was declared but never referenced
+..\Usrer\main\main.c:           u16 j = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(301): warning:  #177-D: variable "temp" was declared but never referenced
+..\Usrer\main\main.c:           u16 temp = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(302): warning:  #177-D: variable "data" was declared but never referenced
+..\Usrer\main\main.c:           u16 data = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(304): warning:  #177-D: variable "key_down" was declared but never referenced
+..\Usrer\main\main.c:           u8 key_down = 0;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(305): warning:  #177-D: variable "key_cnt" was declared but never referenced
+..\Usrer\main\main.c:           u16 key_cnt = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c: ..\Usrer\main\main.c: 13 warnings, 0 errors
+linking...
+Program Size: Code=24908 RO-data=4488 RW-data=204 ZI-data=15428  
+FromELF: creating hex file...
+"..\Output\MyProject.axf" - 0 Error(s), 13 Warning(s).
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.293V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Project_Template'
+compiling main.c...
+..\Usrer\main\main.c(112): warning:  #188-D: enumerated type mixed with another type
+..\Usrer\main\main.c:           GpioInit(GPIOA, GPIO_Pin_0, GPIO_Mode_IPU, 0);
+..\Usrer\main\main.c:                                                      ^
+..\Usrer\main\main.c(121): warning:  #111-D: statement is unreachable
+..\Usrer\main\main.c:           return 1;
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(110): warning:  #550-D: variable "key_down" was set but never used
+..\Usrer\main\main.c:           u8 key_down;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(201): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\Usrer\main\main.c:                                   temp_id = (u16)CharToNumber(fn, 5);
+..\Usrer\main\main.c:                                                               ^
+..\Usrer\main\main.c(168): warning:  #177-D: variable "i" was declared but never referenced
+..\Usrer\main\main.c:           u16 i = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(239): warning:  #167-D: argument of type "const u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:           res = f_open(&f_jpg, p_path, FA_CREATE_ALWAYS | FA_WRITE);
+..\Usrer\main\main.c:                                ^
+..\Usrer\main\main.c(274): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:                   res = f_open(&f_jpg, PhotoName, FA_OPEN_EXISTING | FA_READ);
+..\Usrer\main\main.c:                                        ^
+..\Usrer\main\main.c(364): warning:  #223-D: function "OV2640_AutoExposure" declared implicitly
+..\Usrer\main\main.c:           OV2640_AutoExposure(2);
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(300): warning:  #177-D: variable "j" was declared but never referenced
+..\Usrer\main\main.c:           u16 j = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(301): warning:  #177-D: variable "temp" was declared but never referenced
+..\Usrer\main\main.c:           u16 temp = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(302): warning:  #177-D: variable "data" was declared but never referenced
+..\Usrer\main\main.c:           u16 data = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(304): warning:  #177-D: variable "key_down" was declared but never referenced
+..\Usrer\main\main.c:           u8 key_down = 0;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(305): warning:  #177-D: variable "key_cnt" was declared but never referenced
+..\Usrer\main\main.c:           u16 key_cnt = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c: ..\Usrer\main\main.c: 13 warnings, 0 errors
+linking...
+Program Size: Code=24908 RO-data=4488 RW-data=204 ZI-data=15428  
+FromELF: creating hex file...
+"..\Output\MyProject.axf" - 0 Error(s), 13 Warning(s).
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.293V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Project_Template'
+compiling main.c...
+..\Usrer\main\main.c(112): warning:  #188-D: enumerated type mixed with another type
+..\Usrer\main\main.c:           GpioInit(GPIOA, GPIO_Pin_0, GPIO_Mode_IPU, 0);
+..\Usrer\main\main.c:                                                      ^
+..\Usrer\main\main.c(121): warning:  #111-D: statement is unreachable
+..\Usrer\main\main.c:           return 1;
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(110): warning:  #550-D: variable "key_down" was set but never used
+..\Usrer\main\main.c:           u8 key_down;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(201): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\Usrer\main\main.c:                                   temp_id = (u16)CharToNumber(fn, 5);
+..\Usrer\main\main.c:                                                               ^
+..\Usrer\main\main.c(168): warning:  #177-D: variable "i" was declared but never referenced
+..\Usrer\main\main.c:           u16 i = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(239): warning:  #167-D: argument of type "const u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:           res = f_open(&f_jpg, p_path, FA_CREATE_ALWAYS | FA_WRITE);
+..\Usrer\main\main.c:                                ^
+..\Usrer\main\main.c(274): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:                   res = f_open(&f_jpg, PhotoName, FA_OPEN_EXISTING | FA_READ);
+..\Usrer\main\main.c:                                        ^
+..\Usrer\main\main.c(364): warning:  #223-D: function "OV2640_AutoExposure" declared implicitly
+..\Usrer\main\main.c:           OV2640_AutoExposure(2);
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(300): warning:  #177-D: variable "j" was declared but never referenced
+..\Usrer\main\main.c:           u16 j = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(301): warning:  #177-D: variable "temp" was declared but never referenced
+..\Usrer\main\main.c:           u16 temp = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(302): warning:  #177-D: variable "data" was declared but never referenced
+..\Usrer\main\main.c:           u16 data = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(304): warning:  #177-D: variable "key_down" was declared but never referenced
+..\Usrer\main\main.c:           u8 key_down = 0;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(305): warning:  #177-D: variable "key_cnt" was declared but never referenced
+..\Usrer\main\main.c:           u16 key_cnt = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c: ..\Usrer\main\main.c: 13 warnings, 0 errors
+linking...
+Program Size: Code=24908 RO-data=4488 RW-data=204 ZI-data=15428  
+FromELF: creating hex file...
+"..\Output\MyProject.axf" - 0 Error(s), 13 Warning(s).
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Project_Template'
+compiling main.c...
+..\Usrer\main\main.c(112): warning:  #188-D: enumerated type mixed with another type
+..\Usrer\main\main.c:           GpioInit(GPIOA, GPIO_Pin_0, GPIO_Mode_IPU, 0);
+..\Usrer\main\main.c:                                                      ^
+..\Usrer\main\main.c(121): warning:  #111-D: statement is unreachable
+..\Usrer\main\main.c:           return 1;
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(110): warning:  #550-D: variable "key_down" was set but never used
+..\Usrer\main\main.c:           u8 key_down;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(201): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\Usrer\main\main.c:                                   temp_id = (u16)CharToNumber(fn, 5);
+..\Usrer\main\main.c:                                                               ^
+..\Usrer\main\main.c(168): warning:  #177-D: variable "i" was declared but never referenced
+..\Usrer\main\main.c:           u16 i = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(239): warning:  #167-D: argument of type "const u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:           res = f_open(&f_jpg, p_path, FA_CREATE_ALWAYS | FA_WRITE);
+..\Usrer\main\main.c:                                ^
+..\Usrer\main\main.c(274): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:                   res = f_open(&f_jpg, PhotoName, FA_OPEN_EXISTING | FA_READ);
+..\Usrer\main\main.c:                                        ^
+..\Usrer\main\main.c(364): warning:  #223-D: function "OV2640_AutoExposure" declared implicitly
+..\Usrer\main\main.c:           OV2640_AutoExposure(2);
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(300): warning:  #177-D: variable "j" was declared but never referenced
+..\Usrer\main\main.c:           u16 j = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(301): warning:  #177-D: variable "temp" was declared but never referenced
+..\Usrer\main\main.c:           u16 temp = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(302): warning:  #177-D: variable "data" was declared but never referenced
+..\Usrer\main\main.c:           u16 data = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(304): warning:  #177-D: variable "key_down" was declared but never referenced
+..\Usrer\main\main.c:           u8 key_down = 0;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(305): warning:  #177-D: variable "key_cnt" was declared but never referenced
+..\Usrer\main\main.c:           u16 key_cnt = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c: ..\Usrer\main\main.c: 13 warnings, 0 errors
+compiling stm32f10x_it.c...
+..\Usrer\STM32_it\stm32f10x_it.c(245): warning:  #177-D: variable "i" was declared but never referenced
+..\Usrer\STM32_it\stm32f10x_it.c:       u32 i = 0;
+..\Usrer\STM32_it\stm32f10x_it.c:           ^
+..\Usrer\STM32_it\stm32f10x_it.c: ..\Usrer\STM32_it\stm32f10x_it.c: 1 warning, 0 errors
+compiling SPI.c...
+..\OnChip_Drivers\SPI\SPI.c(357): warning:  #177-D: variable "i" was declared but never referenced
+..\OnChip_Drivers\SPI\SPI.c:    u16 i = 0;
+..\OnChip_Drivers\SPI\SPI.c:        ^
+..\OnChip_Drivers\SPI\SPI.c(358): warning:  #177-D: variable "retry" was declared but never referenced
+..\OnChip_Drivers\SPI\SPI.c:    u8 retry;
+..\OnChip_Drivers\SPI\SPI.c:       ^
+..\OnChip_Drivers\SPI\SPI.c(359): warning:  #177-D: variable "reg_val" was declared but never referenced
+..\OnChip_Drivers\SPI\SPI.c:    u32 reg_val = 0;
+..\OnChip_Drivers\SPI\SPI.c:        ^
+..\OnChip_Drivers\SPI\SPI.c: ..\OnChip_Drivers\SPI\SPI.c: 3 warnings, 0 errors
+compiling Wifi_Spi.c...
+..\MyBSP\Wifi\Wifi_Spi.c(134): warning:  #177-D: variable "reg_val" was declared but never referenced
+..\MyBSP\Wifi\Wifi_Spi.c:       u32 reg_val = 0;
+..\MyBSP\Wifi\Wifi_Spi.c:           ^
+..\MyBSP\Wifi\Wifi_Spi.c: ..\MyBSP\Wifi\Wifi_Spi.c: 1 warning, 0 errors
+compiling LCD_Driver.c...
+..\MyBSP\LCD_Driver\LCD_Driver.c(347): warning:  #223-D: function "UART_Transmit" declared implicitly
+..\MyBSP\LCD_Driver\LCD_Driver.c:               UART_Transmit(lcd_id >> 8);
+..\MyBSP\LCD_Driver\LCD_Driver.c:               ^
+..\MyBSP\LCD_Driver\LCD_Driver.c: ..\MyBSP\LCD_Driver\LCD_Driver.c: 1 warning, 0 errors
+compiling ov7670.c...
+..\MyBSP\OV7670_Driver\ov7670.c(268): warning:  #188-D: enumerated type mixed with another type
+..\MyBSP\OV7670_Driver\ov7670.c:        GpioInit(GPIOB, GPIO_Pin_14, GPIO_Mode_IPU, 0);                                                 //HREF
+..\MyBSP\OV7670_Driver\ov7670.c:                                                    ^
+..\MyBSP\OV7670_Driver\ov7670.c(270): warning:  #117-D: non-void function "OV7670_init" should return a value
+..\MyBSP\OV7670_Driver\ov7670.c:        return;//从这里返回     
+..\MyBSP\OV7670_Driver\ov7670.c:              ^
+..\MyBSP\OV7670_Driver\ov7670.c(273): warning:  #111-D: statement is unreachable
+..\MyBSP\OV7670_Driver\ov7670.c:        temp=0x80;
+..\MyBSP\OV7670_Driver\ov7670.c:        ^
+..\MyBSP\OV7670_Driver\ov7670.c: ..\MyBSP\OV7670_Driver\ov7670.c: 3 warnings, 0 errors
+compiling SCCB.c...
+compiling dcmi_ov2640.c...
+..\MyBSP\OV2640\dcmi_ov2640.c(1317): warning:  #188-D: enumerated type mixed with another type
+..\MyBSP\OV2640\dcmi_ov2640.c:       GpioInit(GPIOB, GPIO_Pin_14, GPIO_Mode_IPU, 0);
+..\MyBSP\OV2640\dcmi_ov2640.c:                                                   ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1404): warning:  #223-D: function "Delay" declared implicitly
+..\MyBSP\OV2640\dcmi_ov2640.c:       Delay(200);
+..\MyBSP\OV2640\dcmi_ov2640.c:       ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1420): warning:  #111-D: statement is unreachable
+..\MyBSP\OV2640\dcmi_ov2640.c:       OV2640_Reset();
+..\MyBSP\OV2640\dcmi_ov2640.c:       ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1421): warning:  #223-D: function "Delay" declared implicitly
+..\MyBSP\OV2640\dcmi_ov2640.c:       Delay(200);
+..\MyBSP\OV2640\dcmi_ov2640.c:       ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1614): warning:  #223-D: function "Delay" declared implicitly
+..\MyBSP\OV2640\dcmi_ov2640.c:       Delay(200);
+..\MyBSP\OV2640\dcmi_ov2640.c:       ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1431): warning:  #177-D: variable "change_reg" was declared but never referenced
+..\MyBSP\OV2640\dcmi_ov2640.c:   static const u8 change_reg[][2]=
+..\MyBSP\OV2640\dcmi_ov2640.c:                   ^
+..\MyBSP\OV2640\dcmi_ov2640.c: ..\MyBSP\OV2640\dcmi_ov2640.c: 6 warnings, 0 errors
+linking...
+Program Size: Code=24908 RO-data=4488 RW-data=204 ZI-data=15428  
+FromELF: creating hex file...
+"..\Output\MyProject.axf" - 0 Error(s), 28 Warning(s).
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+**JLink Warning: RESET (pin 15) high, but should be low. Please check target hardware.
+**JLink Warning: No matching core found.
+***JLink Error: Supply voltage too low (1 Volt is required, Measured: 0.0 Volt).
+Please check target power.
+Build target 'Project_Template'
+linking...
+Program Size: Code=24908 RO-data=4488 RW-data=204 ZI-data=15428  
+FromELF: creating hex file...
+"..\Output\MyProject.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Project_Template'
+compiling main.c...
+..\Usrer\main\main.c(112): warning:  #188-D: enumerated type mixed with another type
+..\Usrer\main\main.c:           GpioInit(GPIOA, GPIO_Pin_0, GPIO_Mode_IPU, 0);
+..\Usrer\main\main.c:                                                      ^
+..\Usrer\main\main.c(121): warning:  #111-D: statement is unreachable
+..\Usrer\main\main.c:           return 1;
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(110): warning:  #550-D: variable "key_down" was set but never used
+..\Usrer\main\main.c:           u8 key_down;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(201): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\Usrer\main\main.c:                                   temp_id = (u16)CharToNumber(fn, 5);
+..\Usrer\main\main.c:                                                               ^
+..\Usrer\main\main.c(168): warning:  #177-D: variable "i" was declared but never referenced
+..\Usrer\main\main.c:           u16 i = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(239): warning:  #167-D: argument of type "const u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:           res = f_open(&f_jpg, p_path, FA_CREATE_ALWAYS | FA_WRITE);
+..\Usrer\main\main.c:                                ^
+..\Usrer\main\main.c(274): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:                   res = f_open(&f_jpg, PhotoName, FA_OPEN_EXISTING | FA_READ);
+..\Usrer\main\main.c:                                        ^
+..\Usrer\main\main.c(364): warning:  #223-D: function "OV2640_AutoExposure" declared implicitly
+..\Usrer\main\main.c:           OV2640_AutoExposure(2);
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(300): warning:  #177-D: variable "j" was declared but never referenced
+..\Usrer\main\main.c:           u16 j = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(301): warning:  #177-D: variable "temp" was declared but never referenced
+..\Usrer\main\main.c:           u16 temp = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(302): warning:  #177-D: variable "data" was declared but never referenced
+..\Usrer\main\main.c:           u16 data = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(304): warning:  #177-D: variable "key_down" was declared but never referenced
+..\Usrer\main\main.c:           u8 key_down = 0;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(305): warning:  #177-D: variable "key_cnt" was declared but never referenced
+..\Usrer\main\main.c:           u16 key_cnt = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c: ..\Usrer\main\main.c: 13 warnings, 0 errors
+compiling USART.c...
+..\MyBSP\USART\USART.c(187): warning:  #550-D: variable "RxBuffer2" was set but never used
+..\MyBSP\USART\USART.c:   static u8 RxBuffer2[10];
+..\MyBSP\USART\USART.c:             ^
+..\MyBSP\USART\USART.c: ..\MyBSP\USART\USART.c: 1 warning, 0 errors
+compiling dcmi_ov2640.c...
+..\MyBSP\OV2640\dcmi_ov2640.c(1317): warning:  #188-D: enumerated type mixed with another type
+..\MyBSP\OV2640\dcmi_ov2640.c:       GpioInit(GPIOB, GPIO_Pin_14, GPIO_Mode_IPU, 0);
+..\MyBSP\OV2640\dcmi_ov2640.c:                                                   ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1404): warning:  #223-D: function "Delay" declared implicitly
+..\MyBSP\OV2640\dcmi_ov2640.c:       Delay(200);
+..\MyBSP\OV2640\dcmi_ov2640.c:       ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1420): warning:  #111-D: statement is unreachable
+..\MyBSP\OV2640\dcmi_ov2640.c:       OV2640_Reset();
+..\MyBSP\OV2640\dcmi_ov2640.c:       ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1421): warning:  #223-D: function "Delay" declared implicitly
+..\MyBSP\OV2640\dcmi_ov2640.c:       Delay(200);
+..\MyBSP\OV2640\dcmi_ov2640.c:       ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1614): warning:  #223-D: function "Delay" declared implicitly
+..\MyBSP\OV2640\dcmi_ov2640.c:       Delay(200);
+..\MyBSP\OV2640\dcmi_ov2640.c:       ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1431): warning:  #177-D: variable "change_reg" was declared but never referenced
+..\MyBSP\OV2640\dcmi_ov2640.c:   static const u8 change_reg[][2]=
+..\MyBSP\OV2640\dcmi_ov2640.c:                   ^
+..\MyBSP\OV2640\dcmi_ov2640.c: ..\MyBSP\OV2640\dcmi_ov2640.c: 6 warnings, 0 errors
+linking...
+Program Size: Code=24904 RO-data=4488 RW-data=204 ZI-data=15428  
+FromELF: creating hex file...
+"..\Output\MyProject.axf" - 0 Error(s), 20 Warning(s).
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Project_Template'
+compiling main.c...
+..\Usrer\main\main.c(112): warning:  #188-D: enumerated type mixed with another type
+..\Usrer\main\main.c:           GpioInit(GPIOA, GPIO_Pin_0, GPIO_Mode_IPU, 0);
+..\Usrer\main\main.c:                                                      ^
+..\Usrer\main\main.c(121): warning:  #111-D: statement is unreachable
+..\Usrer\main\main.c:           return 1;
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(110): warning:  #550-D: variable "key_down" was set but never used
+..\Usrer\main\main.c:           u8 key_down;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(201): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\Usrer\main\main.c:                                   temp_id = (u16)CharToNumber(fn, 5);
+..\Usrer\main\main.c:                                                               ^
+..\Usrer\main\main.c(168): warning:  #177-D: variable "i" was declared but never referenced
+..\Usrer\main\main.c:           u16 i = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(239): warning:  #167-D: argument of type "const u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:           res = f_open(&f_jpg, p_path, FA_CREATE_ALWAYS | FA_WRITE);
+..\Usrer\main\main.c:                                ^
+..\Usrer\main\main.c(274): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:                   res = f_open(&f_jpg, PhotoName, FA_OPEN_EXISTING | FA_READ);
+..\Usrer\main\main.c:                                        ^
+..\Usrer\main\main.c(364): warning:  #223-D: function "OV2640_AutoExposure" declared implicitly
+..\Usrer\main\main.c:           OV2640_AutoExposure(2);
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(300): warning:  #177-D: variable "j" was declared but never referenced
+..\Usrer\main\main.c:           u16 j = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(301): warning:  #177-D: variable "temp" was declared but never referenced
+..\Usrer\main\main.c:           u16 temp = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(302): warning:  #177-D: variable "data" was declared but never referenced
+..\Usrer\main\main.c:           u16 data = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(304): warning:  #177-D: variable "key_down" was declared but never referenced
+..\Usrer\main\main.c:           u8 key_down = 0;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(305): warning:  #177-D: variable "key_cnt" was declared but never referenced
+..\Usrer\main\main.c:           u16 key_cnt = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c: ..\Usrer\main\main.c: 13 warnings, 0 errors
+linking...
+Program Size: Code=24904 RO-data=4488 RW-data=204 ZI-data=15428  
+FromELF: creating hex file...
+"..\Output\MyProject.axf" - 0 Error(s), 13 Warning(s).
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.293V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Project_Template'
+compiling main.c...
+..\Usrer\main\main.c(112): warning:  #188-D: enumerated type mixed with another type
+..\Usrer\main\main.c:           GpioInit(GPIOA, GPIO_Pin_0, GPIO_Mode_IPU, 0);
+..\Usrer\main\main.c:                                                      ^
+..\Usrer\main\main.c(121): warning:  #111-D: statement is unreachable
+..\Usrer\main\main.c:           return 1;
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(110): warning:  #550-D: variable "key_down" was set but never used
+..\Usrer\main\main.c:           u8 key_down;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(201): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\Usrer\main\main.c:                                   temp_id = (u16)CharToNumber(fn, 5);
+..\Usrer\main\main.c:                                                               ^
+..\Usrer\main\main.c(168): warning:  #177-D: variable "i" was declared but never referenced
+..\Usrer\main\main.c:           u16 i = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(239): warning:  #167-D: argument of type "const u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:           res = f_open(&f_jpg, p_path, FA_CREATE_ALWAYS | FA_WRITE);
+..\Usrer\main\main.c:                                ^
+..\Usrer\main\main.c(274): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:                   res = f_open(&f_jpg, PhotoName, FA_OPEN_EXISTING | FA_READ);
+..\Usrer\main\main.c:                                        ^
+..\Usrer\main\main.c(364): warning:  #223-D: function "OV2640_AutoExposure" declared implicitly
+..\Usrer\main\main.c:           OV2640_AutoExposure(2);
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(300): warning:  #177-D: variable "j" was declared but never referenced
+..\Usrer\main\main.c:           u16 j = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(301): warning:  #177-D: variable "temp" was declared but never referenced
+..\Usrer\main\main.c:           u16 temp = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(302): warning:  #177-D: variable "data" was declared but never referenced
+..\Usrer\main\main.c:           u16 data = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(304): warning:  #177-D: variable "key_down" was declared but never referenced
+..\Usrer\main\main.c:           u8 key_down = 0;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(305): warning:  #177-D: variable "key_cnt" was declared but never referenced
+..\Usrer\main\main.c:           u16 key_cnt = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c: ..\Usrer\main\main.c: 13 warnings, 0 errors
+linking...
+Program Size: Code=24900 RO-data=4488 RW-data=204 ZI-data=15428  
+FromELF: creating hex file...
+"..\Output\MyProject.axf" - 0 Error(s), 13 Warning(s).
+Build target 'Project_Template'
+linking...
+Program Size: Code=24900 RO-data=4488 RW-data=204 ZI-data=15428  
+FromELF: creating hex file...
+"..\Output\MyProject.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Project_Template'
+compiling main.c...
+..\Usrer\main\main.c(112): warning:  #188-D: enumerated type mixed with another type
+..\Usrer\main\main.c:           GpioInit(GPIOA, GPIO_Pin_0, GPIO_Mode_IPU, 0);
+..\Usrer\main\main.c:                                                      ^
+..\Usrer\main\main.c(121): warning:  #111-D: statement is unreachable
+..\Usrer\main\main.c:           return 1;
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(110): warning:  #550-D: variable "key_down" was set but never used
+..\Usrer\main\main.c:           u8 key_down;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(201): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\Usrer\main\main.c:                                   temp_id = (u16)CharToNumber(fn, 5);
+..\Usrer\main\main.c:                                                               ^
+..\Usrer\main\main.c(168): warning:  #177-D: variable "i" was declared but never referenced
+..\Usrer\main\main.c:           u16 i = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(239): warning:  #167-D: argument of type "const u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:           res = f_open(&f_jpg, p_path, FA_CREATE_ALWAYS | FA_WRITE);
+..\Usrer\main\main.c:                                ^
+..\Usrer\main\main.c(274): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:                   res = f_open(&f_jpg, PhotoName, FA_OPEN_EXISTING | FA_READ);
+..\Usrer\main\main.c:                                        ^
+..\Usrer\main\main.c(364): warning:  #223-D: function "OV2640_AutoExposure" declared implicitly
+..\Usrer\main\main.c:           OV2640_AutoExposure(2);
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(300): warning:  #177-D: variable "j" was declared but never referenced
+..\Usrer\main\main.c:           u16 j = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(301): warning:  #177-D: variable "temp" was declared but never referenced
+..\Usrer\main\main.c:           u16 temp = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(302): warning:  #177-D: variable "data" was declared but never referenced
+..\Usrer\main\main.c:           u16 data = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(304): warning:  #177-D: variable "key_down" was declared but never referenced
+..\Usrer\main\main.c:           u8 key_down = 0;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(305): warning:  #177-D: variable "key_cnt" was declared but never referenced
+..\Usrer\main\main.c:           u16 key_cnt = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c: ..\Usrer\main\main.c: 13 warnings, 0 errors
+linking...
+Program Size: Code=24900 RO-data=4488 RW-data=204 ZI-data=15428  
+FromELF: creating hex file...
+"..\Output\MyProject.axf" - 0 Error(s), 13 Warning(s).
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.293V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Project_Template'
+linking...
+Program Size: Code=24900 RO-data=4488 RW-data=204 ZI-data=15428  
+FromELF: creating hex file...
+"..\Output\MyProject.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Sep 20 2013 15:09:45
+Hardware: V8.00
+S/N : 99999994 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFULL 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+**JLink Warning: Could not set S_RESET_ST
+**JLink Warning: RESET (pin 15) high, but should be low. Please check target hardware.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 1, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Contents missmatch at: 08000000H  (Flash=FFH  Required=10H) !
+Contents missmatch at: 08000001H  (Flash=FFH  Required=3DH) !
+Contents missmatch at: 08000002H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000003H  (Flash=FFH  Required=20H) !
+Contents missmatch at: 08000004H  (Flash=FFH  Required=FDH) !
+Contents missmatch at: 08000005H  (Flash=FFH  Required=55H) !
+Contents missmatch at: 08000006H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000007H  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000008H  (Flash=FFH  Required=91H) !
+Contents missmatch at: 08000009H  (Flash=FFH  Required=05H) !
+Contents missmatch at: 0800000AH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800000BH  (Flash=FFH  Required=08H) !
+Contents missmatch at: 0800000CH  (Flash=FFH  Required=93H) !
+Contents missmatch at: 0800000DH  (Flash=FFH  Required=05H) !
+Contents missmatch at: 0800000EH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800000FH  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000010H  (Flash=FFH  Required=97H) !
+Contents missmatch at: 08000011H  (Flash=FFH  Required=05H) !
+Contents missmatch at: 08000012H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000013H  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000014H  (Flash=FFH  Required=9BH) !
+Contents missmatch at: 08000015H  (Flash=FFH  Required=05H) !
+Contents missmatch at: 08000016H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000017H  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000018H  (Flash=FFH  Required=9FH) !
+Contents missmatch at: 08000019H  (Flash=FFH  Required=05H) !
+Contents missmatch at: 0800001AH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800001BH  (Flash=FFH  Required=08H) !
+Contents missmatch at: 0800001CH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800001DH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800001EH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800001FH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000020H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000021H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000022H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000023H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000024H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000025H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000026H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000027H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000028H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000029H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800002AH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800002BH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800002CH  (Flash=FFH  Required=A3H) !
+Contents missmatch at: 0800002DH  (Flash=FFH  Required=05H) !
+Contents missmatch at: 0800002EH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800002FH  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000030H  (Flash=FFH  Required=A5H) !
+Contents missmatch at: 08000031H  (Flash=FFH  Required=05H) !
+Contents missmatch at: 08000032H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000033H  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000034H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000035H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000036H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000037H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000038H  (Flash=FFH  Required=A7H) !
+Contents missmatch at: 08000039H  (Flash=FFH  Required=05H) !
+Contents missmatch at: 0800003AH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800003BH  (Flash=FFH  Required=08H) !
+Contents missmatch at: 0800003CH  (Flash=FFH  Required=A9H) !
+Contents missmatch at: 0800003DH  (Flash=FFH  Required=05H) !
+Contents missmatch at: 0800003EH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800003FH  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000040H  (Flash=FFH  Required=17H) !
+Contents missmatch at: 08000041H  (Flash=FFH  Required=56H) !
+Contents missmatch at: 08000042H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000043H  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000044H  (Flash=FFH  Required=17H) !
+Contents missmatch at: 08000045H  (Flash=FFH  Required=56H) !
+Contents missmatch at: 08000046H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000047H  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000048H  (Flash=FFH  Required=17H) !
+Contents missmatch at: 08000049H  (Flash=FFH  Required=56H) !
+Contents missmatch at: 0800004AH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800004BH  (Flash=FFH  Required=08H) !
+Contents missmatch at: 0800004CH  (Flash=FFH  Required=17H) !
+Contents missmatch at: 0800004DH  (Flash=FFH  Required=56H) !
+Contents missmatch at: 0800004EH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800004FH  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000050H  (Flash=FFH  Required=17H) !
+Contents missmatch at: 08000051H  (Flash=FFH  Required=56H) !
+Contents missmatch at: 08000052H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000053H  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000054H  (Flash=FFH  Required=17H) !
+Contents missmatch at: 08000055H  (Flash=FFH  Required=56H) !
+Contents missmatch at: 08000056H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000057H  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000058H  (Flash=FFH  Required=17H) !
+Contents missmatch at: 08000059H  (Flash=FFH  Required=56H) !
+Contents missmatch at: 0800005AH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800005BH  (Flash=FFH  Required=08H) !
+Contents missmatch at: 0800005CH  (Flash=FFH  Required=17H) !
+Contents missmatch at: 0800005DH  (Flash=FFH  Required=56H) !
+Contents missmatch at: 0800005EH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800005FH  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000060H  (Flash=FFH  Required=17H) !
+Contents missmatch at: 08000061H  (Flash=FFH  Required=56H) !
+Contents missmatch at: 08000062H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000063H  (Flash=FFH  Required=08H) !
+Too many errors to display !
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Sep 20 2013 15:09:45
+Hardware: V8.00
+S/N : 99999994 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFULL 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+**JLink Warning: Could not set S_RESET_ST
+**JLink Warning: RESET (pin 15) high, but should be low. Please check target hardware.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 1, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Contents missmatch at: 08000000H  (Flash=FFH  Required=10H) !
+Contents missmatch at: 08000001H  (Flash=FFH  Required=3DH) !
+Contents missmatch at: 08000002H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000003H  (Flash=FFH  Required=20H) !
+Contents missmatch at: 08000004H  (Flash=FFH  Required=FDH) !
+Contents missmatch at: 08000005H  (Flash=FFH  Required=55H) !
+Contents missmatch at: 08000006H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000007H  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000008H  (Flash=FFH  Required=91H) !
+Contents missmatch at: 08000009H  (Flash=FFH  Required=05H) !
+Contents missmatch at: 0800000AH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800000BH  (Flash=FFH  Required=08H) !
+Contents missmatch at: 0800000CH  (Flash=FFH  Required=93H) !
+Contents missmatch at: 0800000DH  (Flash=FFH  Required=05H) !
+Contents missmatch at: 0800000EH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800000FH  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000010H  (Flash=FFH  Required=97H) !
+Contents missmatch at: 08000011H  (Flash=FFH  Required=05H) !
+Contents missmatch at: 08000012H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000013H  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000014H  (Flash=FFH  Required=9BH) !
+Contents missmatch at: 08000015H  (Flash=FFH  Required=05H) !
+Contents missmatch at: 08000016H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000017H  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000018H  (Flash=FFH  Required=9FH) !
+Contents missmatch at: 08000019H  (Flash=FFH  Required=05H) !
+Contents missmatch at: 0800001AH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800001BH  (Flash=FFH  Required=08H) !
+Contents missmatch at: 0800001CH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800001DH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800001EH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800001FH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000020H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000021H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000022H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000023H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000024H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000025H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000026H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000027H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000028H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000029H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800002AH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800002BH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800002CH  (Flash=FFH  Required=A3H) !
+Contents missmatch at: 0800002DH  (Flash=FFH  Required=05H) !
+Contents missmatch at: 0800002EH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800002FH  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000030H  (Flash=FFH  Required=A5H) !
+Contents missmatch at: 08000031H  (Flash=FFH  Required=05H) !
+Contents missmatch at: 08000032H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000033H  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000034H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000035H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000036H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000037H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000038H  (Flash=FFH  Required=A7H) !
+Contents missmatch at: 08000039H  (Flash=FFH  Required=05H) !
+Contents missmatch at: 0800003AH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800003BH  (Flash=FFH  Required=08H) !
+Contents missmatch at: 0800003CH  (Flash=FFH  Required=A9H) !
+Contents missmatch at: 0800003DH  (Flash=FFH  Required=05H) !
+Contents missmatch at: 0800003EH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800003FH  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000040H  (Flash=FFH  Required=17H) !
+Contents missmatch at: 08000041H  (Flash=FFH  Required=56H) !
+Contents missmatch at: 08000042H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000043H  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000044H  (Flash=FFH  Required=17H) !
+Contents missmatch at: 08000045H  (Flash=FFH  Required=56H) !
+Contents missmatch at: 08000046H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000047H  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000048H  (Flash=FFH  Required=17H) !
+Contents missmatch at: 08000049H  (Flash=FFH  Required=56H) !
+Contents missmatch at: 0800004AH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800004BH  (Flash=FFH  Required=08H) !
+Contents missmatch at: 0800004CH  (Flash=FFH  Required=17H) !
+Contents missmatch at: 0800004DH  (Flash=FFH  Required=56H) !
+Contents missmatch at: 0800004EH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800004FH  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000050H  (Flash=FFH  Required=17H) !
+Contents missmatch at: 08000051H  (Flash=FFH  Required=56H) !
+Contents missmatch at: 08000052H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000053H  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000054H  (Flash=FFH  Required=17H) !
+Contents missmatch at: 08000055H  (Flash=FFH  Required=56H) !
+Contents missmatch at: 08000056H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000057H  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000058H  (Flash=FFH  Required=17H) !
+Contents missmatch at: 08000059H  (Flash=FFH  Required=56H) !
+Contents missmatch at: 0800005AH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800005BH  (Flash=FFH  Required=08H) !
+Contents missmatch at: 0800005CH  (Flash=FFH  Required=17H) !
+Contents missmatch at: 0800005DH  (Flash=FFH  Required=56H) !
+Contents missmatch at: 0800005EH  (Flash=FFH  Required=00H) !
+Contents missmatch at: 0800005FH  (Flash=FFH  Required=08H) !
+Contents missmatch at: 08000060H  (Flash=FFH  Required=17H) !
+Contents missmatch at: 08000061H  (Flash=FFH  Required=56H) !
+Contents missmatch at: 08000062H  (Flash=FFH  Required=00H) !
+Contents missmatch at: 08000063H  (Flash=FFH  Required=08H) !
+Too many errors to display !
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Aug  1 2012 13:40:47
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.280V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 1, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.125V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.170V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.248V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.164V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Project_Template'
+compiling main.c...
+..\Usrer\main\main.c(112): warning:  #188-D: enumerated type mixed with another type
+..\Usrer\main\main.c:           GpioInit(GPIOA, GPIO_Pin_0, GPIO_Mode_IPU, 0);
+..\Usrer\main\main.c:                                                      ^
+..\Usrer\main\main.c(121): warning:  #111-D: statement is unreachable
+..\Usrer\main\main.c:           return 1;
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(110): warning:  #550-D: variable "key_down" was set but never used
+..\Usrer\main\main.c:           u8 key_down;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(201): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\Usrer\main\main.c:                                   temp_id = (u16)CharToNumber(fn, 5);
+..\Usrer\main\main.c:                                                               ^
+..\Usrer\main\main.c(168): warning:  #177-D: variable "i" was declared but never referenced
+..\Usrer\main\main.c:           u16 i = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(239): warning:  #167-D: argument of type "const u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:           res = f_open(&f_jpg, p_path, FA_CREATE_ALWAYS | FA_WRITE);
+..\Usrer\main\main.c:                                ^
+..\Usrer\main\main.c(274): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:                   res = f_open(&f_jpg, PhotoName, FA_OPEN_EXISTING | FA_READ);
+..\Usrer\main\main.c:                                        ^
+..\Usrer\main\main.c(364): warning:  #223-D: function "OV2640_AutoExposure" declared implicitly
+..\Usrer\main\main.c:           OV2640_AutoExposure(2);
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(300): warning:  #177-D: variable "j" was declared but never referenced
+..\Usrer\main\main.c:           u16 j = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(301): warning:  #177-D: variable "temp" was declared but never referenced
+..\Usrer\main\main.c:           u16 temp = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(302): warning:  #177-D: variable "data" was declared but never referenced
+..\Usrer\main\main.c:           u16 data = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(304): warning:  #177-D: variable "key_down" was declared but never referenced
+..\Usrer\main\main.c:           u8 key_down = 0;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(305): warning:  #177-D: variable "key_cnt" was declared but never referenced
+..\Usrer\main\main.c:           u16 key_cnt = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c: ..\Usrer\main\main.c: 13 warnings, 0 errors
+compiling USART.c...
+..\MyBSP\USART\USART.c(187): warning:  #550-D: variable "RxBuffer2" was set but never used
+..\MyBSP\USART\USART.c:   static u8 RxBuffer2[10];
+..\MyBSP\USART\USART.c:             ^
+..\MyBSP\USART\USART.c: ..\MyBSP\USART\USART.c: 1 warning, 0 errors
+linking...
+Program Size: Code=24900 RO-data=4488 RW-data=204 ZI-data=15428  
+FromELF: creating hex file...
+"..\Output\MyProject.axf" - 0 Error(s), 14 Warning(s).
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.235V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Project_Template'
+compiling main.c...
+..\Usrer\main\main.c(112): warning:  #188-D: enumerated type mixed with another type
+..\Usrer\main\main.c:           GpioInit(GPIOA, GPIO_Pin_0, GPIO_Mode_IPU, 0);
+..\Usrer\main\main.c:                                                      ^
+..\Usrer\main\main.c(121): warning:  #111-D: statement is unreachable
+..\Usrer\main\main.c:           return 1;
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(110): warning:  #550-D: variable "key_down" was set but never used
+..\Usrer\main\main.c:           u8 key_down;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(201): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\Usrer\main\main.c:                                   temp_id = (u16)CharToNumber(fn, 5);
+..\Usrer\main\main.c:                                                               ^
+..\Usrer\main\main.c(168): warning:  #177-D: variable "i" was declared but never referenced
+..\Usrer\main\main.c:           u16 i = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(239): warning:  #167-D: argument of type "const u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:           res = f_open(&f_jpg, p_path, FA_CREATE_ALWAYS | FA_WRITE);
+..\Usrer\main\main.c:                                ^
+..\Usrer\main\main.c(274): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:                   res = f_open(&f_jpg, PhotoName, FA_OPEN_EXISTING | FA_READ);
+..\Usrer\main\main.c:                                        ^
+..\Usrer\main\main.c(364): warning:  #223-D: function "OV2640_AutoExposure" declared implicitly
+..\Usrer\main\main.c:           OV2640_AutoExposure(2);
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(300): warning:  #177-D: variable "j" was declared but never referenced
+..\Usrer\main\main.c:           u16 j = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(301): warning:  #177-D: variable "temp" was declared but never referenced
+..\Usrer\main\main.c:           u16 temp = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(302): warning:  #177-D: variable "data" was declared but never referenced
+..\Usrer\main\main.c:           u16 data = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(304): warning:  #177-D: variable "key_down" was declared but never referenced
+..\Usrer\main\main.c:           u8 key_down = 0;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(305): warning:  #177-D: variable "key_cnt" was declared but never referenced
+..\Usrer\main\main.c:           u16 key_cnt = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c: ..\Usrer\main\main.c: 13 warnings, 0 errors
+compiling dcmi_ov2640.c...
+..\MyBSP\OV2640\dcmi_ov2640.c(1317): warning:  #188-D: enumerated type mixed with another type
+..\MyBSP\OV2640\dcmi_ov2640.c:       GpioInit(GPIOB, GPIO_Pin_14, GPIO_Mode_IPU, 0);
+..\MyBSP\OV2640\dcmi_ov2640.c:                                                   ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1404): warning:  #223-D: function "Delay" declared implicitly
+..\MyBSP\OV2640\dcmi_ov2640.c:       Delay(200);
+..\MyBSP\OV2640\dcmi_ov2640.c:       ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1420): warning:  #111-D: statement is unreachable
+..\MyBSP\OV2640\dcmi_ov2640.c:       OV2640_Reset();
+..\MyBSP\OV2640\dcmi_ov2640.c:       ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1421): warning:  #223-D: function "Delay" declared implicitly
+..\MyBSP\OV2640\dcmi_ov2640.c:       Delay(200);
+..\MyBSP\OV2640\dcmi_ov2640.c:       ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1614): warning:  #223-D: function "Delay" declared implicitly
+..\MyBSP\OV2640\dcmi_ov2640.c:       Delay(200);
+..\MyBSP\OV2640\dcmi_ov2640.c:       ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1431): warning:  #177-D: variable "change_reg" was declared but never referenced
+..\MyBSP\OV2640\dcmi_ov2640.c:   static const u8 change_reg[][2]=
+..\MyBSP\OV2640\dcmi_ov2640.c:                   ^
+..\MyBSP\OV2640\dcmi_ov2640.c: ..\MyBSP\OV2640\dcmi_ov2640.c: 6 warnings, 0 errors
+linking...
+Program Size: Code=24908 RO-data=4488 RW-data=204 ZI-data=15428  
+FromELF: creating hex file...
+"..\Output\MyProject.axf" - 0 Error(s), 19 Warning(s).
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.164V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Project_Template'
+compiling main.c...
+..\Usrer\main\main.c(112): warning:  #188-D: enumerated type mixed with another type
+..\Usrer\main\main.c:           GpioInit(GPIOA, GPIO_Pin_0, GPIO_Mode_IPU, 0);
+..\Usrer\main\main.c:                                                      ^
+..\Usrer\main\main.c(121): warning:  #111-D: statement is unreachable
+..\Usrer\main\main.c:           return 1;
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(110): warning:  #550-D: variable "key_down" was set but never used
+..\Usrer\main\main.c:           u8 key_down;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(201): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\Usrer\main\main.c:                                   temp_id = (u16)CharToNumber(fn, 5);
+..\Usrer\main\main.c:                                                               ^
+..\Usrer\main\main.c(168): warning:  #177-D: variable "i" was declared but never referenced
+..\Usrer\main\main.c:           u16 i = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(239): warning:  #167-D: argument of type "const u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:           res = f_open(&f_jpg, p_path, FA_CREATE_ALWAYS | FA_WRITE);
+..\Usrer\main\main.c:                                ^
+..\Usrer\main\main.c(274): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:                   res = f_open(&f_jpg, PhotoName, FA_OPEN_EXISTING | FA_READ);
+..\Usrer\main\main.c:                                        ^
+..\Usrer\main\main.c(364): warning:  #223-D: function "OV2640_AutoExposure" declared implicitly
+..\Usrer\main\main.c:           OV2640_AutoExposure(2);
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(300): warning:  #177-D: variable "j" was declared but never referenced
+..\Usrer\main\main.c:           u16 j = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(301): warning:  #177-D: variable "temp" was declared but never referenced
+..\Usrer\main\main.c:           u16 temp = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(302): warning:  #177-D: variable "data" was declared but never referenced
+..\Usrer\main\main.c:           u16 data = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(304): warning:  #177-D: variable "key_down" was declared but never referenced
+..\Usrer\main\main.c:           u8 key_down = 0;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(305): warning:  #177-D: variable "key_cnt" was declared but never referenced
+..\Usrer\main\main.c:           u16 key_cnt = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c: ..\Usrer\main\main.c: 13 warnings, 0 errors
+compiling stm32f10x_it.c...
+..\Usrer\STM32_it\stm32f10x_it.c(245): warning:  #177-D: variable "i" was declared but never referenced
+..\Usrer\STM32_it\stm32f10x_it.c:       u32 i = 0;
+..\Usrer\STM32_it\stm32f10x_it.c:           ^
+..\Usrer\STM32_it\stm32f10x_it.c: ..\Usrer\STM32_it\stm32f10x_it.c: 1 warning, 0 errors
+compiling SPI.c...
+..\OnChip_Drivers\SPI\SPI.c(357): warning:  #177-D: variable "i" was declared but never referenced
+..\OnChip_Drivers\SPI\SPI.c:    u16 i = 0;
+..\OnChip_Drivers\SPI\SPI.c:        ^
+..\OnChip_Drivers\SPI\SPI.c(358): warning:  #177-D: variable "retry" was declared but never referenced
+..\OnChip_Drivers\SPI\SPI.c:    u8 retry;
+..\OnChip_Drivers\SPI\SPI.c:       ^
+..\OnChip_Drivers\SPI\SPI.c(359): warning:  #177-D: variable "reg_val" was declared but never referenced
+..\OnChip_Drivers\SPI\SPI.c:    u32 reg_val = 0;
+..\OnChip_Drivers\SPI\SPI.c:        ^
+..\OnChip_Drivers\SPI\SPI.c: ..\OnChip_Drivers\SPI\SPI.c: 3 warnings, 0 errors
+compiling Wifi_Spi.c...
+..\MyBSP\Wifi\Wifi_Spi.c(134): warning:  #177-D: variable "reg_val" was declared but never referenced
+..\MyBSP\Wifi\Wifi_Spi.c:       u32 reg_val = 0;
+..\MyBSP\Wifi\Wifi_Spi.c:           ^
+..\MyBSP\Wifi\Wifi_Spi.c: ..\MyBSP\Wifi\Wifi_Spi.c: 1 warning, 0 errors
+compiling LCD_Driver.c...
+..\MyBSP\LCD_Driver\LCD_Driver.c(347): warning:  #223-D: function "UART_Transmit" declared implicitly
+..\MyBSP\LCD_Driver\LCD_Driver.c:               UART_Transmit(lcd_id >> 8);
+..\MyBSP\LCD_Driver\LCD_Driver.c:               ^
+..\MyBSP\LCD_Driver\LCD_Driver.c: ..\MyBSP\LCD_Driver\LCD_Driver.c: 1 warning, 0 errors
+compiling ov7670.c...
+..\MyBSP\OV7670_Driver\ov7670.c(268): warning:  #188-D: enumerated type mixed with another type
+..\MyBSP\OV7670_Driver\ov7670.c:        GpioInit(GPIOB, GPIO_Pin_14, GPIO_Mode_IPU, 0);                                                 //HREF
+..\MyBSP\OV7670_Driver\ov7670.c:                                                    ^
+..\MyBSP\OV7670_Driver\ov7670.c(270): warning:  #117-D: non-void function "OV7670_init" should return a value
+..\MyBSP\OV7670_Driver\ov7670.c:        return;//从这里返回     
+..\MyBSP\OV7670_Driver\ov7670.c:              ^
+..\MyBSP\OV7670_Driver\ov7670.c(273): warning:  #111-D: statement is unreachable
+..\MyBSP\OV7670_Driver\ov7670.c:        temp=0x80;
+..\MyBSP\OV7670_Driver\ov7670.c:        ^
+..\MyBSP\OV7670_Driver\ov7670.c: ..\MyBSP\OV7670_Driver\ov7670.c: 3 warnings, 0 errors
+compiling SCCB.c...
+compiling dcmi_ov2640.c...
+..\MyBSP\OV2640\dcmi_ov2640.c(1317): warning:  #188-D: enumerated type mixed with another type
+..\MyBSP\OV2640\dcmi_ov2640.c:       GpioInit(GPIOB, GPIO_Pin_14, GPIO_Mode_IPU, 0);
+..\MyBSP\OV2640\dcmi_ov2640.c:                                                   ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1404): warning:  #223-D: function "Delay" declared implicitly
+..\MyBSP\OV2640\dcmi_ov2640.c:       Delay(200);
+..\MyBSP\OV2640\dcmi_ov2640.c:       ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1420): warning:  #111-D: statement is unreachable
+..\MyBSP\OV2640\dcmi_ov2640.c:       OV2640_Reset();
+..\MyBSP\OV2640\dcmi_ov2640.c:       ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1421): warning:  #223-D: function "Delay" declared implicitly
+..\MyBSP\OV2640\dcmi_ov2640.c:       Delay(200);
+..\MyBSP\OV2640\dcmi_ov2640.c:       ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1614): warning:  #223-D: function "Delay" declared implicitly
+..\MyBSP\OV2640\dcmi_ov2640.c:       Delay(200);
+..\MyBSP\OV2640\dcmi_ov2640.c:       ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1431): warning:  #177-D: variable "change_reg" was declared but never referenced
+..\MyBSP\OV2640\dcmi_ov2640.c:   static const u8 change_reg[][2]=
+..\MyBSP\OV2640\dcmi_ov2640.c:                   ^
+..\MyBSP\OV2640\dcmi_ov2640.c: ..\MyBSP\OV2640\dcmi_ov2640.c: 6 warnings, 0 errors
+linking...
+Program Size: Code=24908 RO-data=4488 RW-data=204 ZI-data=15428  
+FromELF: creating hex file...
+"..\Output\MyProject.axf" - 0 Error(s), 28 Warning(s).
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.293V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+**JLink Warning: RESET (pin 15) high, but should be low. Please check target hardware.
+**JLink Warning: No matching core found.
+***JLink Error: Supply voltage too low (1 Volt is required, Measured: 0.0 Volt).
+Please check target power.
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.293V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.293V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.293V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.293V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Project_Template'
+compiling main.c...
+..\Usrer\main\main.c(112): warning:  #188-D: enumerated type mixed with another type
+..\Usrer\main\main.c:           GpioInit(GPIOA, GPIO_Pin_0, GPIO_Mode_IPU, 0);
+..\Usrer\main\main.c:                                                      ^
+..\Usrer\main\main.c(121): warning:  #111-D: statement is unreachable
+..\Usrer\main\main.c:           return 1;
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(110): warning:  #550-D: variable "key_down" was set but never used
+..\Usrer\main\main.c:           u8 key_down;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(201): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\Usrer\main\main.c:                                   temp_id = (u16)CharToNumber(fn, 5);
+..\Usrer\main\main.c:                                                               ^
+..\Usrer\main\main.c(168): warning:  #177-D: variable "i" was declared but never referenced
+..\Usrer\main\main.c:           u16 i = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(239): warning:  #167-D: argument of type "const u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:           res = f_open(&f_jpg, p_path, FA_CREATE_ALWAYS | FA_WRITE);
+..\Usrer\main\main.c:                                ^
+..\Usrer\main\main.c(274): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:                   res = f_open(&f_jpg, PhotoName, FA_OPEN_EXISTING | FA_READ);
+..\Usrer\main\main.c:                                        ^
+..\Usrer\main\main.c(364): warning:  #223-D: function "OV2640_AutoExposure" declared implicitly
+..\Usrer\main\main.c:           OV2640_AutoExposure(2);
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(300): warning:  #177-D: variable "j" was declared but never referenced
+..\Usrer\main\main.c:           u16 j = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(301): warning:  #177-D: variable "temp" was declared but never referenced
+..\Usrer\main\main.c:           u16 temp = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(302): warning:  #177-D: variable "data" was declared but never referenced
+..\Usrer\main\main.c:           u16 data = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(304): warning:  #177-D: variable "key_down" was declared but never referenced
+..\Usrer\main\main.c:           u8 key_down = 0;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(305): warning:  #177-D: variable "key_cnt" was declared but never referenced
+..\Usrer\main\main.c:           u16 key_cnt = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c: ..\Usrer\main\main.c: 13 warnings, 0 errors
+compiling stm32f10x_it.c...
+..\Usrer\STM32_it\stm32f10x_it.c(245): warning:  #177-D: variable "i" was declared but never referenced
+..\Usrer\STM32_it\stm32f10x_it.c:       u32 i = 0;
+..\Usrer\STM32_it\stm32f10x_it.c:           ^
+..\Usrer\STM32_it\stm32f10x_it.c: ..\Usrer\STM32_it\stm32f10x_it.c: 1 warning, 0 errors
+compiling sd_driver.c...
+compiling USART.c...
+..\MyBSP\USART\USART.c(187): warning:  #550-D: variable "RxBuffer2" was set but never used
+..\MyBSP\USART\USART.c:   static u8 RxBuffer2[10];
+..\MyBSP\USART\USART.c:             ^
+..\MyBSP\USART\USART.c: ..\MyBSP\USART\USART.c: 1 warning, 0 errors
+compiling LED_Key.c...
+compiling Delay.c...
+compiling stm32f10x_usart.c...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_pwr.c...
+compiling diskio.c...
+compiling FATFS_008.c...
+..\Usrer\fatfs\FATFS_008.c(1298): warning:  #111-D: statement is unreachable
+..\Usrer\fatfs\FATFS_008.c:                     w = (w << 8) + b;
+..\Usrer\fatfs\FATFS_008.c:                     ^
+..\Usrer\fatfs\FATFS_008.c: ..\Usrer\fatfs\FATFS_008.c: 1 warning, 0 errors
+compiling ccsbcs.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_hd.s...
+compiling SPI.c...
+..\OnChip_Drivers\SPI\SPI.c(357): warning:  #177-D: variable "i" was declared but never referenced
+..\OnChip_Drivers\SPI\SPI.c:    u16 i = 0;
+..\OnChip_Drivers\SPI\SPI.c:        ^
+..\OnChip_Drivers\SPI\SPI.c(358): warning:  #177-D: variable "retry" was declared but never referenced
+..\OnChip_Drivers\SPI\SPI.c:    u8 retry;
+..\OnChip_Drivers\SPI\SPI.c:       ^
+..\OnChip_Drivers\SPI\SPI.c(359): warning:  #177-D: variable "reg_val" was declared but never referenced
+..\OnChip_Drivers\SPI\SPI.c:    u32 reg_val = 0;
+..\OnChip_Drivers\SPI\SPI.c:        ^
+..\OnChip_Drivers\SPI\SPI.c: ..\OnChip_Drivers\SPI\SPI.c: 3 warnings, 0 errors
+compiling Nvic_Exit.c...
+compiling Wifi_Spi.c...
+..\MyBSP\Wifi\Wifi_Spi.c(134): warning:  #177-D: variable "reg_val" was declared but never referenced
+..\MyBSP\Wifi\Wifi_Spi.c:       u32 reg_val = 0;
+..\MyBSP\Wifi\Wifi_Spi.c:           ^
+..\MyBSP\Wifi\Wifi_Spi.c: ..\MyBSP\Wifi\Wifi_Spi.c: 1 warning, 0 errors
+compiling LCD_Driver.c...
+..\MyBSP\LCD_Driver\LCD_Driver.c(347): warning:  #223-D: function "UART_Transmit" declared implicitly
+..\MyBSP\LCD_Driver\LCD_Driver.c:               UART_Transmit(lcd_id >> 8);
+..\MyBSP\LCD_Driver\LCD_Driver.c:               ^
+..\MyBSP\LCD_Driver\LCD_Driver.c: ..\MyBSP\LCD_Driver\LCD_Driver.c: 1 warning, 0 errors
+compiling LCD_GUI.c...
+..\MyBSP\LCD_Driver\LCD_GUI.c(417): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\MyBSP\LCD_Driver\LCD_GUI.c:                                  if(Start_X < 0)
+..\MyBSP\LCD_Driver\LCD_GUI.c:                                             ^
+..\MyBSP\LCD_Driver\LCD_GUI.c: ..\MyBSP\LCD_Driver\LCD_GUI.c: 1 warning, 0 errors
+compiling FIFO.c...
+compiling ov7670.c...
+..\MyBSP\OV7670_Driver\ov7670.c(268): warning:  #188-D: enumerated type mixed with another type
+..\MyBSP\OV7670_Driver\ov7670.c:        GpioInit(GPIOB, GPIO_Pin_14, GPIO_Mode_IPU, 0);                                                 //HREF
+..\MyBSP\OV7670_Driver\ov7670.c:                                                    ^
+..\MyBSP\OV7670_Driver\ov7670.c(270): warning:  #117-D: non-void function "OV7670_init" should return a value
+..\MyBSP\OV7670_Driver\ov7670.c:        return;//从这里返回     
+..\MyBSP\OV7670_Driver\ov7670.c:              ^
+..\MyBSP\OV7670_Driver\ov7670.c(273): warning:  #111-D: statement is unreachable
+..\MyBSP\OV7670_Driver\ov7670.c:        temp=0x80;
+..\MyBSP\OV7670_Driver\ov7670.c:        ^
+..\MyBSP\OV7670_Driver\ov7670.c: ..\MyBSP\OV7670_Driver\ov7670.c: 3 warnings, 0 errors
+compiling SCCB.c...
+compiling dcmi_ov2640.c...
+..\MyBSP\OV2640\dcmi_ov2640.c(1317): warning:  #188-D: enumerated type mixed with another type
+..\MyBSP\OV2640\dcmi_ov2640.c:       GpioInit(GPIOB, GPIO_Pin_14, GPIO_Mode_IPU, 0);
+..\MyBSP\OV2640\dcmi_ov2640.c:                                                   ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1404): warning:  #223-D: function "Delay" declared implicitly
+..\MyBSP\OV2640\dcmi_ov2640.c:       Delay(200);
+..\MyBSP\OV2640\dcmi_ov2640.c:       ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1420): warning:  #111-D: statement is unreachable
+..\MyBSP\OV2640\dcmi_ov2640.c:       OV2640_Reset();
+..\MyBSP\OV2640\dcmi_ov2640.c:       ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1421): warning:  #223-D: function "Delay" declared implicitly
+..\MyBSP\OV2640\dcmi_ov2640.c:       Delay(200);
+..\MyBSP\OV2640\dcmi_ov2640.c:       ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1614): warning:  #223-D: function "Delay" declared implicitly
+..\MyBSP\OV2640\dcmi_ov2640.c:       Delay(200);
+..\MyBSP\OV2640\dcmi_ov2640.c:       ^
+..\MyBSP\OV2640\dcmi_ov2640.c(1431): warning:  #177-D: variable "change_reg" was declared but never referenced
+..\MyBSP\OV2640\dcmi_ov2640.c:   static const u8 change_reg[][2]=
+..\MyBSP\OV2640\dcmi_ov2640.c:                   ^
+..\MyBSP\OV2640\dcmi_ov2640.c: ..\MyBSP\OV2640\dcmi_ov2640.c: 6 warnings, 0 errors
+linking...
+Program Size: Code=24908 RO-data=4488 RW-data=204 ZI-data=15428  
+FromELF: creating hex file...
+"..\Output\MyProject.axf" - 0 Error(s), 31 Warning(s).
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.293V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Project_Template'
+compiling main.c...
+..\Usrer\main\main.c(112): warning:  #188-D: enumerated type mixed with another type
+..\Usrer\main\main.c:           GpioInit(GPIOA, GPIO_Pin_0, GPIO_Mode_IPU, 0);
+..\Usrer\main\main.c:                                                      ^
+..\Usrer\main\main.c(121): warning:  #111-D: statement is unreachable
+..\Usrer\main\main.c:           return 1;
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(110): warning:  #550-D: variable "key_down" was set but never used
+..\Usrer\main\main.c:           u8 key_down;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(201): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\Usrer\main\main.c:                                   temp_id = (u16)CharToNumber(fn, 5);
+..\Usrer\main\main.c:                                                               ^
+..\Usrer\main\main.c(168): warning:  #177-D: variable "i" was declared but never referenced
+..\Usrer\main\main.c:           u16 i = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(239): warning:  #167-D: argument of type "const u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:           res = f_open(&f_jpg, p_path, FA_CREATE_ALWAYS | FA_WRITE);
+..\Usrer\main\main.c:                                ^
+..\Usrer\main\main.c(274): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:                   res = f_open(&f_jpg, PhotoName, FA_OPEN_EXISTING | FA_READ);
+..\Usrer\main\main.c:                                        ^
+..\Usrer\main\main.c(364): warning:  #223-D: function "OV2640_AutoExposure" declared implicitly
+..\Usrer\main\main.c:           OV2640_AutoExposure(2);
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(300): warning:  #177-D: variable "j" was declared but never referenced
+..\Usrer\main\main.c:           u16 j = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(301): warning:  #177-D: variable "temp" was declared but never referenced
+..\Usrer\main\main.c:           u16 temp = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(302): warning:  #177-D: variable "data" was declared but never referenced
+..\Usrer\main\main.c:           u16 data = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(304): warning:  #177-D: variable "key_down" was declared but never referenced
+..\Usrer\main\main.c:           u8 key_down = 0;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(305): warning:  #177-D: variable "key_cnt" was declared but never referenced
+..\Usrer\main\main.c:           u16 key_cnt = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c: ..\Usrer\main\main.c: 13 warnings, 0 errors
+linking...
+Program Size: Code=24908 RO-data=4488 RW-data=204 ZI-data=15428  
+FromELF: creating hex file...
+"..\Output\MyProject.axf" - 0 Error(s), 13 Warning(s).
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.293V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Project_Template'
+compiling stm32f10x_it.c...
+..\Usrer\STM32_it\stm32f10x_it.c(245): warning:  #177-D: variable "i" was declared but never referenced
+..\Usrer\STM32_it\stm32f10x_it.c:       u32 i = 0;
+..\Usrer\STM32_it\stm32f10x_it.c:           ^
+..\Usrer\STM32_it\stm32f10x_it.c: ..\Usrer\STM32_it\stm32f10x_it.c: 1 warning, 0 errors
+linking...
+Program Size: Code=24908 RO-data=4488 RW-data=204 ZI-data=25428  
+FromELF: creating hex file...
+"..\Output\MyProject.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.293V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Project_Template'
+compiling main.c...
+..\Usrer\main\main.c(112): warning:  #188-D: enumerated type mixed with another type
+..\Usrer\main\main.c:           GpioInit(GPIOA, GPIO_Pin_0, GPIO_Mode_IPU, 0);
+..\Usrer\main\main.c:                                                      ^
+..\Usrer\main\main.c(121): warning:  #111-D: statement is unreachable
+..\Usrer\main\main.c:           return 1;
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(110): warning:  #550-D: variable "key_down" was set but never used
+..\Usrer\main\main.c:           u8 key_down;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(201): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\Usrer\main\main.c:                                   temp_id = (u16)CharToNumber(fn, 5);
+..\Usrer\main\main.c:                                                               ^
+..\Usrer\main\main.c(168): warning:  #177-D: variable "i" was declared but never referenced
+..\Usrer\main\main.c:           u16 i = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(239): warning:  #167-D: argument of type "const u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:           res = f_open(&f_jpg, p_path, FA_CREATE_ALWAYS | FA_WRITE);
+..\Usrer\main\main.c:                                ^
+..\Usrer\main\main.c(274): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const TCHAR *"
+..\Usrer\main\main.c:                   res = f_open(&f_jpg, PhotoName, FA_OPEN_EXISTING | FA_READ);
+..\Usrer\main\main.c:                                        ^
+..\Usrer\main\main.c(364): warning:  #223-D: function "OV2640_AutoExposure" declared implicitly
+..\Usrer\main\main.c:           OV2640_AutoExposure(2);
+..\Usrer\main\main.c:           ^
+..\Usrer\main\main.c(300): warning:  #177-D: variable "j" was declared but never referenced
+..\Usrer\main\main.c:           u16 j = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(301): warning:  #177-D: variable "temp" was declared but never referenced
+..\Usrer\main\main.c:           u16 temp = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(302): warning:  #177-D: variable "data" was declared but never referenced
+..\Usrer\main\main.c:           u16 data = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c(304): warning:  #177-D: variable "key_down" was declared but never referenced
+..\Usrer\main\main.c:           u8 key_down = 0;
+..\Usrer\main\main.c:              ^
+..\Usrer\main\main.c(305): warning:  #177-D: variable "key_cnt" was declared but never referenced
+..\Usrer\main\main.c:           u16 key_cnt = 0;
+..\Usrer\main\main.c:               ^
+..\Usrer\main\main.c: ..\Usrer\main\main.c: 13 warnings, 0 errors
+compiling stm32f10x_it.c...
+..\Usrer\STM32_it\stm32f10x_it.c(245): warning:  #177-D: variable "i" was declared but never referenced
+..\Usrer\STM32_it\stm32f10x_it.c:       u32 i = 0;
+..\Usrer\STM32_it\stm32f10x_it.c:           ^
+..\Usrer\STM32_it\stm32f10x_it.c: ..\Usrer\STM32_it\stm32f10x_it.c: 1 warning, 0 errors
+linking...
+Program Size: Code=24908 RO-data=4488 RW-data=204 ZI-data=35428  
+FromELF: creating hex file...
+"..\Output\MyProject.axf" - 0 Error(s), 14 Warning(s).
+Load "..\\Output\\MyProject.AXF" 
+Set JLink Project File to "E:\mr09OV2640\STM32F103R\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.293V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...

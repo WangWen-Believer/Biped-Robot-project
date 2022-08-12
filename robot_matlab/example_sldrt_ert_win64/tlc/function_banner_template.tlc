@@ -1,0 +1,10 @@
+%assign FunctionDescription = FEVAL("rtwprivate", "rtw_format_banner", "formatFcnDescription", ...
+rawFcnDescription, 0, 0)
+%openfile regionBuf
+%<FunctionDescription>
+%<BlockDescription>
+%closefile regionBuf
+%assign regionBuf = FEVAL("rtwprivate", "rtw_format_banner", ...
+"formatBanner", regionBuf,"classic", 0)
+%assign bannerBuf = regionBuf
+

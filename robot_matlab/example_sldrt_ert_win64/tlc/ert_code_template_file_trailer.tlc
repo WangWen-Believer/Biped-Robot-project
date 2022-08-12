@@ -1,0 +1,8 @@
+%openfile regionBuf
+File trailer for generated code.
+
+[EOF]
+%closefile regionBuf
+%assign regionBuf = FEVAL("rtwprivate", "rtw_format_banner", ...
+"formatBanner", regionBuf,"classic", 0)
+%<regionBuf>

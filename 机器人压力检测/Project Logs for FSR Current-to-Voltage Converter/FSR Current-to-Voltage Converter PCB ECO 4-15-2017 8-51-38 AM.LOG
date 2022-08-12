@@ -1,0 +1,13 @@
+Added Component: Designator=D?(DSO-C2/D5.6)
+Added Component: Designator=R?(RESC1608L)
+Added Pin To Net: NetName=GND Pin=D?-2
+Added Pin To Net: NetName=VCC Pin=R?-2
+Added Pin To Net: NetName=GND Pin=U1-11
+Added Pin To Net: NetName=NetU1_5 Pin=U1-11
+Added Pin To Net: NetName=NetU1_10 Pin=U1-11
+Added Pin To Net: NetName=NetD?_1 Pin=D?-1
+Added Pin To Net: NetName=NetD?_1 Pin=R?-1
+Added Net: Name=NetD?_1
+Added Member To Class: ClassName=FSR Current-to-Voltage Converter Member=Component D? LED3
+Added Member To Class: ClassName=FSR Current-to-Voltage Converter Member=Component R? Res3
+Added Room: Name=FSR Current-to-Voltage Converter

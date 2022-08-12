@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="10/05/17||16:00:33" using="Simscape Multibody Link Version 5.0" from="SolidWorks 22.0.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Mechanical" uid="Mechanical" version="144">
+<AssemblyFile name="Mechanical.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Mechanical_2-1" uid="Mechanical_2-1" entityUid="Mechanical_2*:*默认">
+<Transform>
+<Rotation>0.19518356429545458 0.96248722075173765 -0.18847208312776165 -0.69238105644547543 0.27132701651253927 0.66857319927278835 0.69463072844812268 9.9226472650774611e-016 0.71936649289192678</Rotation>
+<Translation>0.052041712595824061 -0.23518756542780117 0.13691463013658575</Translation>
+</Transform>
+</Instance>
+<Instance name="Mechanical_up-1" uid="Mechanical_up-1" entityUid="Mechanical_up*:*默认">
+<Transform>
+<Rotation>-0.27132701651253888 -0.96248722075173776 0 0.96248722075173776 -0.27132701651253888 0 0 0 1</Rotation>
+<Translation>0.053903242180168814 -0.13693600940267117 -0.04166685327499161</Translation>
+</Transform>
+</Instance>
+<Instance name="Steering_gear-1" uid="Steering_gear-1" entityUid="Steering_gear*:*默认">
+<Transform>
+<Rotation>-0.99999999999999989 0 0 0 0 -0.99999999999999978 0 -1 0</Rotation>
+<Translation>0.071565099807529675 -0.12002440736027782 -0.0011668532749916014</Translation>
+</Transform>
+</Instance>
+<Instance name="Steering_gear-2" uid="Steering_gear-2" entityUid="Steering_gear*:*默认">
+<Transform>
+<Rotation>-0.19518356429545447 0.96248722075173787 0.18847208312776198 0.69238105644547532 0.27132701651253943 -0.66857319927278858 -0.69463072844812279 1.2950957353428461e-015 -0.71936649289192656</Rotation>
+<Translation>0.027777996682246099 -0.14911609051557051 0.078365733507371388</Translation>
+</Transform>
+</Instance>
+<Instance name="Mechanical_down1-1" uid="Mechanical_down1-1" grounded="true" entityUid="Mechanical_down1*:*默认">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.031565099807529674 -0.14002440736027782 -0.041666853274991603</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="重合1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Mechanical_down1-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Steering_gear-1</Uid>
+</InstancePath>
+<Position>0 0 0.020000000000000004</Position>
+<Axis>0 0 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="重合2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Mechanical_down1-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Steering_gear-1</Uid>
+</InstancePath>
+<Position>0.039999999999999987 0.040500000000000001 0.020000000000000004</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="重合3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Mechanical_down1-1</Uid>
+</InstancePath>
+<Position>0 0.019999999999996146 0</Position>
+<Axis>1 -1.1714553645825241e-015 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Steering_gear-1</Uid>
+</InstancePath>
+<Position>0.039999999999999987 0 0.020000000000000004</Position>
+<Axis>0.99999999999999989 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心1">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Steering_gear-1</Uid>
+</InstancePath>
+<Position>0.029999999999999992 -0.0064999999999999997 0.009999999999999995</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Mechanical_up-1</Uid>
+</InstancePath>
+<Position>0.0099999999999999811 0.0099999999999958455 0.055</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Steering_gear-1</Uid>
+</InstancePath>
+<Position>0.029999999999999992 -0.0064999999999999997 0.009999999999999995</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Mechanical_up-1</Uid>
+</InstancePath>
+<Position>0.0099999999999999811 0.0099999999999958455 0.047</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Mechanical_up-1</Uid>
+</InstancePath>
+<Position>0.0099999999999999811 0.063249999999995699 0.091999999999999998</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Steering_gear-2</Uid>
+</InstancePath>
+<Position>0.029999999999999971 0.045200000000000025 0.010000000000000009</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Mechanical_up-1</Uid>
+</InstancePath>
+<Position>0.046561047019939392 -0.016750000000004157 0.10500000000000001</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Steering_gear-2</Uid>
+</InstancePath>
+<Position>0.029999999999999971 0.045200000000000025 0.010000000000000009</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="重合8">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Steering_gear-2</Uid>
+</InstancePath>
+<Position>0 0 0.01999999999999999</Position>
+<Axis>-1.6653345369377348e-016 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Mechanical_2-1</Uid>
+</InstancePath>
+<Position>-0.14499999999999996 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="重合9">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Steering_gear-2</Uid>
+</InstancePath>
+<Position>0 0 0.01999999999999999</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Mechanical_2-1</Uid>
+</InstancePath>
+<Position>-0.14499999999999999 0 0.019999999999999983</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="重合10">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Steering_gear-2</Uid>
+</InstancePath>
+<Position>0 0.040500000000000022 0.020000000000000004</Position>
+<Axis>-1 0 1.6653345369377348e-016</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Mechanical_2-1</Uid>
+</InstancePath>
+<Position>-0.10499999999999998 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Mechanical_2" uid="Mechanical_2*:*默认" version="102">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="Mechanical_2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.35388123925916748</Mass>
+<CenterOfMass>-0.052507421306011805 0.018794262236740088 0.0097781098825083321</CenterOfMass>
+<Inertia>0.00025433201313392214 0.0011832576725392529 0.001121170345651539 1.1324421837680452e-006 4.7138690074554364e-009 -5.6939198755452117e-008</Inertia>
+</MassProperties>
+<GeometryFile name="Mechanical_2_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="0.59999999999999998" b="0" a="1"/>
+<Diffuse r="1" g="0.59999999999999998" b="0" a="1"/>
+<Specular r="0.5" g="0.29999999999999999" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Mechanical_down1" uid="Mechanical_down1*:*默认" version="102">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="Mechanical_down1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.074256928095078556</Mass>
+<CenterOfMass>0.01337975815590536 0.01000108466548813 0.010741348544350458</CenterOfMass>
+<Inertia>7.748776694943789e-005 8.2274793343266398e-005 0.00011807485854292278 1.4431530102387614e-009 3.1104356336614483e-007 5.5412895728114553e-009</Inertia>
+</MassProperties>
+<GeometryFile name="Mechanical_down1_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="0.59999999999999998" b="0" a="1"/>
+<Diffuse r="1" g="0.59999999999999998" b="0" a="1"/>
+<Specular r="0.5" g="0.29999999999999999" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Mechanical_up" uid="Mechanical_up*:*默认" version="102">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="Mechanical_up.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.17231370325263051</Mass>
+<CenterOfMass>0.0099095664538025111 0.011363169888302943 0.074932845088501107</CenterOfMass>
+<Inertia>0.00024868058564869614 0.00015101991095601129 0.0002253756491613501 -3.8827766053669356e-006 -3.7322313618688559e-007 -3.5517461059449243e-008</Inertia>
+</MassProperties>
+<GeometryFile name="Mechanical_up_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="0.59999999999999998" b="0" a="1"/>
+<Diffuse r="1" g="0.59999999999999998" b="0" a="1"/>
+<Specular r="0.5" g="0.29999999999999999" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Steering_gear" uid="Steering_gear*:*默认" version="102">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="Steering_gear.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.034054902991438166</Mass>
+<CenterOfMass>0.020532355893272538 0.020144603951688288 0.0099999166554809501</CenterOfMass>
+<Inertia>6.5038429113634837e-006 5.6153479922202361e-006 9.9015457975856826e-006 -5.0080494324412692e-011 -1.3719153921089718e-010 3.4190573587101549e-008</Inertia>
+</MassProperties>
+<GeometryFile name="Steering_gear_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="0.59999999999999998" b="0" a="1"/>
+<Diffuse r="1" g="0.59999999999999998" b="0" a="1"/>
+<Specular r="0.5" g="0.29999999999999999" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>

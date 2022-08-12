@@ -1,0 +1,65 @@
+Added Component: Designator=P1(HDR1X2)
+Added Component: Designator=P2(HDR1X2)
+Added Component: Designator=P3(HDR1X2)
+Added Component: Designator=P4(HDR1X2)
+Added Component: Designator=P5(HDR1X2)
+Added Component: Designator=P6(HDR1X4)
+Added Component: Designator=RG1(RESC2012N)
+Added Component: Designator=RG2(RESC2012N)
+Added Component: Designator=RG3(RESC2012N)
+Added Component: Designator=RG4(RESC2012N)
+Added Component: Designator=U1(SO14_N)
+Added Pin To Net: NetName=FOOT_1 Pin=P1-2
+Added Pin To Net: NetName=FOOT_1 Pin=RG1-1
+Added Pin To Net: NetName=FOOT_1 Pin=U1-2
+Added Net: Name=FOOT_1
+Added Pin To Net: NetName=FOOT_2 Pin=P2-2
+Added Pin To Net: NetName=FOOT_2 Pin=RG2-1
+Added Pin To Net: NetName=FOOT_2 Pin=U1-6
+Added Net: Name=FOOT_2
+Added Pin To Net: NetName=FOOT_3 Pin=P3-2
+Added Pin To Net: NetName=FOOT_3 Pin=RG3-1
+Added Pin To Net: NetName=FOOT_3 Pin=U1-9
+Added Net: Name=FOOT_3
+Added Pin To Net: NetName=FOOT_4 Pin=P4-2
+Added Pin To Net: NetName=FOOT_4 Pin=RG4-1
+Added Pin To Net: NetName=FOOT_4 Pin=U1-13
+Added Net: Name=FOOT_4
+Added Pin To Net: NetName=GND Pin=P5-2
+Added Pin To Net: NetName=GND Pin=U1-3
+Added Pin To Net: NetName=GND Pin=U1-11
+Added Net: Name=GND
+Added Pin To Net: NetName=NetU1_5 Pin=U1-5
+Added Pin To Net: NetName=NetU1_5 Pin=U1-11
+Added Net: Name=NetU1_5
+Added Pin To Net: NetName=NetU1_10 Pin=U1-10
+Added Pin To Net: NetName=NetU1_10 Pin=U1-11
+Added Net: Name=NetU1_10
+Added Pin To Net: NetName=NetU1_11 Pin=U1-11
+Added Pin To Net: NetName=NetU1_11 Pin=U1-12
+Added Net: Name=NetU1_11
+Added Pin To Net: NetName=SENSER_1 Pin=P6-1
+Added Pin To Net: NetName=SENSER_1 Pin=U1-1
+Added Net: Name=SENSER_1
+Added Pin To Net: NetName=SENSER_2 Pin=P6-2
+Added Pin To Net: NetName=SENSER_2 Pin=U1-7
+Added Net: Name=SENSER_2
+Added Pin To Net: NetName=SENSER_3 Pin=P6-3
+Added Pin To Net: NetName=SENSER_3 Pin=U1-8
+Added Net: Name=SENSER_3
+Added Pin To Net: NetName=SENSER_4 Pin=P6-4
+Added Pin To Net: NetName=SENSER_4 Pin=U1-14
+Added Net: Name=SENSER_4
+Added Pin To Net: NetName=VCC Pin=P1-1
+Added Pin To Net: NetName=VCC Pin=P2-1
+Added Pin To Net: NetName=VCC Pin=P3-1
+Added Pin To Net: NetName=VCC Pin=P4-1
+Added Pin To Net: NetName=VCC Pin=P5-1
+Added Pin To Net: NetName=VCC Pin=RG1-2
+Added Pin To Net: NetName=VCC Pin=RG2-2
+Added Pin To Net: NetName=VCC Pin=RG3-2
+Added Pin To Net: NetName=VCC Pin=RG4-2
+Added Pin To Net: NetName=VCC Pin=U1-4
+Added Net: Name=VCC
+Added Class: Name=FSR Current-to-Voltage Converter
+Added Room: Name=FSR Current-to-Voltage Converter

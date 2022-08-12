@@ -1,0 +1,46 @@
+%implements s0_b0_7o2ic_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcOutputsFcnOfS0B0 = OpaqueTLCBlockFcn("Outputs", 0, 0, 0, 0)
+%assign tlcOutputsFcnOfS0B1 = OpaqueTLCBlockFcn("Outputs", 0, 1, 0, 0)
+%assign tlcOutputsFcnOfS0B2 = OpaqueTLCBlockFcn("Outputs", 0, 2, 0, 0)
+%assign tlcOutputsFcnOfS0B3 = OpaqueTLCBlockFcn("Outputs", 0, 3, 0, 0)
+%<SLibGenerateExtModeOutput(system)>
+%if !WHITE_SPACE(tlcOutputsFcnOfS0B0)
+/* M-S-Function: '<Root>/Serial Configuration' */
+%<SLibCG_DumpSSCode("/*@[1bf4*/",tlcOutputsFcnOfS0B0,"/*@]*/")>\
+%endif
+/* Clock: '<Root>/Clock' */
+/*@>1a9f*/example_B./*@>24f0*/Clock/*@>744*/ = %<SLibCG_DumpSSCode("/*@[1bf5*/",(SLibCG_SE(LibGetT())),"/*@]*/")>;
+/* Constant: '<Root>/Constant' */
+/*@>1aa5*/example_B./*@>24f3*/Constant/*@>266*/ = /*@>1b62*/example_P./*@>24f9*/Constant_Value;
+%if !WHITE_SPACE(tlcOutputsFcnOfS0B1)
+/* M-S-Function: '<Root>/Serial Send' */
+%<SLibCG_DumpSSCode("/*@[1bf9*/",tlcOutputsFcnOfS0B1,"/*@]*/")>\
+%endif
+/* Sin: '<Root>/Sine Wave' */
+/*@>1ab1*/example_B./*@>24f6*/SineWave/*@>75f*/ = /*@>182f*/sin(/*@>1b68*/example_P./*@>24fc*/SineWave_Freq/*@>142a*/ * %<SLibCG_DumpSSCode("/*@[1bfa*/",(SLibCG_SE(LibGetTaskTime(0))),"/*@]*/")>/*@>755*/ + /*@>1b6e*/example_P./*@>24ff*/SineWave_Phase)/*@>1426*/ * /*@>1b74*/example_P./*@>2502*/SineWave_Amp/*@>75d*/ + /*@>1b7a*/example_P./*@>2505*/SineWave_Bias;
+%if !WHITE_SPACE(tlcOutputsFcnOfS0B2)
+/* S-Function (exa): '<Root>/S-Function' */
+%<SLibCG_DumpSSCode("/*@[1c00*/",tlcOutputsFcnOfS0B2,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS0B3)
+/* Scope: '<Root>/Scope' */
+%<SLibCG_DumpSSCode("/*@[1c04*/",tlcOutputsFcnOfS0B3,"/*@]*/")>\
+%endif
+%<SLibInsertSolverResetCode()>\
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 0, fcnProtoType)>
+%endfunction

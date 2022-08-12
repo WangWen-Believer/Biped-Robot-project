@@ -1,0 +1,27 @@
+%implements s0_b0_7o2ic_ForcingFunction "C"
+
+%function ForcingFunction(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcForcingFunctionFcnOfS0B0 = OpaqueTLCBlockFcn("ForcingFunction", 0, 0, 0, 3)
+%assign tlcForcingFunctionFcnOfS0B1 = OpaqueTLCBlockFcn("ForcingFunction", 0, 1, 0, 3)
+%if !WHITE_SPACE(tlcForcingFunctionFcnOfS0B0)
+/* ForcingFunction for M-S-Function: '<Root>/Serial Configuration' */
+%<SLibCG_DumpSSCode("/*@[1c19*/",tlcForcingFunctionFcnOfS0B0,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcForcingFunctionFcnOfS0B1)
+/* ForcingFunction for M-S-Function: '<Root>/Serial Send' */
+%<SLibCG_DumpSSCode("/*@[1c1b*/",tlcForcingFunctionFcnOfS0B1,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function ForcingFunctionFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void ForcingFunction(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 3, fcnProtoType)>
+%endfunction

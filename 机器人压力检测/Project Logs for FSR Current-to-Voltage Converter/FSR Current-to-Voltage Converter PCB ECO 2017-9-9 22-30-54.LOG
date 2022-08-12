@@ -1,0 +1,4 @@
+Change Component Comment : Designator=P2 Old Comment=Header 3X2 New Comment=foot
+Added Pin To Net: NetName=GND Pin=U1-11
+Added Pin To Net: NetName=NetU1_5 Pin=U1-11
+Added Pin To Net: NetName=NetU1_11 Pin=U1-11

@@ -1,0 +1,51 @@
+*** Creating Trace Output File '..\Output\MyProject.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"..\output\main.o"'
+### List of Objects: adding '"..\output\stm32f10x_it.o"'
+### List of Objects: adding '"..\output\sd_driver.o"'
+### List of Objects: adding '"..\output\usart.o"'
+### List of Objects: adding '"..\output\led_key.o"'
+### List of Objects: adding '"..\output\delay.o"'
+### List of Objects: adding '"..\output\stm32f10x_usart.o"'
+### List of Objects: adding '"..\output\misc.o"'
+### List of Objects: adding '"..\output\stm32f10x_dma.o"'
+### List of Objects: adding '"..\output\stm32f10x_exti.o"'
+### List of Objects: adding '"..\output\stm32f10x_fsmc.o"'
+### List of Objects: adding '"..\output\stm32f10x_gpio.o"'
+### List of Objects: adding '"..\output\stm32f10x_i2c.o"'
+### List of Objects: adding '"..\output\stm32f10x_sdio.o"'
+### List of Objects: adding '"..\output\stm32f10x_spi.o"'
+### List of Objects: adding '"..\output\stm32f10x_rcc.o"'
+### List of Objects: adding '"..\output\stm32f10x_flash.o"'
+### List of Objects: adding '"..\output\stm32f10x_pwr.o"'
+### List of Objects: adding '"..\output\diskio.o"'
+### List of Objects: adding '"..\output\fatfs_008.o"'
+### List of Objects: adding '"..\output\ccsbcs.o"'
+### List of Objects: adding '"..\output\core_cm3.o"'
+### List of Objects: adding '"..\output\system_stm32f10x.o"'
+### List of Objects: adding '"..\output\startup_stm32f10x_hd.o"'
+### List of Objects: adding '"..\output\spi.o"'
+### List of Objects: adding '"..\output\nvic_exit.o"'
+### List of Objects: adding '"..\output\wifi_spi.o"'
+### List of Objects: adding '"..\output\lcd_driver.o"'
+### List of Objects: adding '"..\output\lcd_gui.o"'
+### List of Objects: adding '"..\output\fifo.o"'
+### List of Objects: adding '"..\output\ov7670.o"'
+### List of Objects: adding '"..\output\sccb.o"'
+### List of Objects: adding '"..\output\dcmi_ov2640.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 "..\output\main.o" "..\output\stm32f10x_it.o" "..\output\sd_driver.o" "..\output\usart.o" "..\output\led_key.o" "..\output\delay.o" "..\output\stm32f10x_usart.o" "..\output\misc.o" "..\output\stm32f10x_dma.o" "..\output\stm32f10x_exti.o" "..\output\stm32f10x_fsmc.o" "..\output\stm32f10x_gpio.o" "..\output\stm32f10x_i2c.o" "..\output\stm32f10x_sdio.o" "..\output\stm32f10x_spi.o" "..\output\stm32f10x_rcc.o" "..\output\stm32f10x_flash.o" "..\output\stm32f10x_pwr.o" "..\output\diskio.o" "..\output\fatfs_008.o" "..\output\ccsbcs.o" "..\output\core_cm3.o" "..\output\system_stm32f10x.o" "..\output\startup_stm32f10x_hd.o" "..\output\spi.o" "..\output\nvic_exit.o" "..\output\wifi_spi.o" "..\output\lcd_driver.o" "..\output\lcd_gui.o" "..\output\fifo.o" "..\output\ov7670.o" "..\output\sccb.o" "..\output\dcmi_ov2640.o" --strict --scatter "..\Output\MyProject.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list "..\Output\List\MyProject.map" -o "..\Output\MyProject.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '..\Output\MyProject.axf'
+### ADS-LD Command File: '..\Output\MyProject.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '..\Output\MyProject.lnp', Handle=0x00000280
+### Writing '.lnp' file
+### ADS-LD Command file '..\Output\MyProject.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

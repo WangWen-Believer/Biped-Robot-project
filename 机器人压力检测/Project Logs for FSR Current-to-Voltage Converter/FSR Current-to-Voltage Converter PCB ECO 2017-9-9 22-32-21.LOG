@@ -1,0 +1,6 @@
+Added Pin To Net: NetName=SENSER_2 Pin=P2-2
+Added Pin To Net: NetName=SENSER_4 Pin=P2-4
+Added Pin To Net: NetName=GND Pin=U1-11
+Added Pin To Net: NetName=NetU1_5 Pin=U1-11
+Added Pin To Net: NetName=NetU1_10 Pin=U1-11
+Added Room: Name=FSR Current-to-Voltage Converter

@@ -1,0 +1,32 @@
+%implements s0_b0_mypic_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcOutputsFcnOfS0B0 = OpaqueTLCBlockFcn("Outputs", 0, 0, 0, 2)
+%assign tlcOutputsFcnOfS0B1 = OpaqueTLCBlockFcn("Outputs", 0, 1, 0, 2)
+%<SLibGenerateExtModeOutput(system)>
+%if !WHITE_SPACE(tlcOutputsFcnOfS0B0)
+/* S-Function (sldrtsync): '<Root>/Real-Time Synchronization' */
+%<tlcOutputsFcnOfS0B0>\
+%endif
+/* Sin: '<Root>/Sine Wave' */
+example_B.SineWave = sin(example_P.SineWave_Freq * %<(SLibCG_SE(LibGetTaskTime(0)))> + example_P.SineWave_Phase) * example_P.SineWave_Amp + example_P.SineWave_Bias;
+%if !WHITE_SPACE(tlcOutputsFcnOfS0B1)
+/* Scope: '<Root>/Scope' */
+%<tlcOutputsFcnOfS0B1>\
+%endif
+%<SLibInsertSolverResetCode()>\
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 2, fcnProtoType)>
+%endfunction

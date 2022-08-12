@@ -1,0 +1,772 @@
+Model {
+  Name			  "demo6"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "all"
+  WideLines		  on
+  ShowLineDimensions	  on
+  ShowPortDataTypes	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  on
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sat Jan 26 02:15:13 2002"
+  Creator		  "pic"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "pic"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Mon Apr  8 11:51:47 2002"
+  ModelVersionFormat	  "1.%<AutoIncrement:13>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "20.0"
+  SolverMode		  "Auto"
+  Solver		  "ode45"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  off
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "oneshot"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  ExtModeLogAll		  on
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  off
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "demo6"
+    Location		    [4, 297, 1065, 895]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "portrait"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    AutoZoom		    on
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Display
+      Name		      "Cartesian velocity dmd"
+      Ports		      [1]
+      Position		      [375, 344, 465, 466]
+      Orientation	      "left"
+      Format		      "bank"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain1"
+      Position		      [295, 520, 350, 560]
+      Orientation	      "left"
+      ShowName		      off
+      Gain		      "-0.10"
+      Multiplication	      "Element-wise(K.*u)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      MATLABFcn
+      Name		      "MATLAB Fcn"
+      Position		      [720, 300, 780, 330]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      MATLABFcn		      "reshape(u',prod(size(u)),1)"
+      OutputDimensions	      "-1"
+      OutputSignalType	      "auto"
+      Output1D		      on
+      Port {
+	PortNumber		1
+	Name			"feature vel"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+      }
+    }
+    Block {
+      BlockType		      MATLABFcn
+      Name		      "MATLAB Fcn1"
+      Position		      [860, 350, 920, 380]
+      ShowName		      off
+      MATLABFcn		      "norm(u)"
+      OutputDimensions	      "-1"
+      OutputSignalType	      "auto"
+      Output1D		      on
+    }
+    Block {
+      BlockType		      MATLABFcn
+      Name		      "MATLAB Fcn2"
+      Position		      [840, 80, 900, 110]
+      ShowName		      off
+      MATLABFcn		      "cond(u)"
+      OutputDimensions	      "-1"
+      OutputSignalType	      "auto"
+      Output1D		      on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Model Info"
+      Ports		      []
+      Position		      [14, 480, 225, 529]
+      ShowName		      off
+      FontName		      "Arial"
+      SourceBlock	      "simulink3/Signals\n& Systems/Model Info"
+      SourceType	      "CMBlock"
+      InitialBlockCM	      "none"
+      BlockCM		      "none"
+      Frame		      "on"
+      DisplayStringWithTags   "Image-based visual servo control\n%<Creator>\n%"
+"<LastModificationDate>"
+      MaskDisplayString	      "Image-based visual servo control\\npic\\n08-Apr"
+"-2002 11:39:37"
+      HorizontalTextAlignment "Left"
+      LeftAlignmentValue      "0.02"
+      SourceBlockDiagram      "demo6"
+      TagMaxNumber	      "20"
+    }
+    Block {
+      BlockType		      Product
+      Name		      "Product"
+      Ports		      [2, 1]
+      Position		      [260, 185, 295, 245]
+      ShowName		      off
+      Inputs		      "2"
+      Multiplication	      "Matrix(*)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Product
+      Name		      "Product1"
+      Ports		      [2, 1]
+      Position		      [965, 200, 1000, 260]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      Inputs		      "2"
+      Multiplication	      "Matrix(*)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Rate\ncontrolled\nrobot\naxes"
+      Ports		      [1, 1]
+      Position		      [325, 192, 360, 238]
+      DropShadow	      on
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "[0.3048   -0.9869    0.4483   -0.3513   -1.0595"
+"    0.1774]"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      Port {
+	PortNumber		1
+	Name			"q"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+      }
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      Ports		      [2, 1]
+      Position		      [660, 305, 680, 325]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "-+|"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "camera"
+      Ports		      [1, 1]
+      Position		      [545, 176, 625, 254]
+      BackgroundColor	      "lightBlue"
+      DropShadow	      on
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskPromptString	      "Name|Camera params|Image plane size|Points (nx2"
+")"
+      MaskStyleString	      "edit,edit,edit,edit"
+      MaskTunableValueString  "on,on,on,on"
+      MaskCallbackString      "|||"
+      MaskEnableString	      "on,on,on,on"
+      MaskVisibilityString    "on,on,on,on"
+      MaskToolTipString	      "on,on,on,on"
+      MaskVariables	      "name=&1;camdata=@2;dims=@3;points=@4;"
+      MaskInitialization      "h=gcamera(name,camcalp_c(camdata),dims);"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "IBVS camera|[8e-3 80e3 80e3 256 256]|[0 511 0 5"
+"11]|rotz(0.02)*[2 0.2 0.2;2 0.2 -0.2; 2 -0.2 -0.2 ;2 -0.2 0.2]"
+      MaskVariableAliases     ",,,"
+      System {
+	Name			"camera"
+	Location		[379, 398, 686, 504]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+	Block {
+	  BlockType		  Inport
+	  Name			  "T"
+	  Position		  [25, 33, 55, 47]
+	  Port			  "1"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  MATLABFcn
+	  Name			  "MATLAB Fcn"
+	  Position		  [110, 25, 170, 55]
+	  MATLABFcn		  "gcamera(h,points, eye(4,4), u)"
+	  OutputDimensions	  "-1"
+	  OutputSignalType	  "auto"
+	  Output1D		  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "uv"
+	  Position		  [230, 33, 260, 47]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "MATLAB Fcn"
+	  SrcPort		  1
+	  DstBlock		  "uv"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "T"
+	  SrcPort		  1
+	  DstBlock		  "MATLAB Fcn"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      MATLABFcn
+      Name		      "cond()"
+      Position		      [155, 95, 215, 125]
+      MATLABFcn		      "cond(u)"
+      OutputDimensions	      "-1"
+      OutputSignalType	      "auto"
+      Output1D		      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "desired\nimage plane\ncoordinates"
+      Position		      [530, 289, 615, 341]
+      BackgroundColor	      "lightBlue"
+      Value		      "[256 456;456 456;456 256;256 256]"
+      VectorParams1D	      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "feature \nerror"
+      Ports		      [1]
+      Position		      [870, 414, 900, 446]
+      Floating		      off
+      Location		      [26, 100, 350, 339]
+      Open		      on
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      Grid		      "on"
+      TimeRange		      "20"
+      YMin		      "-0.2"
+      YMax		      "0.1"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "feature error"
+      Ports		      [1]
+      Position		      [635, 345, 725, 515]
+      Orientation	      "left"
+      Format		      "bank"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "feature error\nnorm"
+      Ports		      [1]
+      Position		      [940, 350, 1030, 380]
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "fkine"
+      Ports		      [1, 1]
+      Position		      [440, 187, 490, 243]
+      BackgroundColor	      "red"
+      SourceBlock	      "roblocks/fkine"
+      SourceType	      ""
+      robot		      "p560"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "ijacob"
+      Ports		      [1, 1]
+      Position		      [155, 165, 220, 235]
+      BackgroundColor	      "red"
+      SourceBlock	      "roblocks/ijacob"
+      SourceType	      ""
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "jacobn"
+      Ports		      [1, 1]
+      Position		      [35, 168, 100, 232]
+      BackgroundColor	      "red"
+      SourceBlock	      "roblocks/jacobn"
+      SourceType	      ""
+      robot		      "p560"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "manip jac condition"
+      Ports		      [1]
+      Position		      [235, 95, 325, 125]
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      MATLABFcn
+      Name		      "pinv"
+      Position		      [845, 200, 905, 230]
+      BackgroundColor	      "lightBlue"
+      MATLABFcn		      "pinv(u)"
+      OutputDimensions	      "-1"
+      OutputSignalType	      "auto"
+      Output1D		      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "plot"
+      Ports		      [1]
+      Position		      [440, 27, 520, 83]
+      BackgroundColor	      "red"
+      SourceBlock	      "roblocks/plot"
+      SourceType	      ""
+      robot		      "p560"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "visjac\ncondition"
+      Ports		      [1]
+      Position		      [920, 80, 1010, 110]
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "visual\nJacobian"
+      Ports		      [1, 1]
+      Position		      [695, 189, 765, 241]
+      BackgroundColor	      "lightBlue"
+      DropShadow	      on
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskPromptString	      "Camera params|Assumed depth (m)"
+      MaskStyleString	      "edit,edit"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskVariables	      "camdata=@1;z=@2;"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "[8e-3 80e3 80e3 256 256]|2"
+      MaskVariableAliases     ","
+      System {
+	Name			"visual\nJacobian"
+	Location		[186, 604, 495, 730]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+	Block {
+	  BlockType		  Inport
+	  Name			  "uv"
+	  Position		  [25, 33, 55, 47]
+	  Port			  "1"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  MATLABFcn
+	  Name			  "MATLAB Fcn"
+	  Position		  [105, 25, 165, 55]
+	  MATLABFcn		  "visjac(u,camdata,z)"
+	  OutputDimensions	  "[8 6]"
+	  OutputSignalType	  "auto"
+	  Output1D		  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "J"
+	  Position		  [210, 33, 240, 47]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "MATLAB Fcn"
+	  SrcPort		  1
+	  DstBlock		  "J"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "uv"
+	  SrcPort		  1
+	  DstBlock		  "MATLAB Fcn"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      Name		      "q"
+      Labels		      [0, 0]
+      SrcBlock		      "Rate\ncontrolled\nrobot\naxes"
+      SrcPort		      1
+      Points		      [0, 0; 30, 0]
+      Branch {
+	DstBlock		"fkine"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -160]
+	DstBlock		"plot"
+	DstPort			1
+      }
+      Branch {
+	Labels			[2, 0]
+	Points			[0, -160; -375, 0]
+	DstBlock		"jacobn"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "jacobn"
+      SrcPort		      1
+      Points		      [0, 0; 20, 0]
+      Branch {
+	DstBlock		"ijacob"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -90]
+	DstBlock		"cond()"
+	DstPort			1
+      }
+    }
+    Line {
+      Labels		      [1, 0]
+      SrcBlock		      "Product"
+      SrcPort		      1
+      DstBlock		      "Rate\ncontrolled\nrobot\naxes"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "camera"
+      SrcPort		      1
+      Points		      [15, 0; 25, 0]
+      Branch {
+	DstBlock		"visual\nJacobian"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Sum"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "fkine"
+      SrcPort		      1
+      DstBlock		      "camera"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "visual\nJacobian"
+      SrcPort		      1
+      Points		      [30, 0]
+      Branch {
+	DstBlock		"pinv"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -120]
+	DstBlock		"MATLAB Fcn2"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      DstBlock		      "MATLAB Fcn"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "pinv"
+      SrcPort		      1
+      DstBlock		      "Product1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "desired\nimage plane\ncoordinates"
+      SrcPort		      1
+      DstBlock		      "Sum"
+      DstPort		      2
+    }
+    Line {
+      Name		      "feature vel"
+      Labels		      [0, 0]
+      SrcBlock		      "MATLAB Fcn"
+      SrcPort		      1
+      Points		      [50, 0]
+      Branch {
+	Points			[95, 0; 0, -70]
+	DstBlock		"Product1"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 50]
+	Branch {
+	  DstBlock		  "MATLAB Fcn1"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 65]
+	  Branch {
+	    DstBlock		    "feature error"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "feature \nerror"
+	    DstPort		    1
+	  }
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "ijacob"
+      SrcPort		      1
+      DstBlock		      "Product"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "MATLAB Fcn2"
+      SrcPort		      1
+      DstBlock		      "visjac\ncondition"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "cond()"
+      SrcPort		      1
+      DstBlock		      "manip jac condition"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "MATLAB Fcn1"
+      SrcPort		      1
+      DstBlock		      "feature error\nnorm"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Product1"
+      SrcPort		      1
+      Points		      [40, 0; 0, 310; -550, 0]
+      Branch {
+	DstBlock		"Gain1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -135]
+	DstBlock		"Cartesian velocity dmd"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Gain1"
+      SrcPort		      1
+      Points		      [-55, 0; 0, -310]
+      DstBlock		      "Product"
+      DstPort		      2
+    }
+    Annotation {
+      Position		      [164, 19]
+      Text		      "Image-based visual servo control"
+      FontSize		      18
+      FontWeight	      "bold"
+    }
+    Annotation {
+      Position		      [837, 529]
+      Text		      "desired camera velocity"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+Removed Pin From Net: NetName=LED1 Pin=LED1-2
+Removed Pin From Net: NetName=LED1 Pin=M1-J2_26
+Removed Pin From Net: NetName=GND Pin=PWR-2
+Removed Member From Class: ClassName=Robot_demoborad Member=LED1
+Removed Member From Class: ClassName=Robot_demoborad Member=PWR
+Removed Member From Class: ClassName=Robot_demoborad Member=R6
+Removed Member From Class: ClassName=Robot_demoborad Member=R7
+Change Component Designator: OldDesignator=U? NewDesignator=U20
+Added Pin To Net: NetName=GND Pin=BOOT-1
+Added Pin To Net: NetName=GND Pin=BOOT-2
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C32-2
+Added Pin To Net: NetName=GND Pin=C38-1
+Added Pin To Net: NetName=GND Pin=C39-1
+Added Pin To Net: NetName=GND Pin=J1-1
+Added Pin To Net: NetName=GND Pin=P14-4
+Added Pin To Net: NetName=GND Pin=P15-4
+Added Pin To Net: NetName=GND Pin=R3-2
+Added Pin To Net: NetName=GND Pin=R5-2
+Added Pin To Net: NetName=GND Pin=R11-1
+Added Pin To Net: NetName=GND Pin=R16-2
+Added Pin To Net: NetName=GND Pin=R17-2
+Added Pin To Net: NetName=GND Pin=R18-2
+Added Pin To Net: NetName=GND Pin=R19-2
+Added Pin To Net: NetName=GND Pin=R20-2
+Added Pin To Net: NetName=GND Pin=R23-2
+Added Pin To Net: NetName=GND Pin=R33-2
+Added Pin To Net: NetName=GND Pin=R34-2
+Added Pin To Net: NetName=GND Pin=SD_CARD-4
+Added Pin To Net: NetName=GND Pin=U4-14
+Added Pin To Net: NetName=GND Pin=U5-5
+Added Room: Name=Robot_demoborad

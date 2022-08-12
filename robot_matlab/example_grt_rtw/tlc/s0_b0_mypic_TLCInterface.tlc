@@ -1,0 +1,82 @@
+%implements s0_b0_mypic_TLCInterface "C"
+
+%function getInputAddr_0_1_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&example_B.SineWave"
+%endfunction
+
+%function getInput_0_1_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "example_B.SineWave"
+%endfunction
+
+%function getDWorkAddr_0_1_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&example_DW.Scope_PWORK"
+%endfunction
+
+%function getDWork_0_1_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "example_DW.Scope_PWORK"
+%endfunction
+
+%function getOutputAddr_0_0_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&example_B.RealTimeSynchronization"
+%endfunction
+
+%function getOutput_0_0_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "example_B.RealTimeSynchronization"
+%endfunction
+
+%function getDWorkAddr_0_0_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&example_DW.RealTimeSynchronization_PWORK"
+%endfunction
+
+%function getDWork_0_0_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "example_DW.RealTimeSynchronization_PWORK"
+%endfunction
+
+%function getParamAddr_0_0_0_2_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&example_P.RealTimeSynchronization_MaxMiss"
+%endfunction
+
+%function getParam_0_0_0_2_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "example_P.RealTimeSynchronization_MaxMiss"
+%endfunction
+
+%function getParamAddr_0_0_0_2_1_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&example_P.RealTimeSynchronization_YieldWh"
+%endfunction
+
+%function getParam_0_0_0_2_1_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "example_P.RealTimeSynchronization_YieldWh"
+%endfunction
+
+%function getInputAddr_0_1_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&example_B.SineWave"
+%endfunction
+
+%function getInput_0_1_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "example_B.SineWave"
+%endfunction
+
+%function getDWorkAddr_0_1_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&example_DW.Scope_PWORK"
+%endfunction
+
+%function getDWork_0_1_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "example_DW.Scope_PWORK"
+%endfunction
+

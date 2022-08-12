@@ -1,0 +1,307 @@
+C51 COMPILER V9.00   REG_RW                       12/12/2011 19:59:16 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE REG_RW
+OBJECT MODULE PLACED IN Reg_RW.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE Reg_RW.c OPTIMIZE(SIZE) BROWSE DEB
+                    -UG OBJECTEXTEND PAGEWIDTH(79) PAGELENGTH(66) TABS(2)
+
+line level    source
+
+   1          /****************************************************************
+             -********************/
+   2          //  °æÈ¨ËùÓÐ£ºCopyright (c) 2005 - 2010 ICRoute INC.
+   3          /****************************************************************
+             -********************/
+   4          
+   5          #include "STC10F08XE.H"
+   6          #include "Reg_RW.h"
+   7          
+   8          extern void _nop_(void);
+   9          
+  10          /****************************************************************
+             -********************/
+  11          //  Ö÷¿ØMCU¶ÔÓÚLD3320¶ÁÐ´¼Ä´æÆ÷µÄÊµÏÖÓÐËÄÖÖ£º
+  12          //  #define SOFT_PARA_PORT    //  Èí¼þÄ£Äâ²¢ÐÐ¶ÁÐ´
+  13          //  #define HARD_PARA_PORT    //  Ó²¼þÊµÏÖ²¢ÐÐ¶ÁÐ´ £¨ÐèÒªÖ÷¿ØMCUÓÐÓ²¼
+             -þµÄWR/RD¶Ë¿Ú£©
+  14          //  #define SOFT_SPI_PORT   //  Èí¼þÄ£ÄâSPI¶ÁÐ´
+  15          //  #define HARD_SPI_PORT   //  Ó²¼þÊµÏÖSPI¶ÁÐ´   £¨ÐèÒªÖ÷¿ØMCUÓÐÓ²¼
+             -þSPI½Ó¿Ú£©
+  16          /****************************************************************
+             -********************/
+  17          
+  18          
+  19          #ifdef SOFT_PARA_PORT
+              
+                  #define DELAY_NOP _nop_();_nop_();_nop_();
+                  sbit  LD_WR   = P3^6;
+                  sbit  LD_RD = P3^7;
+                  sbit  LD_CS = P2^6;
+                  sbit  LD_A0 = P2^0;
+                  void LD_WriteReg( unsigned char address, unsigned char dataout 
+             -)
+                  {
+                    P0 = address;
+                    LD_A0 = 1;
+                    LD_CS = 0;
+                    LD_WR = 0;
+                    DELAY_NOP;
+                  
+                    LD_WR = 1;
+                    LD_CS = 1;
+                    DELAY_NOP;
+                  
+                    P0 = dataout;
+                    LD_A0 = 0;
+                    LD_CS = 0;
+                    LD_WR = 0;
+                    DELAY_NOP;
+                  
+                    LD_WR = 1;
+                    LD_CS = 1;
+                    DELAY_NOP;
+                  }
+                  
+                  unsigned char LD_ReadReg( unsigned char address )
+C51 COMPILER V9.00   REG_RW                       12/12/2011 19:59:16 PAGE 2   
+
+                  {
+                    unsigned char datain;
+                  
+                    P0 = address;
+                    LD_A0 = 1;
+                    LD_CS = 0;
+                    LD_WR = 0;
+                    DELAY_NOP;
+                  
+                    LD_WR = 1;
+                    LD_CS = 1;
+                    DELAY_NOP;
+                  
+                    LD_A0 = 0;
+                    LD_CS = 0;
+                    LD_RD = 0;
+                    DELAY_NOP;
+              
+                    datain = P0;
+                    LD_RD = 1;
+                    LD_CS = 1;
+                    DELAY_NOP;
+                  
+                    return datain;
+                  }
+              #endif
+  76          
+  77          #ifdef HARD_PARA_PORT
+  78          
+  79              #define LD_INDEX_PORT   (*((volatile unsigned char xdata*)(0x810
+             -0))) 
+  80              #define LD_DATA_PORT    (*((volatile unsigned char xdata*)(0x8000
+             -))) 
+  81              
+  82              //ÆÀ¹À°åÉÏ MCUµÄA8 Á¬½Óµ½ LDÐ¾Æ¬µÄAD
+  83              //         MCUµÄA14 Á¬½Óµ½ LDÐ¾Æ¬µÄCSB
+  84              //         MCUµÄRD¡¢WR Á¬½Ó LDÐ¾Æ¬µÄRD¡¢WR (xdata ¶ÁÐ´Ê±×Ô¶¯²úÉ
+             -úµÍÐÅºÅ)
+  85              //
+  86              //0x8100µÄ¶þ½øÖÆÊÇ10000001 00000000   CSB=0 AD=1
+  87              //                 ^     ^
+  88              //0x8000µÄ¶þ½øÖÆÊÇ10000000 00000000   CSB=0 AD=0
+  89              //                 ^     ^
+  90              
+  91              void LD_WriteReg( unsigned char address, unsigned char dataout 
+             -)
+  92              {
+  93   1            LD_INDEX_PORT  = address;         
+  94   1            LD_DATA_PORT = dataout;          
+  95   1          }
+  96              
+  97              unsigned char LD_ReadReg( unsigned char address )
+  98              {
+  99   1            LD_INDEX_PORT = address;         
+ 100   1            return (unsigned char)LD_DATA_PORT;     
+ 101   1          }
+ 102          #endif
+ 103          
+ 104          #ifdef SOFT_SPI_PORT
+                  #define DELAY_NOP _nop_();_nop_();_nop_();
+                  
+                  sbit SCS=P2^6;    //Ð¾Æ¬Æ¬Ñ¡ÐÅºÅ
+                  sbit SDCK=P0^2;   //SPI Ê±ÖÓÐÅºÅ
+                  sbit SDI=P0^0;    //SPI Êý¾ÝÊäÈë
+C51 COMPILER V9.00   REG_RW                       12/12/2011 19:59:16 PAGE 3   
+
+                  sbit SDO=P0^1;    //SPI Êý¾ÝÊä³ö
+                  sbit SPIS=P3^6;   //SPIÄ£Ê½ÉèÖÃ£ºµÍÓÐÐ§¡£
+              
+                  void LD_WriteReg(unsigned char address,unsigned char dataout)
+                  {
+                    unsigned char i = 0;
+                    unsigned char command=0x04;
+                    SPIS =0;
+                    SCS = 0;
+                    DELAY_NOP;
+                  
+                    //write command
+                    for (i=0;i < 8; i++)
+                    {
+                      if ((command & 0x80) == 0x80) 
+                        SDI = 1;
+                      else
+                        SDI = 0;
+                      
+                      DELAY_NOP;
+                      SDCK = 0;
+                      command = (command << 1);  
+                      DELAY_NOP;
+                      SDCK = 1;  
+                    }
+                    //write address
+                    for (i=0;i < 8; i++)
+                    {
+                      if ((address & 0x80) == 0x80) 
+                        SDI = 1;
+                      else
+                        SDI = 0;
+                      DELAY_NOP;
+                      SDCK = 0;
+                      address = (address << 1); 
+                      DELAY_NOP;
+                      SDCK = 1;  
+                    }
+                    //write data
+                    for (i=0;i < 8; i++)
+                    {
+                      if ((dataout & 0x80) == 0x80) 
+                        SDI = 1;
+                      else
+                        SDI = 0;
+                      DELAY_NOP;
+                      SDCK = 0;
+                      dataout = (dataout << 1); 
+                      DELAY_NOP;
+                      SDCK = 1;  
+                    }
+                    DELAY_NOP;
+                    SCS = 1;
+                  }
+              
+                  unsigned char LD_ReadReg(unsigned char address)
+                  {
+                    unsigned char i = 0; 
+                    unsigned char datain =0 ;
+                    unsigned char temp = 0; 
+                    unsigned char command=0x05;
+                    SPIS =0;
+                    SCS = 0;
+                    DELAY_NOP;
+C51 COMPILER V9.00   REG_RW                       12/12/2011 19:59:16 PAGE 4   
+
+                  
+                    //write command
+                    for (i=0;i < 8; i++)
+                    {
+                      if ((command & 0x80) == 0x80) 
+                        SDI = 1;
+                      else
+                        SDI = 0;
+                      DELAY_NOP;
+                      SDCK = 0;
+                      command = (command << 1);  
+                      DELAY_NOP;
+                      SDCK = 1;  
+                    }
+              
+                    //write address
+                    for (i=0;i < 8; i++)
+                    {
+                      if ((address & 0x80) == 0x80) 
+                        SDI = 1;
+                      else
+                        SDI = 0;
+                      DELAY_NOP;
+                      SDCK = 0;
+                      address = (address << 1); 
+                      DELAY_NOP;
+                      SDCK = 1;  
+                    }
+                    DELAY_NOP;
+              
+                    //Read data
+                    for (i=0;i < 8; i++)
+                    {
+                      datain = (datain << 1);
+                      temp = SDO;
+                      DELAY_NOP;
+                      SDCK = 0;  
+                      if (temp == 1)  
+                        datain |= 0x01; 
+                      DELAY_NOP;
+                      SDCK = 1;  
+                    }
+                  
+                    DELAY_NOP;
+                    SCS = 1;
+                    return datain;
+                  }
+              
+              #endif
+ 223          
+ 224          #ifdef HARD_SPI_PORT
+                  /*
+                  STCµ¥Æ¬»ú£¨´øSPI¿ÚµÄÖÖÀà£©¼æ¹Ë¶ÁÐ´µÄº¯ÊýÀý³Ì
+                  unsigend char SPI_TR( unsigned char x ) 
+                  { 
+                    SPSTAT=0xC0;  
+                    SPDAT=x;  
+                    while(!(SPSTAT&0x80));  
+                    return SPDAT;
+                  }
+                  
+                  --------------------------------------------------
+                  AVRµ¥Æ¬»ú£¨´øSPI¿ÚµÄÖÖÀà£©¼æ¹Ë¶ÁÐ´µÄº¯ÊýÀý³Ì
+                  unsigend char SPI_TR( unsigned char x ) 
+C51 COMPILER V9.00   REG_RW                       12/12/2011 19:59:16 PAGE 5   
+
+                  { 
+                    SPDR=x;  
+                    while(!(SPSR & (1<<SPIF)));  
+                    return SPDR;
+                  }
+              
+                  */
+                  void LD_WriteReg( unsigned char address, unsigned char dataout 
+             -)
+                  {
+                    // ÕâÀïÌí¼ÓÓ²¼þSPI¿ÚµÄ²Ù×÷´úÂë£º
+                    SPI_TR(0x04); // ·¢ËÍ 0x04
+                    SPI_TR(address); // ·¢ËÍ address
+                    SPI_TR(dataout); // ·¢ËÍ dataout
+                  }
+                  unsigned char LD_ReadReg( unsigned char address )
+                  {
+                    // ÕâÀïÌí¼ÓÓ²¼þSPI¿ÚµÄ²Ù×÷´úÂë£º
+                    SPI_TR(0x05); // ·¢ËÍ 0x05
+                    SPI_TR(address); // ·¢ËÍ address
+                    return (SPI_TR(0)); // ¶Á³öÊý¾Ý, ²¢·µ»Ø
+                  }
+              #endif
+ 260          
+ 261          
+ 262          
+ 263          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     22    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

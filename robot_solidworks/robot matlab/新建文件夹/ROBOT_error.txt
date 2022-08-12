@@ -1,0 +1,24 @@
+Constrained Instances: 'body_1-1/body_1.sldasm-Part-2-1', 'back batter-1'
+Constraint Name: 锁定1
+Error Details: Constraint is not supported. The constraint has been exported as unknown constraint.
+---------------------------------------------------------------------------------
+Constrained Instances: 'body_1-1/body_1.sldasm-Part-2-1', 'back batter-1'
+Constraint Name: 锁定1
+Error Details: Constraint geometry is not supported. The constraint geometry has been exported as unknown geometry.
+---------------------------------------------------------------------------------
+Constrained Instances: 'body_1-1/body_1.sldasm-Part-2-1', 'back batter-1'
+Constraint Name: 锁定1
+Error Details: Constraint geometry is not supported. The constraint geometry has been exported as unknown geometry.
+---------------------------------------------------------------------------------
+Constrained Instances: 'body_1-1/body_1.sldasm-Part-2-1', 'back of batter-1'
+Constraint Name: 锁定5
+Error Details: Constraint is not supported. The constraint has been exported as unknown constraint.
+---------------------------------------------------------------------------------
+Constrained Instances: 'body_1-1/body_1.sldasm-Part-2-1', 'back of batter-1'
+Constraint Name: 锁定5
+Error Details: Constraint geometry is not supported. The constraint geometry has been exported as unknown geometry.
+---------------------------------------------------------------------------------
+Constrained Instances: 'body_1-1/body_1.sldasm-Part-2-1', 'back of batter-1'
+Constraint Name: 锁定5
+Error Details: Constraint geometry is not supported. The constraint geometry has been exported as unknown geometry.
+---------------------------------------------------------------------------------

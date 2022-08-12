@@ -1,0 +1,27 @@
+%implements s0_b0_7o2ic_Derivatives "C"
+
+%function Derivatives(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcDerivativesFcnOfS0B0 = OpaqueTLCBlockFcn("Derivatives", 0, 0, 0, 2)
+%assign tlcDerivativesFcnOfS0B1 = OpaqueTLCBlockFcn("Derivatives", 0, 1, 0, 2)
+%if !WHITE_SPACE(tlcDerivativesFcnOfS0B0)
+/* Derivatives for M-S-Function: '<Root>/Serial Configuration' */
+%<SLibCG_DumpSSCode("/*@[1c13*/",tlcDerivativesFcnOfS0B0,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcDerivativesFcnOfS0B1)
+/* Derivatives for M-S-Function: '<Root>/Serial Send' */
+%<SLibCG_DumpSSCode("/*@[1c15*/",tlcDerivativesFcnOfS0B1,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function DerivativesFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Derivatives(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 2, fcnProtoType)>
+%endfunction

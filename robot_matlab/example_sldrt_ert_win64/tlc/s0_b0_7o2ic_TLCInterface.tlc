@@ -1,0 +1,242 @@
+%implements s0_b0_7o2ic_TLCInterface "C"
+
+%function getInputAddr_0_1_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1e3d*//*@>1e37*/example_B./*@>1e42*/Constant"
+%endfunction
+
+%function getInput_0_1_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1e4f*/example_B./*@>1e5b*/Constant"
+%endfunction
+
+%function getInputAddr_0_2_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1e80*//*@>1e7a*/example_B./*@>1e85*/SineWave"
+%endfunction
+
+%function getInput_0_2_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1e92*/example_B./*@>1e9e*/SineWave"
+%endfunction
+
+%function getOutputAddr_0_2_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1eaf*//*@>1ea9*/example_B./*@>1eb4*/SFunction"
+%endfunction
+
+%function getOutput_0_2_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1ec1*/example_B./*@>1ecd*/SFunction"
+%endfunction
+
+%function getParamAddr_0_2_0_0_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1ee0*//*@>1eda*/example_P./*@>1ee5*/SFunction_P1"
+%endfunction
+
+%function getParam_0_2_0_0_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1ef2*/example_P./*@>1efe*/SFunction_P1"
+%endfunction
+
+%function getInputAddr_0_3_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1f21*//*@>1f1b*/example_B./*@>1f26*/SineWave"
+%endfunction
+
+%function getInput_0_3_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1f33*/example_B./*@>1f3f*/SineWave"
+%endfunction
+
+%function getInputAddr_0_3_0_0_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1f50*//*@>1f4a*/example_B./*@>1f55*/SFunction"
+%endfunction
+
+%function getInput_0_3_0_0_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1f62*/example_B./*@>1f6e*/SFunction"
+%endfunction
+
+%function getDWorkAddr_0_3_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1f7f*//*@>1f79*/example_DW./*@>1f84*/Scope_PWORK"
+%endfunction
+
+%function getDWork_0_3_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1f91*/example_DW./*@>1f9d*/Scope_PWORK"
+%endfunction
+
+%function getInputAddr_0_1_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1fd6*//*@>1fd0*/example_B./*@>1fdb*/Constant"
+%endfunction
+
+%function getInput_0_1_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1fe8*/example_B./*@>1ff4*/Constant"
+%endfunction
+
+%function getInputAddr_0_2_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<2019*//*@>2013*/example_B./*@>201e*/SineWave"
+%endfunction
+
+%function getInput_0_2_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>202b*/example_B./*@>2037*/SineWave"
+%endfunction
+
+%function getOutputAddr_0_2_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<2048*//*@>2042*/example_B./*@>204d*/SFunction"
+%endfunction
+
+%function getOutput_0_2_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>205a*/example_B./*@>2066*/SFunction"
+%endfunction
+
+%function getParamAddr_0_2_0_1_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<2079*//*@>2073*/example_P./*@>207e*/SFunction_P1"
+%endfunction
+
+%function getParam_0_2_0_1_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>208b*/example_P./*@>2097*/SFunction_P1"
+%endfunction
+
+%function getInputAddr_0_1_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<20ce*//*@>20c8*/example_B./*@>20d3*/Constant"
+%endfunction
+
+%function getInput_0_1_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>20e0*/example_B./*@>20ec*/Constant"
+%endfunction
+
+%function getInputAddr_0_1_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<2125*//*@>211f*/example_B./*@>212a*/Constant"
+%endfunction
+
+%function getInput_0_1_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>2137*/example_B./*@>2143*/Constant"
+%endfunction
+
+%function getInputAddr_0_1_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<217c*//*@>2176*/example_B./*@>2181*/Constant"
+%endfunction
+
+%function getInput_0_1_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>218e*/example_B./*@>219a*/Constant"
+%endfunction
+
+%function getInputAddr_0_2_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<21bf*//*@>21b9*/example_B./*@>21c4*/SineWave"
+%endfunction
+
+%function getInput_0_2_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>21d1*/example_B./*@>21dd*/SineWave"
+%endfunction
+
+%function getOutputAddr_0_2_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<21ee*//*@>21e8*/example_B./*@>21f3*/SFunction"
+%endfunction
+
+%function getOutput_0_2_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>2200*/example_B./*@>220c*/SFunction"
+%endfunction
+
+%function getParamAddr_0_2_0_4_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<221f*//*@>2219*/example_P./*@>2224*/SFunction_P1"
+%endfunction
+
+%function getParam_0_2_0_4_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>2231*/example_P./*@>223d*/SFunction_P1"
+%endfunction
+
+%function getInputAddr_0_1_0_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<22b0*//*@>22aa*/example_B./*@>22b5*/Constant"
+%endfunction
+
+%function getInput_0_1_0_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>22c2*/example_B./*@>22ce*/Constant"
+%endfunction
+
+%function getInputAddr_0_2_0_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<22f3*//*@>22ed*/example_B./*@>22f8*/SineWave"
+%endfunction
+
+%function getInput_0_2_0_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>2305*/example_B./*@>2311*/SineWave"
+%endfunction
+
+%function getOutputAddr_0_2_0_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<2322*//*@>231c*/example_B./*@>2327*/SFunction"
+%endfunction
+
+%function getOutput_0_2_0_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>2334*/example_B./*@>2340*/SFunction"
+%endfunction
+
+%function getParamAddr_0_2_0_5_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<2353*//*@>234d*/example_P./*@>2358*/SFunction_P1"
+%endfunction
+
+%function getParam_0_2_0_5_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>2365*/example_P./*@>2371*/SFunction_P1"
+%endfunction
+
+%function getInputAddr_0_3_0_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<23d0*//*@>23ca*/example_B./*@>23d5*/SineWave"
+%endfunction
+
+%function getInput_0_3_0_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>23e2*/example_B./*@>23ee*/SineWave"
+%endfunction
+
+%function getInputAddr_0_3_0_5_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<23ff*//*@>23f9*/example_B./*@>2404*/SFunction"
+%endfunction
+
+%function getInput_0_3_0_5_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>2411*/example_B./*@>241d*/SFunction"
+%endfunction
+
+%function getDWorkAddr_0_3_0_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<242e*//*@>2428*/example_DW./*@>2433*/Scope_PWORK"
+%endfunction
+
+%function getDWork_0_3_0_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>2440*/example_DW./*@>244c*/Scope_PWORK"
+%endfunction
+

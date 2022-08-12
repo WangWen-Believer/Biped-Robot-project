@@ -1,0 +1,452 @@
+Model {
+  Name			  "demo5"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "all"
+  WideLines		  on
+  ShowLineDimensions	  on
+  ShowPortDataTypes	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  on
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sat Jan 26 02:15:13 2002"
+  Creator		  "pic"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "pic"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Mon Apr  8 11:39:33 2002"
+  ModelVersionFormat	  "1.%<AutoIncrement:6>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "10.0"
+  SolverMode		  "Auto"
+  Solver		  "ode45"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  off
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "oneshot"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  ExtModeLogAll		  on
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  off
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "demo5"
+    Location		    [505, 513, 1344, 896]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "portrait"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    AutoZoom		    on
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Clock
+      Name		      "Clock"
+      Position		      [20, 154, 70, 176]
+      ForegroundColor	      "magenta"
+      DisplayTime	      on
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      Position		      [100, 280, 130, 310]
+      ForegroundColor	      "magenta"
+      ShowName		      off
+      Value		      "0"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Fcn
+      Name		      "Fcn"
+      Position		      [95, 150, 155, 180]
+      ForegroundColor	      "magenta"
+      ShowName		      off
+      Expr		      "0.05*cos(u)+0.5"
+    }
+    Block {
+      BlockType		      Fcn
+      Name		      "Fcn1"
+      Position		      [95, 200, 155, 230]
+      ForegroundColor	      "magenta"
+      ShowName		      off
+      Expr		      "0.05*sin(u)"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain"
+      Position		      [460, 169, 500, 201]
+      ShowName		      off
+      Gain		      "-0.6"
+      Multiplication	      "Element-wise(K.*u)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Product
+      Name		      "Product"
+      Ports		      [2, 1]
+      Position		      [400, 155, 435, 215]
+      ShowName		      off
+      Inputs		      "2"
+      Multiplication	      "Matrix(*)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Rate\ncontrolled\nrobot\naxes"
+      Ports		      [1, 1]
+      Position		      [530, 162, 565, 208]
+      DropShadow	      on
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "[0.2763    0.9125    2.9359         0    2.4348"
+"   -0.2763]"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      Port {
+	PortNumber		1
+	Name			"q"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "T2xyz"
+      Ports		      [1, 3]
+      Position		      [705, 217, 755, 273]
+      BackgroundColor	      "red"
+      SourceBlock	      "roblocks/T2xyz"
+      SourceType	      ""
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "XY Graph"
+      Ports		      [2]
+      Position		      [790, 216, 820, 249]
+      SourceBlock	      "simulink3/Sinks/XY Graph"
+      SourceType	      "XY scope."
+      xmin		      "0.4"
+      xmax		      "0.6"
+      ymin		      "-0.1"
+      ymax		      "0.1"
+      st		      "-1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "fkine"
+      Ports		      [1, 1]
+      Position		      [615, 157, 665, 213]
+      BackgroundColor	      "red"
+      SourceBlock	      "roblocks/fkine"
+      SourceType	      ""
+      robot		      "p560"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "ijacob"
+      Ports		      [1, 1]
+      Position		      [300, 55, 365, 125]
+      BackgroundColor	      "red"
+      SourceBlock	      "roblocks/ijacob"
+      SourceType	      ""
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "jacob0"
+      Ports		      [1, 1]
+      Position		      [210, 55, 275, 125]
+      BackgroundColor	      "red"
+      SourceBlock	      "roblocks/jacob0"
+      SourceType	      "Unknown"
+      robot		      "p560"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "plot"
+      Ports		      [1]
+      Position		      [710, 97, 790, 153]
+      BackgroundColor	      "red"
+      SourceBlock	      "roblocks/plot"
+      SourceType	      ""
+      robot		      "p560"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "tr2diff"
+      Ports		      [2, 1]
+      Position		      [275, 172, 325, 228]
+      BackgroundColor	      "red"
+      SourceBlock	      "roblocks/tr2diff"
+      SourceType	      ""
+      robot		      "robot"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "xyz2T"
+      Ports		      [3, 1]
+      Position		      [195, 158, 245, 212]
+      BackgroundColor	      "red"
+      SourceBlock	      "roblocks/xyz2T"
+      SourceType	      ""
+    }
+    Line {
+      SrcBlock		      "Clock"
+      SrcPort		      1
+      Points		      [0, 0]
+      Branch {
+	Points			[0, 0]
+	DstBlock		"Fcn"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 50]
+	DstBlock		"Fcn1"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "q"
+      Labels		      [0, 0]
+      SrcBlock		      "Rate\ncontrolled\nrobot\naxes"
+      SrcPort		      1
+      Points		      [0, 0; 15, 0]
+      Branch {
+	DstBlock		"fkine"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -60]
+	DstBlock		"plot"
+	DstPort			1
+      }
+      Branch {
+	Labels			[2, 0]
+	Points			[0, -155; -390, 0]
+	DstBlock		"jacob0"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      Points		      [45, 0]
+      DstBlock		      "xyz2T"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "T2xyz"
+      SrcPort		      1
+      DstBlock		      "XY Graph"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "T2xyz"
+      SrcPort		      2
+      Points		      [15, 0]
+      DstBlock		      "XY Graph"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "tr2diff"
+      SrcPort		      1
+      DstBlock		      "Product"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "xyz2T"
+      SrcPort		      1
+      DstBlock		      "tr2diff"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "fkine"
+      SrcPort		      1
+      Points		      [15, 0; 0, 60; -5, 0]
+      Branch {
+	DstBlock		"T2xyz"
+	DstPort			1
+      }
+      Branch {
+	Points			[-425, 0; 0, -30]
+	DstBlock		"tr2diff"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Fcn1"
+      SrcPort		      1
+      Points		      [0, -30]
+      DstBlock		      "xyz2T"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Fcn"
+      SrcPort		      1
+      DstBlock		      "xyz2T"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "jacob0"
+      SrcPort		      1
+      DstBlock		      "ijacob"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Product"
+      SrcPort		      1
+      DstBlock		      "Gain"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "ijacob"
+      SrcPort		      1
+      Points		      [15, 0]
+      DstBlock		      "Product"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain"
+      SrcPort		      1
+      DstBlock		      "Rate\ncontrolled\nrobot\naxes"
+      DstPort		      1
+    }
+    Annotation {
+      Position		      [91, 133]
+      ForegroundColor	      "magenta"
+      Text		      "Cartesian circle"
+    }
+    Annotation {
+      Position		      [99, 19]
+      Text		      "Cartesian control"
+      FontSize		      18
+      FontWeight	      "bold"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+Added Component: Designator=P3(Head_SOP20)
+Added Pin To Net: NetName=+5V Pin=P3-1
+Added Pin To Net: NetName=GND Pin=P3-2
+Added Pin To Net: NetName=+5V Pin=P3-3
+Added Pin To Net: NetName=GND Pin=P3-4
+Added Pin To Net: NetName=+5V Pin=P3-5
+Added Pin To Net: NetName=GND Pin=P3-6
+Added Pin To Net: NetName=+5V Pin=P3-7
+Added Pin To Net: NetName=GND Pin=P3-8
+Added Pin To Net: NetName=+5V Pin=P3-9
+Added Pin To Net: NetName=GND Pin=P3-10
+Added Pin To Net: NetName=+5V Pin=P3-11
+Added Pin To Net: NetName=GND Pin=P3-12
+Added Pin To Net: NetName=+5V Pin=P3-13
+Added Pin To Net: NetName=GND Pin=P3-14
+Added Pin To Net: NetName=+5V Pin=P3-15
+Added Pin To Net: NetName=GND Pin=P3-16
+Added Pin To Net: NetName=+5V Pin=P3-17
+Added Pin To Net: NetName=GND Pin=P3-18
+Added Pin To Net: NetName=+5V Pin=P3-19
+Added Pin To Net: NetName=GND Pin=P3-20
+Added Member To Class: ClassName=power_manage Member=Component P3 Header 10X2
+Added Room: Name=power_manage

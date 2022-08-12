@@ -1,0 +1,10 @@
+Change Component Footprint: Designator=D? Old Footprint=RESC2012M New Footprint=6-0805_N
+Change Component Footprint: Designator=R? Old Footprint=RESC2012N New Footprint=6-0805_N
+Change Component Footprint: Designator=RG1 Old Footprint=RESC2012N New Footprint=6-0805_N
+Change Component Footprint: Designator=RG2 Old Footprint=RESC2012N New Footprint=6-0805_N
+Change Component Footprint: Designator=RG3 Old Footprint=RESC2012N New Footprint=6-0805_N
+Change Component Footprint: Designator=RG4 Old Footprint=RESC2012N New Footprint=6-0805_N
+Added Pin To Net: NetName=GND Pin=U1-11
+Added Pin To Net: NetName=NetU1_5 Pin=U1-11
+Added Pin To Net: NetName=NetU1_10 Pin=U1-11
+Added Room: Name=FSR Current-to-Voltage Converter

@@ -1,0 +1,428 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Wen Wang, Microsoft, LIC=X1ERA-1I7CT-WIV5K-ZW2XJ-A8NHF-X3FIU
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.24.1
+Toolchain Path:  E:\MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.26.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+D:\My private\study to japan\ROBOT\机器人步态规划\BipedRobot\USER\BipedRobot_Control.uvprojx
+Project File Date:  12/13/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'E:\MDK\ARM\ARMCC\Bin'
+Build target 'BipedRobot_Control'
+compiling stm32f7xx_hal_can.c...
+compiling mpu.c...
+compiling stm32f7xx_hal_qspi.c...
+compiling mpu9250.c...
+compiling stm32f7xx_hal_tim.c...
+compiling eMPL_outputs.c...
+..\DMP\mllite\ml_math_func.h(34): warning:  #260-D: explicit type is missing ("int" assumed)
+      static inline float inv_q30_to_float(long q30)
+..\DMP\mllite\ml_math_func.h(34): error:  #65: expected a ";"
+      static inline float inv_q30_to_float(long q30)
+..\DMP\mllite\ml_math_func.h(57): warning:  #12-D: parsing restarts here after previous syntax error
+      long inv_q29_mult(long a, long b);
+..\DMP\mllite\ml_math_func.h(108): warning:  #260-D: explicit type is missing ("int" assumed)
+      static inline long inv_delta_time_ms(inv_time_t t1, inv_time_t t2)
+..\DMP\mllite\ml_math_func.h(108): error:  #65: expected a ";"
+      static inline long inv_delta_time_ms(inv_time_t t1, inv_time_t t2)
+..\DMP\mllite\ml_math_func.h(119): warning:  #12-D: parsing restarts here after previous syntax error
+      double quaternion_to_rotation_angle(const long *quat);
+..\DMP\eMPL-hal\eMPL_outputs.c(119): warning:  #223-D: function "inv_q29_mult" declared implicitly
+      q00 = inv_q29_mult(eMPL_out.quat[0], eMPL_out.quat[0]);
+..\DMP\eMPL-hal\eMPL_outputs.c(157): warning:  #223-D: function "inv_q29_mult" declared implicitly
+      q00 = inv_q29_mult(eMPL_out.quat[0], eMPL_out.quat[0]);
+..\DMP\eMPL-hal\eMPL_outputs.c: 6 warnings, 2 errors
+compiling data_builder.c...
+..\DMP\mllite\ml_math_func.h(34): warning:  #260-D: explicit type is missing ("int" assumed)
+      static inline float inv_q30_to_float(long q30)
+..\DMP\mllite\ml_math_func.h(34): error:  #65: expected a ";"
+      static inline float inv_q30_to_float(long q30)
+..\DMP\mllite\ml_math_func.h(57): warning:  #12-D: parsing restarts here after previous syntax error
+      long inv_q29_mult(long a, long b);
+..\DMP\mllite\ml_math_func.h(108): warning:  #260-D: explicit type is missing ("int" assumed)
+      static inline long inv_delta_time_ms(inv_time_t t1, inv_time_t t2)
+..\DMP\mllite\ml_math_func.h(108): error:  #65: expected a ";"
+      static inline long inv_delta_time_ms(inv_time_t t1, inv_time_t t2)
+..\DMP\mllite\ml_math_func.h(119): warning:  #12-D: parsing restarts here after previous syntax error
+      double quaternion_to_rotation_angle(const long *quat);
+..\DMP\driver\include\log.h(339): warning:  #260-D: explicit type is missing ("int" assumed)
+  static inline void __print_result_location(int result,
+..\DMP\driver\include\log.h(339): error:  #65: expected a ";"
+  static inline void __print_result_location(int result,
+..\DMP\mllite\data_builder.c(34): warning:  #12-D: parsing restarts here after previous syntax error
+  typedef inv_error_t (*inv_process_cb_func)(struct inv_sensor_cal_t *data);
+..\DMP\mllite\data_builder.c(37): error:  #20: identifier "inv_process_cb_func" is undefined
+      inv_process_cb_func func;
+..\DMP\mllite\data_builder.c(1168): warning:  #223-D: function "inv_q30_to_float" declared implicitly
+          sensors.soft_iron.matrix_f[i] = inv_q30_to_float(matrix[i]);
+..\DMP\mllite\data_builder.c: 7 warnings, 4 errors
+compiling stm32f7xx_hal_tim_ex.c...
+compiling hal_outputs.c...
+..\DMP\driver\include\log.h(339): warning:  #260-D: explicit type is missing ("int" assumed)
+  static inline void __print_result_location(int result,
+..\DMP\driver\include\log.h(339): error:  #65: expected a ";"
+  static inline void __print_result_location(int result,
+..\DMP\mllite\ml_math_func.h(32): warning:  #12-D: parsing restarts here after previous syntax error
+      }   inv_biquad_filter_t;
+..\DMP\mllite\ml_math_func.h(34): warning:  #260-D: explicit type is missing ("int" assumed)
+      static inline float inv_q30_to_float(long q30)
+..\DMP\mllite\ml_math_func.h(34): error:  #65: expected a ";"
+      static inline float inv_q30_to_float(long q30)
+..\DMP\mllite\ml_math_func.h(57): warning:  #12-D: parsing restarts here after previous syntax error
+      long inv_q29_mult(long a, long b);
+..\DMP\mllite\ml_math_func.h(108): warning:  #260-D: explicit type is missing ("int" assumed)
+      static inline long inv_delta_time_ms(inv_time_t t1, inv_time_t t2)
+..\DMP\mllite\ml_math_func.h(108): error:  #65: expected a ";"
+      static inline long inv_delta_time_ms(inv_time_t t1, inv_time_t t2)
+..\DMP\mllite\ml_math_func.h(119): warning:  #12-D: parsing restarts here after previous syntax error
+      double quaternion_to_rotation_angle(const long *quat);
+..\DMP\mllite\ml_math_func.h(122): error:  #20: identifier "inv_biquad_filter_t" is undefined
+      void inv_init_biquad_filter(inv_biquad_filter_t *pFilter, float *pBiquadCoeff);
+..\DMP\mllite\ml_math_func.h(123): error:  #20: identifier "inv_biquad_filter_t" is undefined
+      float inv_biquad_filter_process(inv_biquad_filter_t *pFilter, float input);
+..\DMP\mllite\ml_math_func.h(124): error:  #20: identifier "inv_biquad_filter_t" is undefined
+      void inv_calc_state_to_match_output(inv_biquad_filter_t *pFilter, float input);
+..\DMP\mllite\hal_outputs.c(43): error:  #20: identifier "inv_biquad_filter_t" is undefined
+      inv_biquad_filter_t lp_filter[3];
+..\DMP\mllite\hal_outputs.c: 6 warnings, 7 errors
+compiling message_layer.c...
+..\DMP\driver\include\log.h(339): warning:  #260-D: explicit type is missing ("int" assumed)
+  static inline void __print_result_location(int result,
+..\DMP\driver\include\log.h(339): error:  #65: expected a ";"
+  static inline void __print_result_location(int result,
+..\DMP\mllite\message_layer.c(21): warning:  #12-D: parsing restarts here after previous syntax error
+  };
+..\DMP\mllite\message_layer.c(36): error:  #70: incomplete type is not allowed
+          mh.message &= ~clear;
+..\DMP\mllite\message_layer.c(37): error:  #70: incomplete type is not allowed
+          mh.message |= set;
+..\DMP\mllite\message_layer.c(50): error:  #70: incomplete type is not allowed
+      msg = mh.message;
+..\DMP\mllite\message_layer.c(52): error:  #70: incomplete type is not allowed
+          mh.message = 0;
+..\DMP\mllite\message_layer.c(23): error:  #235: variable "mh" was declared with a never-completed type
+  static struct message_holder_t mh;
+..\DMP\mllite\message_layer.c: 2 warnings, 6 errors
+compiling ml_math_func.c...
+..\DMP\mllite\ml_math_func.h(34): warning:  #260-D: explicit type is missing ("int" assumed)
+      static inline float inv_q30_to_float(long q30)
+..\DMP\mllite\ml_math_func.h(34): error:  #65: expected a ";"
+      static inline float inv_q30_to_float(long q30)
+..\DMP\mllite\ml_math_func.h(57): warning:  #12-D: parsing restarts here after previous syntax error
+      long inv_q29_mult(long a, long b);
+..\DMP\mllite\ml_math_func.h(108): warning:  #260-D: explicit type is missing ("int" assumed)
+      static inline long inv_delta_time_ms(inv_time_t t1, inv_time_t t2)
+..\DMP\mllite\ml_math_func.h(108): error:  #65: expected a ";"
+      static inline long inv_delta_time_ms(inv_time_t t1, inv_time_t t2)
+..\DMP\mllite\ml_math_func.h(119): warning:  #12-D: parsing restarts here after previous syntax error
+      double quaternion_to_rotation_angle(const long *quat);
+..\DMP\mllite\ml_math_func.c(114): warning:  #223-D: function "inv_q30_to_float" declared implicitly
+      angW = -atan2f(inv_q30_to_float(q2[2]), inv_q30_to_float(q2[1]));
+..\DMP\mllite\ml_math_func.c(258): warning:  #223-D: function "inv_q30_to_double" declared implicitly
+              inv_q30_to_double(vec[ii]) * inv_q30_to_double(vec[ii]);
+..\DMP\mllite\ml_math_func.c: 6 warnings, 2 errors
+compiling main.c...
+compiling mlmath.c...
+compiling mpl.c...
+..\DMP\driver\include\log.h(339): warning:  #260-D: explicit type is missing ("int" assumed)
+  static inline void __print_result_location(int result,
+..\DMP\driver\include\log.h(339): error:  #65: expected a ";"
+  static inline void __print_result_location(int result,
+..\DMP\mllite\mpl.h(16): warning:  #12-D: parsing restarts here after previous syntax error
+  inv_error_t inv_init_mpl(void);
+..\DMP\mllite\mpl.c(34): warning:  #223-D: function "__print_result_location" declared implicitly
+      
+NV_ERROR_CHECK(inv_init_start_manager());
+..\DMP\mllite\mpl.c(37): warning:  #223-D: function "__print_result_location" declared implicitly
+      
+NV_ERROR_CHECK(inv_init_data_builder());
+..\DMP\mllite\mpl.c(39): warning:  #223-D: function "__print_result_location" declared implicitly
+      
+NV_ERROR_CHECK(inv_enable_results_holder());
+..\DMP\mllite\mpl.c(66): warning:  #223-D: function "__print_result_location" declared implicitly
+      
+NV_ERROR_CHECK(inv_execute_mpl_start_notification());
+..\DMP\mllite\mpl.c: 6 warnings, 1 error
+compiling results_holder.c...
+..\DMP\mllite\ml_math_func.h(34): warning:  #260-D: explicit type is missing ("int" assumed)
+      static inline float inv_q30_to_float(long q30)
+..\DMP\mllite\ml_math_func.h(34): error:  #65: expected a ";"
+      static inline float inv_q30_to_float(long q30)
+..\DMP\mllite\ml_math_func.h(57): warning:  #12-D: parsing restarts here after previous syntax error
+      long inv_q29_mult(long a, long b);
+..\DMP\mllite\ml_math_func.h(108): warning:  #260-D: explicit type is missing ("int" assumed)
+      static inline long inv_delta_time_ms(inv_time_t t1, inv_time_t t2)
+..\DMP\mllite\ml_math_func.h(108): error:  #65: expected a ";"
+      static inline long inv_delta_time_ms(inv_time_t t1, inv_time_t t2)
+..\DMP\mllite\ml_math_func.h(119): warning:  #12-D: parsing restarts here after previous syntax error
+      double quaternion_to_rotation_angle(const long *quat);
+..\DMP\driver\include\log.h(339): warning:  #260-D: explicit type is missing ("int" assumed)
+  static inline void __print_result_location(int result,
+..\DMP\driver\include\log.h(339): error:  #65: expected a ";"
+  static inline void __print_result_location(int result,
+..\DMP\mllite\results_holder.c(51): warning:  #12-D: parsing restarts here after previous syntax error
+  };
+..\DMP\mllite\results_holder.c(61): error:  #70: incomplete type is not allowed
+      rh.status |= INV_6_AXIS_QUAT_SET;
+..\DMP\mllite\results_holder.c(62): error:  #70: incomplete type is not allowed
+      memcpy(&rh.gam_quat, quat, sizeof(rh.gam_quat));
+..\DMP\mllite\results_holder.c(62): error:  #70: incomplete type is not allowed
+      memcpy(&rh.gam_quat, quat, sizeof(rh.gam_quat));
+..\DMP\mllite\results_holder.c(63): error:  #70: incomplete type is not allowed
+      rh.gam_timestamp = timestamp;
+..\DMP\mllite\results_holder.c(73): error:  #70: incomplete type is not allowed
+      rh.status |= INV_COMPASS_CORRECTION_SET;
+..\DMP\mllite\results_holder.c(74): error:  #70: incomplete type is not allowed
+      memcpy(rh.compass_correction, data, sizeof(rh.compass_correction));
+..\DMP\mllite\results_holder.c(74): error:  #70: incomplete type is not allowed
+      memcpy(rh.compass_correction, data, sizeof(rh.compass_correction));
+..\DMP\mllite\results_holder.c(75): error:  #70: incomplete type is not allowed
+      rh.nav_timestamp = timestamp;
+..\DMP\mllite\results_holder.c(85): error:  #70: incomplete type is not allowed
+      memcpy(data, rh.compass_correction, sizeof(rh.compass_correction));
+..\DMP\mllite\results_holder.c(85): error:  #70: incomplete type is not allowed
+      memcpy(data, rh.compass_correction, sizeof(rh.compass_correction));
+..\DMP\mllite\results_holder.c(86): error:  #70: incomplete type is not allowed
+      *timestamp = rh.nav_timestamp;
+..\DMP\mllite\results_holder.c(94): error:  #70: incomplete type is not allowed
+      return rh.large_mag_field;
+..\DMP\mllite\results_holder.c(102): error:  #70: incomplete type is not allowed
+      rh.large_mag_field = state;
+..\DMP\mllite\results_holder.c(110): error:  #70: incomplete type is not allowed
+      return rh.acc_state;
+..\DMP\mllite\results_holder.c(118): error:  #70: incomplete type is not allowed
+      rh.acc_state = state;
+..\DMP\mllite\results_holder.c(128): error:  #70: incomplete type is not allowed
+      *cntr = rh.motion_state_counter;
+..\DMP\mllite\results_holder.c(129): error:  #70: incomplete type is not allowed
+      return rh.motion_state;
+..\DMP\mllite\results_holder.c(139): error:  #70: incomplete type is not allowed
+      if (state == rh.motion_state) {
+..\DMP\mllite\results_holder.c(141): error:  #70: incomplete type is not allowed
+              rh.motion_state_counter++;
+..\DMP\mllite\results_holder.c(143): error:  #70: incomplete type is not allowed
+              rh.motion_state_counter = 0;
+..\DMP\mllite\results_holder.c(147): error:  #70: incomplete type is not allowed
+      rh.motion_state_counter = 0;
+..\DMP\mllite\results_holder.c(148): error:  #70: incomplete type is not allowed
+      rh.motion_state = state;
+..\DMP\mllite\results_holder.c(164): error:  #70: incomplete type is not allowed
+      memcpy(rh.local_field, data, sizeof(rh.local_field));
+..\DMP\mllite\results_holder.c(164): error:  #70: incomplete type is not allowed
+      memcpy(rh.local_field, data, sizeof(rh.local_field));
+..\DMP\mllite\results_holder.c(174): error:  #70: incomplete type is not allowed
+      memcpy(data, rh.local_field, sizeof(rh.local_field));
+..\DMP\mllite\results_holder.c(174): error:  #70: incomplete type is not allowed
+      memcpy(data, rh.local_field, sizeof(rh.local_field));
+..\DMP\mllite\results_holder.c(183): error:  #70: incomplete type is not allowed
+      memcpy(rh.mag_scale, data, sizeof(rh.mag_scale));
+..\DMP\mllite\results_holder.c: 6 warnings, 30 errors
+compiling start_manager.c...
+..\DMP\driver\include\log.h(339): warning:  #260-D: explicit type is missing ("int" assumed)
+  static inline void __print_result_location(int result,
+..\DMP\driver\include\log.h(339): error:  #65: expected a ";"
+  static inline void __print_result_location(int result,
+..\DMP\driver\include\mltypes.h(109): error:  #20: identifier "int8_t" is undefined
+  typedef int8_t   __s8;
+..\DMP\mllite\start_manager.c: 1 warning, 2 errors
+compiling storage_manager.c...
+..\DMP\driver\include\log.h(339): warning:  #260-D: explicit type is missing ("int" assumed)
+  static inline void __print_result_location(int result,
+..\DMP\driver\include\log.h(339): error:  #65: expected a ";"
+  static inline void __print_result_location(int result,
+..\DMP\mllite\ml_math_func.h(32): warning:  #12-D: parsing restarts here after previous syntax error
+      }   inv_biquad_filter_t;
+..\DMP\mllite\ml_math_func.h(34): warning:  #260-D: explicit type is missing ("int" assumed)
+      static inline float inv_q30_to_float(long q30)
+..\DMP\mllite\ml_math_func.h(34): error:  #65: expected a ";"
+      static inline float inv_q30_to_float(long q30)
+..\DMP\mllite\ml_math_func.h(57): warning:  #12-D: parsing restarts here after previous syntax error
+      long inv_q29_mult(long a, long b);
+..\DMP\mllite\ml_math_func.h(108): warning:  #260-D: explicit type is missing ("int" assumed)
+      static inline long inv_delta_time_ms(inv_time_t t1, inv_time_t t2)
+..\DMP\mllite\ml_math_func.h(108): error:  #65: expected a ";"
+      static inline long inv_delta_time_ms(inv_time_t t1, inv_time_t t2)
+..\DMP\mllite\ml_math_func.h(119): warning:  #12-D: parsing restarts here after previous syntax error
+      double quaternion_to_rotation_angle(const long *quat);
+..\DMP\mllite\ml_math_func.h(122): error:  #20: identifier "inv_biquad_filter_t" is undefined
+      void inv_init_biquad_filter(inv_biquad_filter_t *pFilter, float *pBiquadCoeff);
+..\DMP\mllite\ml_math_func.h(123): error:  #20: identifier "inv_biquad_filter_t" is undefined
+      float inv_biquad_filter_process(inv_biquad_filter_t *pFilter, float input);
+..\DMP\mllite\ml_math_func.h(124): error:  #20: identifier "inv_biquad_filter_t" is undefined
+      void inv_calc_state_to_match_output(inv_biquad_filter_t *pFilter, float input);
+..\DMP\mllite\storage_manager.c: 6 warnings, 6 errors
+compiling inv_mpu_dmp_motion_driver.c...
+..\DMP\driver\eMPL\inv_mpu_dmp_motion_driver.c(495): error:  #29: expected an expression
+      .tap_cb = NULL,
+..\DMP\driver\eMPL\inv_mpu_dmp_motion_driver.c(496): error:  #29: expected an expression
+      .android_orient_cb = NULL,
+..\DMP\driver\eMPL\inv_mpu_dmp_motion_driver.c(497): error:  #29: expected an expression
+      .orient = 0,
+..\DMP\driver\eMPL\inv_mpu_dmp_motion_driver.c(498): error:  #29: expected an expression
+      .feature_mask = 0,
+..\DMP\driver\eMPL\inv_mpu_dmp_motion_driver.c(499): error:  #29: expected an expression
+      .fifo_rate = 0,
+..\DMP\driver\eMPL\inv_mpu_dmp_motion_driver.c(500): error:  #29: expected an expression
+      .packet_length = 0
+..\DMP\driver\eMPL\inv_mpu_dmp_motion_driver.c: 0 warnings, 6 errors
+compiling log_stm32.c...
+..\DMP\driver\include\log.h(339): warning:  #260-D: explicit type is missing ("int" assumed)
+  static inline void __print_result_location(int result,
+..\DMP\driver\include\log.h(339): error:  #65: expected a ";"
+  static inline void __print_result_location(int result,
+..\USER\stm32f767xx.h(187): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+..\CORE\core_cm7.h(1834): error:  #20: identifier "IRQn_Type" is undefined
+  
+_STATIC_INLINE void NVIC_EnableIRQ(IRQn_Type IRQn)
+..\CORE\core_cm7.h(1845): error:  #20: identifier "IRQn_Type" is undefined
+  
+_STATIC_INLINE void NVIC_DisableIRQ(IRQn_Type IRQn)
+..\CORE\core_cm7.h(1858): error:  #20: identifier "IRQn_Type" is undefined
+  
+_STATIC_INLINE uint32_t NVIC_GetPendingIRQ(IRQn_Type IRQn)
+..\CORE\core_cm7.h(1869): error:  #20: identifier "IRQn_Type" is undefined
+  
+_STATIC_INLINE void NVIC_SetPendingIRQ(IRQn_Type IRQn)
+..\CORE\core_cm7.h(1880): error:  #20: identifier "IRQn_Type" is undefined
+  
+_STATIC_INLINE void NVIC_ClearPendingIRQ(IRQn_Type IRQn)
+..\CORE\core_cm7.h(1893): error:  #20: identifier "IRQn_Type" is undefined
+  
+_STATIC_INLINE uint32_t NVIC_GetActive(IRQn_Type IRQn)
+..\CORE\core_cm7.h(1906): error:  #20: identifier "IRQn_Type" is undefined
+  
+_STATIC_INLINE void NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
+..\CORE\core_cm7.h(1928): error:  #20: identifier "IRQn_Type" is undefined
+  
+_STATIC_INLINE uint32_t NVIC_GetPriority(IRQn_Type IRQn)
+..\CORE\core_cm7.h(2413): error:  #20: identifier "SysTick_IRQn" is undefined
+    NVIC_SetPriority (SysTick_IRQn, (1UL << __NVIC_PRIO_BITS) - 1UL); /* set Priority for Systick Interrupt */
+..\HALLIB\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_cortex.h(280): error:  #20: identifier "IRQn_Type" is undefined
+  void HAL_NVIC_SetPriority(IRQn_Type IRQn, uint32_t PreemptPriority, uint32_t SubPriority);
+..\HALLIB\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_cortex.h(281): error:  #20: identifier "IRQn_Type" is undefined
+  void HAL_NVIC_EnableIRQ(IRQn_Type IRQn);
+..\HALLIB\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_cortex.h(282): error:  #20: identifier "IRQn_Type" is undefined
+  void HAL_NVIC_DisableIRQ(IRQn_Type IRQn);
+..\HALLIB\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_cortex.h(297): error:  #20: identifier "IRQn_Type" is undefined
+  void HAL_NVIC_GetPriority(IRQn_Type IRQn, uint32_t PriorityGroup, uint32_t* pPreemptPriority, uint32_t* pSubPriority);
+..\HALLIB\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_cortex.h(298): error:  #20: identifier "IRQn_Type" is undefined
+  uint32_t HAL_NVIC_GetPendingIRQ(IRQn_Type IRQn);
+..\HALLIB\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_cortex.h(299): error:  #20: identifier "IRQn_Type" is undefined
+  void HAL_NVIC_SetPendingIRQ(IRQn_Type IRQn);
+..\HALLIB\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_cortex.h(300): error:  #20: identifier "IRQn_Type" is undefined
+  void HAL_NVIC_ClearPendingIRQ(IRQn_Type IRQn);
+..\HALLIB\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_cortex.h(301): error:  #20: identifier "IRQn_Type" is undefined
+  uint32_t HAL_NVIC_GetActive(IRQn_Type IRQn);
+..\DMP\driver\stm32L\log_stm32.c: 2 warnings, 18 errors
+compiling inv_mpu.c...
+..\DMP\mllite\ml_math_func.h(34): warning:  #260-D: explicit type is missing ("int" assumed)
+      static inline float inv_q30_to_float(long q30)
+..\DMP\mllite\ml_math_func.h(34): error:  #65: expected a ";"
+      static inline float inv_q30_to_float(long q30)
+..\DMP\mllite\ml_math_func.h(57): warning:  #12-D: parsing restarts here after previous syntax error
+      long inv_q29_mult(long a, long b);
+..\DMP\mllite\ml_math_func.h(108): warning:  #260-D: explicit type is missing ("int" assumed)
+      static inline long inv_delta_time_ms(inv_time_t t1, inv_time_t t2)
+..\DMP\mllite\ml_math_func.h(108): error:  #65: expected a ";"
+      static inline long inv_delta_time_ms(inv_time_t t1, inv_time_t t2)
+..\DMP\mllite\ml_math_func.h(119): warning:  #12-D: parsing restarts here after previous syntax error
+      double quaternion_to_rotation_angle(const long *quat);
+..\DMP\driver\include\log.h(339): warning:  #260-D: explicit type is missing ("int" assumed)
+  static inline void __print_result_location(int result,
+..\DMP\driver\include\log.h(339): error:  #65: expected a ";"
+  static inline void __print_result_location(int result,
+..\DMP\mpl\accel_auto_cal.h(23): warning:  #12-D: parsing restarts here after previous syntax error
+  inv_error_t inv_enable_in_use_auto_calibration(void);
+..\DMP\driver\eMPL\inv_mpu.c(554): error:  #29: expected an expression
+      .who_am_i       = 0x75,
+..\DMP\driver\eMPL\inv_mpu.c(555): error:  #29: expected an expression
+      .rate_div       = 0x19,
+..\DMP\driver\eMPL\inv_mpu.c(556): error:  #29: expected an expression
+      .lpf            = 0x1A,
+..\DMP\driver\eMPL\inv_mpu.c(557): error:  #29: expected an expression
+      .prod_id        = 0x0C,
+..\DMP\driver\eMPL\inv_mpu.c(558): error:  #29: expected an expression
+      .user_ctrl      = 0x6A,
+..\DMP\driver\eMPL\inv_mpu.c(559): error:  #29: expected an expression
+      .fifo_en        = 0x23,
+..\DMP\driver\eMPL\inv_mpu.c(560): error:  #29: expected an expression
+      .gyro_cfg       = 0x1B,
+..\DMP\driver\eMPL\inv_mpu.c(561): error:  #29: expected an expression
+      .accel_cfg      = 0x1C,
+..\DMP\driver\eMPL\inv_mpu.c(562): error:  #29: expected an expression
+      .accel_cfg2     = 0x1D,
+..\DMP\driver\eMPL\inv_mpu.c(563): error:  #29: expected an expression
+      .lp_accel_odr   = 0x1E,
+..\DMP\driver\eMPL\inv_mpu.c(564): error:  #29: expected an expression
+      .motion_thr     = 0x1F,
+..\DMP\driver\eMPL\inv_mpu.c(565): error:  #29: expected an expression
+      .motion_dur     = 0x20,
+..\DMP\driver\eMPL\inv_mpu.c(566): error:  #29: expected an expression
+      .fifo_count_h   = 0x72,
+..\DMP\driver\eMPL\inv_mpu.c(567): error:  #29: expected an expression
+      .fifo_r_w       = 0x74,
+..\DMP\driver\eMPL\inv_mpu.c(568): error:  #29: expected an expression
+      .raw_gyro       = 0x43,
+..\DMP\driver\eMPL\inv_mpu.c(569): error:  #29: expected an expression
+      .raw_accel      = 0x3B,
+..\DMP\driver\eMPL\inv_mpu.c(570): error:  #29: expected an expression
+      .temp           = 0x41,
+..\DMP\driver\eMPL\inv_mpu.c(571): error:  #29: expected an expression
+      .int_enable     = 0x38,
+..\DMP\driver\eMPL\inv_mpu.c(572): error:  #29: expected an expression
+      .dmp_int_status = 0x39,
+..\DMP\driver\eMPL\inv_mpu.c(573): error:  #29: expected an expression
+      .int_status     = 0x3A,
+..\DMP\driver\eMPL\inv_mpu.c(574): error:  #29: expected an expression
+      .accel_intel    = 0x69,
+..\DMP\driver\eMPL\inv_mpu.c(575): error:  #29: expected an expression
+      .pwr_mgmt_1     = 0x6B,
+..\DMP\driver\eMPL\inv_mpu.c(576): error:  #29: expected an expression
+      .pwr_mgmt_2     = 0x6C,
+..\DMP\driver\eMPL\inv_mpu.c(577): error:  #29: expected an expression
+      .int_pin_cfg    = 0x37,
+..\DMP\driver\eMPL\inv_mpu.c(578): error:  #29: expected an expression
+      .mem_r_w        = 0x6F,
+..\DMP\driver\eMPL\inv_mpu.c(579): error:  #29: expected an expression
+      .accel_offs     = 0x77,
+..\DMP\driver\eMPL\inv_mpu.c(580): error:  #29: expected an expression
+      .i2c_mst        = 0x24,
+..\DMP\driver\eMPL\inv_mpu.c: 6 warnings, 30 errors
+"..\OBJ\Template.axf" - 114 Error(s), 54 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F7xx_DFP.2.9.0.pack
+                Keil.STM32F7xx_DFP.2.9.0
+                STMicroelectronics STM32F7 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_BipedRobot_Control
+  E:\MDK\ARM\PACK\Keil\STM32F7xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:07
+</pre>
+</body>
+</html>

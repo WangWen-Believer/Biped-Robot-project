@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=VREF+ Pin=P1-1
+Removed Member From Class: ClassName=Robot_demoborad Member=P1
+Added Pin To Net: NetName=VREF+ Pin=C2-2
+Added Pin To Net: NetName=VREF+ Pin=R3-1

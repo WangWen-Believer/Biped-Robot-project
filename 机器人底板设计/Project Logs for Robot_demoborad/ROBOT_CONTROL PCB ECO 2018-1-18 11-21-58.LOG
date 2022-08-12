@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=LED0 Pin=M1-J2_27
+Added Pin To Net: NetName=LED0 Pin=M1-J1_28
+Added Room: Name=Robot_demoborad

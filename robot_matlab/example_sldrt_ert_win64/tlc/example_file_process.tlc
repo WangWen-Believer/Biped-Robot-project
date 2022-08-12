@@ -1,0 +1,111 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%% 
+%% 
+%%
+%% Abstract:
+%%   Example Embedded Coder custom file processing template.
+%%
+%%   Note: This file can contain any valid TLC code, which Embedded Coder
+%%   executes just prior to writing the generated source files to disk.
+%%   Using this template "hook" file, you are able to augment the generated
+%%   source code and create additional files.
+%%
+%% Copyright 1994-2010 The MathWorks, Inc.
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%selectfile NULL_FILE
+
+%%  Uncomment this TLC line to execute the example
+%%   ||   ||
+%%   ||   ||
+%%   \/   \/
+%%  %assign ERTCustomFileTest = TLC_TRUE
+
+%if EXISTS("ERTCustomFileTest") && ERTCustomFileTest == TLC_TRUE
+  
+  %% Add a new C file timestwo.c and put a simple function in it
+  
+  %assign cFile = LibCreateSourceFile("Source", "Custom", "timestwo")
+  
+  %openfile typesBuf
+  
+  #include "rtwtypes.h"
+  
+  %closefile typesBuf
+  
+  %<LibSetSourceFileSection(cFile,"Includes",typesBuf)>
+
+  %openfile tmpBuf
+
+  /* Times two function */
+  real_T timestwofcn(real_T input) {
+    return (input * 2.0);
+  }
+
+  %closefile tmpBuf
+  
+  %<LibSetSourceFileSection(cFile,"Functions",tmpBuf)>
+  
+  %% Add a corresponding H file timestwo.h
+  
+  %assign hFile = LibCreateSourceFile("Header", "Custom", "timestwo")
+  
+  %openfile tmpBuf
+  
+  /* Times two function */
+  extern real_T timestwofcn(real_T input);
+  
+  %closefile tmpBuf
+  
+  %<LibSetSourceFileSection(hFile,"Includes",typesBuf)>
+  %<LibSetSourceFileSection(hFile,"Declarations",tmpBuf)>
+  
+  %% Add a #define to the model's public header file model.h
+  
+  %assign pubName = LibGetMdlPubHdrBaseName()
+  %assign modelH  = LibCreateSourceFile("Header", "Simulink", pubName)
+  
+  %openfile tmpBuf
+
+  #define ACCELERATION 9.81
+
+  %closefile tmpBuf
+  
+  %<LibSetSourceFileSection(modelH,"Defines",tmpBuf)>
+  
+  %% Add a #define to the model's private header file model_private.h
+  
+  %assign prvName  = LibGetMdlPrvHdrBaseName()
+  %assign privateH = LibCreateSourceFile("Header", "Simulink", prvName)
+  
+  %openfile tmpBuf
+
+  #define STARTING_POINT 100.0
+
+  %closefile tmpBuf
+  
+  %<LibSetSourceFileSection(privateH,"Defines",tmpBuf)>
+  
+  %% Add a #include to the model's C file model.c
+  
+  %assign srcName = LibGetMdlSrcBaseName()
+  %assign modelC  = LibCreateSourceFile("Source", "Simulink", srcName)
+  
+  %openfile tmpBuf
+  /* #include "mytables.h" */
+  %closefile tmpBuf
+  
+  %<LibSetSourceFileSection(modelC,"Includes",tmpBuf)>
+  
+  %% Create a simple main.  Files are located in MATLAB/rtw/c/tlc/mw.
+  
+  %if LibIsSingleRateModel() || LibIsSingleTasking()
+    %include "bareboard_srmain.tlc"
+    %<FcnSingleTaskingMain()>
+  %else
+    %include "bareboard_mrmain.tlc"
+    %<FcnMultiTaskingMain()>
+  %endif
+  
+%endif

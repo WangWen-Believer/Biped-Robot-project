@@ -1,0 +1,32 @@
+%implements s0_b0_7o2ic_Update "C"
+
+%function Update(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcUpdateFcnOfS0B0 = OpaqueTLCBlockFcn("Update", 0, 0, 0, 1)
+%assign tlcUpdateFcnOfS0B1 = OpaqueTLCBlockFcn("Update", 0, 1, 0, 1)
+%assign tlcUpdateFcnOfS0B2 = OpaqueTLCBlockFcn("Update", 0, 2, 0, 1)
+%if !WHITE_SPACE(tlcUpdateFcnOfS0B0)
+/* Update for M-S-Function: '<Root>/Serial Configuration' */
+%<SLibCG_DumpSSCode("/*@[1c09*/",tlcUpdateFcnOfS0B0,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcUpdateFcnOfS0B1)
+/* Update for M-S-Function: '<Root>/Serial Send' */
+%<SLibCG_DumpSSCode("/*@[1c0b*/",tlcUpdateFcnOfS0B1,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcUpdateFcnOfS0B2)
+/* Update for S-Function (exa): '<Root>/S-Function' */
+%<SLibCG_DumpSSCode("/*@[1c0f*/",tlcUpdateFcnOfS0B2,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function UpdateFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Update(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 1, fcnProtoType)>
+%endfunction

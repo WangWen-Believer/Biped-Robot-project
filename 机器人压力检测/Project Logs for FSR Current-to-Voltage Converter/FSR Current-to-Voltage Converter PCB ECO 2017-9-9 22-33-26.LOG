@@ -1,0 +1,7 @@
+Added Pin To Net: NetName=FOOT_1 Pin=P1-2
+Added Pin To Net: NetName=FOOT_2 Pin=P1-4
+Added Pin To Net: NetName=FOOT_3 Pin=P1-6
+Added Pin To Net: NetName=FOOT_4 Pin=P1-8
+Added Pin To Net: NetName=GND Pin=U1-11
+Added Pin To Net: NetName=NetU1_5 Pin=U1-11
+Added Pin To Net: NetName=NetU1_11 Pin=U1-11

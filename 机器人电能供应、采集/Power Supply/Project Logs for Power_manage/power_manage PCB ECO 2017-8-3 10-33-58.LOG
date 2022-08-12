@@ -1,0 +1,72 @@
+Added Component: Designator=P3(Head_SOP20)
+Added Pin To Net: NetName=+5V Pin=D2-1
+Added Pin To Net: NetName=+5V Pin=J1-1
+Added Pin To Net: NetName=+5V Pin=j2-1
+Added Pin To Net: NetName=+5V Pin=L1-2
+Added Pin To Net: NetName=+5V Pin=P1-1
+Added Pin To Net: NetName=+5V Pin=P1-3
+Added Pin To Net: NetName=+5V Pin=P1-5
+Added Pin To Net: NetName=+5V Pin=P1-7
+Added Pin To Net: NetName=+5V Pin=P1-9
+Added Pin To Net: NetName=+5V Pin=P1-11
+Added Pin To Net: NetName=+5V Pin=P1-13
+Added Pin To Net: NetName=+5V Pin=P1-15
+Added Pin To Net: NetName=+5V Pin=P1-17
+Added Pin To Net: NetName=+5V Pin=P1-19
+Added Pin To Net: NetName=+5V Pin=P3-1
+Added Pin To Net: NetName=+5V Pin=P3-3
+Added Pin To Net: NetName=+5V Pin=P3-5
+Added Pin To Net: NetName=+5V Pin=P3-7
+Added Pin To Net: NetName=+5V Pin=P3-9
+Added Pin To Net: NetName=+5V Pin=P3-11
+Added Pin To Net: NetName=+5V Pin=P3-13
+Added Pin To Net: NetName=+5V Pin=P3-15
+Added Pin To Net: NetName=+5V Pin=P3-17
+Added Pin To Net: NetName=+5V Pin=P3-19
+Added Net: Name=+5V
+Added Pin To Net: NetName=+12V Pin=C1-1
+Added Pin To Net: NetName=+12V Pin=P2-2
+Added Pin To Net: NetName=+12V Pin=U1-1
+Added Net: Name=+12V
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=GND Pin=D1-1
+Added Pin To Net: NetName=GND Pin=J1-5
+Added Pin To Net: NetName=GND Pin=j2-5
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P1-4
+Added Pin To Net: NetName=GND Pin=P1-6
+Added Pin To Net: NetName=GND Pin=P1-8
+Added Pin To Net: NetName=GND Pin=P1-10
+Added Pin To Net: NetName=GND Pin=P1-12
+Added Pin To Net: NetName=GND Pin=P1-14
+Added Pin To Net: NetName=GND Pin=P1-16
+Added Pin To Net: NetName=GND Pin=P1-18
+Added Pin To Net: NetName=GND Pin=P1-20
+Added Pin To Net: NetName=GND Pin=P2-1
+Added Pin To Net: NetName=GND Pin=P3-2
+Added Pin To Net: NetName=GND Pin=P3-4
+Added Pin To Net: NetName=GND Pin=P3-6
+Added Pin To Net: NetName=GND Pin=P3-8
+Added Pin To Net: NetName=GND Pin=P3-10
+Added Pin To Net: NetName=GND Pin=P3-12
+Added Pin To Net: NetName=GND Pin=P3-14
+Added Pin To Net: NetName=GND Pin=P3-16
+Added Pin To Net: NetName=GND Pin=P3-18
+Added Pin To Net: NetName=GND Pin=P3-20
+Added Pin To Net: NetName=GND Pin=R1-1
+Added Pin To Net: NetName=GND Pin=U1-3
+Added Pin To Net: NetName=GND Pin=U1-5
+Added Net: Name=GND
+Added Pin To Net: NetName=NetC2_1 Pin=C2-1
+Added Pin To Net: NetName=NetC2_1 Pin=U1-4
+Added Net: Name=NetC2_1
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=NetD1_2 Pin=L1-1
+Added Pin To Net: NetName=NetD1_2 Pin=U1-2
+Added Net: Name=NetD1_2
+Added Pin To Net: NetName=NetD2_2 Pin=D2-2
+Added Pin To Net: NetName=NetD2_2 Pin=R1-2
+Added Net: Name=NetD2_2
+Added Class: Name=power_manage
+Added Room: Name=power_manage
